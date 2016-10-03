@@ -25,28 +25,46 @@
 %% This work has the LPPL maintenance status `maintained'.
 %% 
 %% The Current Maintainer of this work is Liam Huang.
+
 %% 
 \documentclass{mcmthesis}
-\mcmsetup{tcn = 0000, problem = A,
+\mcmsetup{tcn = 233666, problem = B,
         sheet = true, titleinsheet = true, keywordsinsheet = true,
         titlepage = true, abstract = true}
 \usepackage{palatino}
 \usepackage{mwe}
-\title{The \LaTeX{} Template for MCM Version \MCMversion}
-\author{\small \href{http://www.latexstudio.net/}
-  {\includegraphics[width=7cm]{mcmthesis-logo}}}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\setlength{\parindent} {2em}
+\title{this is title}
+\author{here is auther}
 \date{\today}
 \begin{document}
 \begin{abstract}
-\lipsum[1]
+here is the abstract!~!!
 \begin{keywords}
 keyword1; keyword2
 \end{keywords}
 \end{abstract}
 \maketitle
+
 \section{Introduction}
 
-\lipsum[2]
+Sudoku, is a logic-based,combinatorial number-placement puzzle. The objextive is to fill a $9\times9$ grid with digits so that each column, each row, and each of the nine $3\times3$ subgrids that compose the grid contains all of the digits from 1 to 9. The puzzle setter provides a partially completed grid, which for a well-posed puzzle has a unique solution. Fig.1 is a typical example of a sudoku puzzle.\par
+
+\centerline{
+	\includegraphics[width = 6cm]{figures/sudoku.png}
+}
+\centerline{Fig.1 Typical sudoku puzzle}
+
+\indent Completed games are always a type of Latin square with an additional constraint on the contents of individual regions. For example, the same single integer may not appear twice in the same row, column, or any of the nine $3\times3$ subregions of the $9\times9$ playing board.
+
+\centerline{
+	\includegraphics[width = 6cm]{figures/sudoku_complete.png}
+}
+\centerline{Fig.2 The same puzzle with solution numbers marked in red}
+
 \begin{itemize}
 \item minimizes the discomfort to the hands, or
 \item maximizes the outgoing velocity of the ball.
