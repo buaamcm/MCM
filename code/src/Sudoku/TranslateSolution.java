@@ -33,7 +33,7 @@ public class TranslateSolution {
 						y = a[k] % 9;
 						y = y == 0 ? 9 : y;
 						x = (a[k] - y) / 9 + 1;
-						System.out.println(x + " " + y);
+						//System.out.println(x + " " + y);
 					}
 					if(a[k] > 81 && a[k] <= 162){
 						value = (a[k] - Sudoku.SIZE) % 9;
@@ -48,6 +48,7 @@ public class TranslateSolution {
 				}
 				System.out.println();
 			}
+			System.out.println();
 		}
 	}
 }

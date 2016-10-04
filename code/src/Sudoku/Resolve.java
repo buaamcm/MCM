@@ -43,6 +43,7 @@ public class Resolve {
 			}
 			resolve(k + 1);
 			rNode = aList.get(k);
+			aList.remove(k);
 			h = rNode.columnHead;
 			for(SudokuNode jNode = rNode.leftNode; jNode != rNode; jNode = jNode.leftNode){
 				uncoverColumn(jNode.columnHead);
