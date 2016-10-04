@@ -37,8 +37,8 @@
 \usepackage{indentfirst}
 \usepackage{graphicx}
 \setlength{\parindent} {2em}
-\title{this is title}
-\author{here is auther}
+\title{Sudoku Analyzing}
+\author{Kai Feng, Song Lu, Yutao Zeng }
 \date{\today}
 \begin{document}
 \begin{abstract}
@@ -50,62 +50,49 @@ keyword1; keyword2
 \maketitle
 
 \section{Introduction}
-
-Sudoku, is a logic-based,combinatorial number-placement puzzle. The objextive is to fill a $9\times9$ grid with digits so that each column, each row, and each of the nine $3\times3$ subgrids that compose the grid contains all of the digits from 1 to 9. The puzzle setter provides a partially completed grid, which for a well-posed puzzle has a unique solution. Fig.1 is a typical example of a sudoku puzzle.\par
+\subsection{Statement of Problem}
+Our job is to develop an algorithm which would construct Sudoku puzzles of varying difficulty.In paricular, 
+\subsection{Sudoku Introduction}
+Sudoku, is a logic-based,combinatorial number-placement puzzle. The objextive is to fill a $9\times9$ grid with digits so that each column, each row, and each of the nine $3\times3$ subgrids that compose the grid contains all of the digits from 1 to 9. The puzzle setter provides a partially completed grid, which for a well-posed puzzle has a unique solution. Fig.1 is a typical example of sudoku puzzle.\newline \par 
 
 \centerline{
 	\includegraphics[width = 6cm]{figures/sudoku.png}
 }
 \centerline{Fig.1 Typical sudoku puzzle}
 
-\indent Completed games are always a type of Latin square with an additional constraint on the contents of individual regions. For example, the same single integer may not appear twice in the same row, column, or any of the nine $3\times3$ subregions of the $9\times9$ playing board.
+\indent Completed games are always a type of Latin square with an additional constraint on the contents of individual regions. For example, the same single integer may not appear twice in the same row, column, or any of the nine $3\times3$ subregions of the $9\times9$ playing board.\newline
 
 \centerline{
 	\includegraphics[width = 6cm]{figures/sudoku_complete.png}
 }
 \centerline{Fig.2 The same puzzle with solution numbers marked in red}
 
-\begin{itemize}
-\item minimizes the discomfort to the hands, or
-\item maximizes the outgoing velocity of the ball.
-\end{itemize}
-We focus exclusively on the second definition.
+\subsection{Notations and Terminologies}
+It is difficult to discuss our solution to the proposed problem without understanding some common
+terminology. Moreover, since we will apply more mathematical formalism here than in most documents dealing with sudoku, it will be helpful to introduce notational conventions.
+% \begin{table}[!hbp]
+% \begin{tabular}{|c|c|c|c|c|}
+% \hline
+% 1-1 & 1-2 & 1-3 & 1-4 & 1-5 \\
+% 2-1 & 2-2 & 2-3 & 2-4 & 2-5 \\
+% \end{tabular}
+% \caption{example of table}
+% \end{table}
 
 \begin{itemize}
-\item the initial velocity and rotation of the ball,
-\item the initial velocity and rotation of the bat,
-\item the relative position and orientation of the bat and ball, and
-\item the force over time that the hitter hands applies on the handle.
-\end{itemize}
-\lipsum[3]
-\begin{itemize}
-\item the angular velocity of the bat,
-\item the velocity of the ball, and
-\item the position of impact along the bat.
-\end{itemize}
-\lipsum[4]
-\emph{center of percussion} [Brody 1986], \lipsum[5]
+	\item \textbf{Cell.} The basic unit of Sudoku puzzle. A square in the grid which may contain one digit(1-9). The grid is composed of 81 cells.
 
-\begin{Theorem} \label{thm:latex}
-\LaTeX
-\end{Theorem}
-\begin{Lemma} \label{thm:tex}
-\TeX .
-\end{Lemma}
-\begin{proof}
-The proof of theorem.
-\end{proof}
+	\item \textbf{Block.} A $3\times3$ array of cells. Normally, the boundaries of the blocks are marked by slightly darker or thicker lines than the lines separating the cells. The grid is composed of 9 non-overlapping blocks. Each block must contain all the digits(form 1 to 9) and may not contain more than one of each digit.
 
-\subsection{Other Assumptions}
-\lipsum[6]
-\begin{itemize}
-\item
-\item
-\item
-\item
+	\item \textbf{Column.} A verticle line of 9 cells. The grid is composed of 9 columns. Each column must contain all the digits(1-9) and may not contain more than one of each digit.
+
+	\item \textbf{Row.} A horizontal line of 9 cells. The grid is composed of 9 rows. Each row must contain all the digits (1-9) and may not contain more than one of each digit.
+
+	\item \textbf{Grid.} The $9\times9$ array of cells that compose a Sudoku puzzle. The grid contains 9 rows, 9 columns and 9 blocks.
+
+	\item \textbf{Puzzle.} A $9\times9$ matrix of cells, with at least one empty and at least one filled cell. For our purposes, we impose the additional requirement that all puzzles have exactly one solution. 	
 \end{itemize}
 
-\lipsum[7]
 
 \section{Analysis of the Problem}
 \begin{figure}[h]
@@ -146,22 +133,22 @@ a^2 \label{aa}
   \right)!}}} \eqno (1)
 \]
 
-\section{Calculating and Simplifying the Model  }
-\lipsum[11]
+\section{Matrix Design}
 
 \section{The Model Results}
-\lipsum[6]
 
 \section{Validating the Model}
-\lipsum[9]
+talk with data
 
 \section{Conclusions}
-\lipsum[6]
+in short but accurate
 
 \section{A Summary}
 \lipsum[6]
 
 \section{Evaluate of the Mode}
+\subsection{Advantage of the Model}
+\subsection{Disadvantage of the Model}
 
 \section{Strengths and weaknesses}
 \lipsum[12]
