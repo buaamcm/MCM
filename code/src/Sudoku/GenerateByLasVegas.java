@@ -21,15 +21,15 @@ class GenerateByLasVegas {
 	
 	public int[][] Generate(){
 		//Initialize
-		for(int i=0;i<Number;i++){
-			for(int j=0;j<Number;j++){
+		for(int i = 0; i < Number; i++){
+			for(int j = 0; j < Number; j++){
 				Sudoku[i][j] = 0;
 			}
 		}
 		//Generate
 		int WrongTimes = 0;
-		for(int i=0;i<Number;i++){
-			if(i==0){
+		for(int i = 0; i < Number; i++){
+			if(i == 0){
 				Candinum.ChangeOrder();
 				Sudoku[i] = Candinum.Candidate.clone();
 			} else {
@@ -39,23 +39,23 @@ class GenerateByLasVegas {
 					if(WrongTimes > MaxCompareNum){
 						return null;
 					}
-				}while(CanFillInArray(Candinum.Candidate, Number, i)==false);
+				}while(CanFillInArray(Candinum.Candidate, Number, i) == false);
 				Sudoku[i] = Candinum.Candidate.clone();
 			}
 		}
 		
 		//Print
-		for(int i=0;i<Number;i++){
-			for(int j=0;j<Number;j++){
-				System.out.print(Sudoku[i][j]+" ");
+		for(int i = 0; i < Number; i++){
+			for(int j = 0; j < Number; j++){
+				System.out.print(Sudoku[i][j] + " ");
 			}
 			System.out.println();
 		}
 		System.out.println("-----------------");
 		int result[][] = new int[Number+1][Number+1];
-		for(int i=1;i<=Number;i++){
-			for(int j=1;j<=Number;j++){
-				result[i][j] = Sudoku[i-1][j-1];
+		for(int i = 1; i <= Number; i++){
+			for(int j = 1; j <= Number; j++){
+				result[i][j] = Sudoku[i - 1][j - 1];
 			}
 		}
 		return result;
@@ -68,12 +68,12 @@ class GenerateByLasVegas {
 //				return false;
 //			}
 //		}
-		for(int i=0;i<line;i++){
+		for(int i = 0; i < line; i++){
 			if(Sudoku[i][column] == num){
 				return false;
 			}
 		}
-		for(int i=0;i<column;i++){
+		for(int i = 0; i < column; i++){
 			if(Sudoku[line][i] == num){
 				return false;
 			}
@@ -81,9 +81,9 @@ class GenerateByLasVegas {
 		int linetmp = line - line % GridNumber;
 		int columntmp = column - column % GridNumber;
 		
-		for(int i=0;i<=line%GridNumber;i++){
-			for(int j=0;j<GridNumber;j++){
-				if(Sudoku[linetmp+i][columntmp+j] == num){
+		for(int i = 0; i <= line % GridNumber; i++){
+			for(int j = 0; j < GridNumber; j++){
+				if(Sudoku[linetmp + i][columntmp + j] == num){
 					return false;
 				}
 			}
@@ -92,8 +92,8 @@ class GenerateByLasVegas {
 	}
 	
 	public boolean CanFillInArray(int a[],int top,int line){
-		for(int i=0;i<top;i++){
-			if(CanFillIn(a[i], line, i)==false)
+		for(int i = 0; i < top; i++){
+			if(CanFillIn(a[i], line, i) == false)
 				return false;
 		}
 		return true;
@@ -106,7 +106,7 @@ class CandidateNumber{
 	int num = 0;
 	public CandidateNumber(int Number){
 		Candidate = new int[Number];
-		for(int i=0;i<Number;i++){
+		for(int i = 0; i < Number; i++){
 			Candidate[i] = i+1;
 		}
 		num = Number;
@@ -117,13 +117,13 @@ class CandidateNumber{
 		boolean Used[] = new boolean[num]; 
 		int canditmp[] = Candidate.clone();
 		Random random = new Random();
-		for(int i=0;i<num;i++){
-			Used[i]=false;
+		for(int i = 0; i < num; i++){
+			Used[i] = false;
 		}
-		for(int i=0;i<num;i++){
+		for(int i = 0; i < num; i++){
 			do{
 				numtmp = random.nextInt(num);
-			}while(Used[numtmp]==true);
+			}while(Used[numtmp] == true);
 			Candidate[i] = canditmp[numtmp];
 			Used[numtmp] = true;
 		}

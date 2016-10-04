@@ -82,5 +82,20 @@ public class Main {
 		
 		TranslateSolution translateSolution = new TranslateSolution(answers);
 		translateSolution.translate();
+		
+		GetPuzzle getPuzzle = new GetPuzzle(generateByLasVegas.Generate());
+		getPuzzle.get();
+		/*for(int i = 1; i <= 9; i++){
+			for(int j = 1; j <= 9; j++){
+				System.out.print(getPuzzle.input[i][j] + " ");
+			}
+			System.out.println();
+		}*/
+		System.out.println("-----------------");
+		resolve = new Resolve(new Sudoku(getPuzzle.input));
+		resolve.resolve(0);
+		answers = resolve.allAnswers;
+		translateSolution = new TranslateSolution(answers);
+		translateSolution.translate();
 	}
 }
