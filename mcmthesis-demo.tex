@@ -25,72 +25,81 @@
 %% This work has the LPPL maintenance status `maintained'.
 %% 
 %% The Current Maintainer of this work is Liam Huang.
+
 %% 
 \documentclass{mcmthesis}
-\mcmsetup{tcn = 0000, problem = A,
-        sheet = true, titleinsheet = true, keywordsinsheet = true,
-        titlepage = true, abstract = true}
+\mcmsetup{tcn = 233666, problem = B,
+sheet = true, titleinsheet = true, keywordsinsheet = true,
+titlepage = true, abstract = true}
 \usepackage{palatino}
 \usepackage{mwe}
-\title{The \LaTeX{} Template for MCM Version \MCMversion}
-\author{\small \href{http://www.latexstudio.net/}
-  {\includegraphics[width=7cm]{mcmthesis-logo}}}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\setlength{\parindent} {2em}
+\title{Sudoku Analyzing}
+\author{Kai Feng, Song Lu, Yutao Zeng }
 \date{\today}
 \begin{document}
 \begin{abstract}
-\lipsum[1]
+here is the abstract!~!!
 \begin{keywords}
 keyword1; keyword2
 \end{keywords}
 \end{abstract}
 \maketitle
+
 \section{Introduction}
+\subsection{Statement of Problem}
+We set out to design an algorithm that would construct unique sudoku puzzles of various difficulties as well as to develop metrics by which to measure the difficulty of a given puzzle. In particular, our algorithm must admit at least four levels of difficulty while minimizing its level of complexity.\\
+\subsection{Sudoku Introduction}
+Sudoku, is a logic-based,combinatorial number-placement puzzle. The objextive is to fill a $9\times9$ grid with digits so that each column, each row, and each of the nine $3\times3$ subgrids that compose the grid contains all of the digits from 1 to 9. The puzzle setter provides a partially completed grid, which for a well-posed puzzle has a unique solution. Fig.1 is a typical example of sudoku puzzle.\\
+\centerline{
+\includegraphics[width = 6cm]{figures/sudoku.png}
+}
+\centerline{Fig.1 Typical sudoku puzzle}
+\indent Completed games are always a type of Latin square with an additional constraint on the contents of individual regions. For example, the same single integer may not appear twice in the same row, column, or any of the nine $3\times3$ subregions of the $9\times9$ playing board.\newline
 
-\lipsum[2]
+\centerline{
+\includegraphics[width = 6cm]{figures/sudoku_complete.png}
+}
+\centerline{Fig.2 The same puzzle with solution numbers marked in red}
+
+\subsection{Notations and Terminologies}
+It is difficult to discuss our solution to the proposed problem without understanding some common
+terminology. Moreover, since we will apply more mathematical formalism here than in most documents dealing with sudoku, it will be helpful to introduce notational conventions.
+% \begin{table}[!hbp]
+% \begin{tabular}{|c|c|c|c|c|}
+% \hline
+% 1-1 & 1-2 & 1-3 & 1-4 & 1-5 \\
+% 2-1 & 2-2 & 2-3 & 2-4 & 2-5 \\
+% \end{tabular}
+% \caption{example of table}
+% \end{table}
+
 \begin{itemize}
-\item minimizes the discomfort to the hands, or
-\item maximizes the outgoing velocity of the ball.
-\end{itemize}
-We focus exclusively on the second definition.
+	\item \textbf{Cell.} The basic unit of Sudoku puzzle. A square in the grid which may contain one digit(1-9). The grid is composed of 81 cells.
 
-\begin{itemize}
-\item the initial velocity and rotation of the ball,
-\item the initial velocity and rotation of the bat,
-\item the relative position and orientation of the bat and ball, and
-\item the force over time that the hitter hands applies on the handle.
-\end{itemize}
-\lipsum[3]
-\begin{itemize}
-\item the angular velocity of the bat,
-\item the velocity of the ball, and
-\item the position of impact along the bat.
-\end{itemize}
-\lipsum[4]
-\emph{center of percussion} [Brody 1986], \lipsum[5]
+	\item \textbf{Block.} A $3\times3$ array of cells. Normally, the boundaries of the blocks are marked by slightly darker or thicker lines than the lines separating the cells. The grid is composed of 9 non-overlapping blocks. Each block must contain all the digits(form 1 to 9) and may not contain more than one of each digit.
 
-\begin{Theorem} \label{thm:latex}
-\LaTeX
-\end{Theorem}
-\begin{Lemma} \label{thm:tex}
-\TeX .
-\end{Lemma}
-\begin{proof}
-The proof of theorem.
-\end{proof}
+	\item \textbf{Column.} A verticle line of 9 cells. The grid is composed of 9 columns. Each column must contain all the digits(1-9) and may not contain more than one of each digit.
 
-\subsection{Other Assumptions}
-\lipsum[6]
-\begin{itemize}
-\item
-\item
-\item
-\item
+	\item \textbf{Row.} A horizontal line of 9 cells. The grid is composed of 9 rows. Each row must contain all the digits (1-9) and may not contain more than one of each digit.
+
+	\item \textbf{Grid.} The $9\times9$ array of cells that compose a Sudoku puzzle. The grid contains 9 rows, 9 columns and 9 blocks.
+
+	\item \textbf{Puzzle.} A $9\times9$ matrix of cells, with at least one empty and at least one filled cell. For our purposes, we impose the additional requirement that all puzzles have exactly one solution. 	
+
+	\item \textbf{Buddy.} Two cells in the same row, column or block are buddies. Every cell has 20 buddies. Obviously, if 2 cells are buddies, they must contain different numbers.
+
+	\item \textbf{Candidate.} Any digit that may be placed in an empty cell based on current state of the puzzle. If a digit is present in one or more of a cell's buddies, it cannot be a candidate for that cell. Analysis may further reduce the candidate set to a signle candidate, that candidate must be the sulution for that cell.
+
+	\item \textbf{Analysis.} Any technique that eliminates candidates. Techniques of analysis do ultimately lead to solutions for cells, but it may take the application of multiple techniques or multiple applications of the same technique to reach a solution for a single cell. The point of analysis then, is to eliminate candidates, not look for solutions. Looking for solutions is scanning.
 \end{itemize}
 
-\lipsum[7]
 
 \section{Analysis of the Problem}
-\begin{figure}[h]
+\begin{figure}[ht]
 \small
 \centering
 \includegraphics[width=12cm]{mcmthesis-aaa.eps}
@@ -103,62 +112,62 @@ a^2 \label{aa}
 \end{equation}
 
 \[
-  \begin{pmatrix}{*{20}c}
-  {a_{11} } & {a_{12} } & {a_{13} }  \\
-  {a_{21} } & {a_{22} } & {a_{23} }  \\
-  {a_{31} } & {a_{32} } & {a_{33} }  \\
-  \end{pmatrix}
-  = \frac{{Opposite}}{{Hypotenuse}}\cos ^{ - 1} \theta \arcsin \theta
+\begin{pmatrix}{*{20}c}
+{a_{11} } & {a_{12} } & {a_{13} }  \\
+{a_{21} } & {a_{22} } & {a_{23} }  \\
+{a_{31} } & {a_{32} } & {a_{33} }  \\
+\end{pmatrix}
+= \frac{{Opposite}}{{Hypotenuse}}\cos ^{ - 1} \theta \arcsin \theta
 \]
 \lipsum[9]
 
 \[
-  p_{j}=\begin{cases} 0,&\text{if $j$ is odd}\\
-  r!\,(-1)^{j/2},&\text{if $j$ is even}
-  \end{cases}
+p_{j}=\begin{cases} 0,&\text{if $j$ is odd}\\
+r!\,(-1)^{j/2},&\text{if $j$ is even}
+\end{cases}
 \]
 
 \lipsum[10]
 
 \[
-  \arcsin \theta  =
-  \mathop{{\int\!\!\!\!\!\int\!\!\!\!\!\int}\mkern-31.2mu
-  \bigodot}\limits_\varphi
-  {\mathop {\lim }\limits_{x \to \infty } \frac{{n!}}{{r!\left( {n - r}
-  \right)!}}} \eqno (1)
+\arcsin \theta  =
+\mathop{{\int\!\!\!\!\!\int\!\!\!\!\!\int}\mkern-31.2mu
+\bigodot}\limits_\varphi
+{\mathop {\lim }\limits_{x \to \infty } \frac{{n!}}{{r!\left( {n - r}
+\right)!}}} \eqno (1)
 \]
 
-\section{Calculating and Simplifying the Model  }
-\lipsum[11]
+\section{Matrix Design}
 
 \section{The Model Results}
-\lipsum[6]
 
 \section{Validating the Model}
-\lipsum[9]
+talk with data
 
 \section{Conclusions}
-\lipsum[6]
+in short but accurate
 
 \section{A Summary}
 \lipsum[6]
 
 \section{Evaluate of the Mode}
+\subsection{Advantage of the Model}
+\subsection{Disadvantage of the Model}
 
 \section{Strengths and weaknesses}
 \lipsum[12]
 
 \subsection{Strengths}
 \begin{itemize}
-\item \textbf{Applies widely}\\
-This  system can be used for many types of airplanes, and it also
-solves the interference during  the procedure of the boarding
-airplane,as described above we can get to the  optimization
-boarding time.We also know that all the service is automate.
-\item \textbf{Improve the quality of the airport service}\\
-Balancing the cost of the cost and the benefit, it will bring in
-more convenient  for airport and passengers.It also saves many
-human resources for the airline. \item \textbf{}
+	\item \textbf{Applies widely}\\
+	This  system can be used for many types of airplanes, and it also
+	solves the interference during  the procedure of the boarding
+	airplane,as described above we can get to the  optimization
+	boarding time.We also know that all the service is automate.
+	\item \textbf{Improve the quality of the airport service}\\
+	Balancing the cost of the cost and the benefit, it will bring in
+	more convenient  for airport and passengers.It also saves many
+	human resources for the airline. \item \textbf{}
 \end{itemize}
 
 \begin{thebibliography}{99}
