@@ -38,6 +38,7 @@ titlepage = true, abstract = true}
 \usepackage{graphicx}
 \usepackage{subfigure}
 \usepackage{caption}
+\usepackage{framed}
 \setlength{\parindent} {2em}
 \title{Sudoku Analyzing}
 \author{Kai Feng, Song Lu, Yutao Zeng }
@@ -135,20 +136,6 @@ A Full House is simply the last digit that can be placed in a row,column or bloc
 \subsubsection{Naked Single}
 Naked Single means that in a specific cell only one digit remains possible (the last remaining candidate has no other candidates to hide behind and is thus naked). The digit must then go into that cell.
 
-% \begin{figure}[ht]
-% \small
-% \centering
-% \includegraphics[width=5cm]{figures/naked_single.png}
-% \caption{an example of naked single} \label{fig:02}
-% \end{figure}
-
-% \begin{figure}[ht]
-% \small
-% \centering
-% \includegraphics[width=5cm]{figures/hidden_single.png}
-% \caption{an example of hidden single} \label{fig:03}
-% \end{figure}
-
 \begin{figure}[htbp]
 \centering %居中
 \subfigure[Naked Single]{ %第一张子图
@@ -202,47 +189,45 @@ Hidden Triples work in the same way as Hidden Pairs only with three cells and th
 All the strategies above will be used as the benchmark to test the difficulty of new-created sudoku puzzles.
 
 \section{Analysis of the Problem}
+\subsection{Background Knowledge}
+
+\subsubsection{Exact Cover}
+In mathematics, given a collection $\mathcal{S}$ of subsets of a set $\mathcal{X}$, an \textbf{exact vocer} is a subcollection $\mathcal{S^*}$ of $\mathcal{S}$ that satisfies two conditions:
+\begin{itemize}
+	\item The intersection of any two sistinct subsets in $\mathcal{S^*}$ is empty, i.e., the subsets in $\mathcal{S^*}$ are pairwise disjoint. In other words, each element in $\mathcal{X}$ is contained in at most one subset in $\mathcal{S^*}$.
+	\item The union of the subsets in $\mathcal{S^*}$ is $\mathcal{X}$, i.e., the subsets in $\mathcal{S^*}$ cover $\mathcal{X}$. In other words, each element in $\mathcal{X}$ is contained in at least one subset in $\mathcal{S^*}$.
+\end{itemize}
+
+\indent In short, an exact cover is "exact" in the sense that each element in $\mathcal{X}$ is contained in exactly one subset in $\mathcal{S^*}$. Figure 5 is an example of exact cover. As we can see the set(row 1,4 and 5) is the exact cover of the origin matrix.
+
+\begin{figure}[htbp]
+\small
+\centering
+\includegraphics[width=4cm]{figures/exact_cover.png}
+\caption{an example of exact cover} \label{fig:2.1.1}
+\end{figure}
+
+\subsubsection{Algorithm X}
+"Algorithm X" is the name D.E Knuth used in his paper "Dancing Links" to refer to "the most obvious-trail-and-error approach" for finding all solutions to the exact cover problem. Technically, Algorithm X is a recursive, nondeterministic, depth-first, backtracking algorithm. While Algorithm X is generally useful as a succinct explanation of how the exact cover problem may be solved, Knuth's intent in presenting it was merely to demonstrate the utility of the dancing links technique via an efficient implementation he called DLX.\newline
+\indent The exact cover problem is represented in Algorithm X using a matrix A consisting of 0s and 1s. The goal is to select a subset of the rows so that the digit 1 appears in each column exactly once. Algorithm X functions as follows:\\
+\begin{framed}
+\newcounter{alg}
+\begin{list}{\arabic{alg}.}
+    {\usecounter{alg}\setlength{\parsep}{0ex}\setlength{\itemsep}{0ex}}
+\item[] Algorithm $\cal X$
+\item   If the matrix \textit{A} has no columns, the current partial solution is a valid solution; terminate successfully.
+\item   Otherwise choose a column \textit{c} (deterministically).
+\item 	Choose a row \textit{r} such that $A_{r, c} = 1$ (nondeterministically).
+\item For each column \textit{j} such that $A_{r, j} = 1$, 
+\item \qquad for each row \textit{i} such that $A_{i,j} = 1$,
+\item \qquad \qquad delete row \textit{i} from matrix \textit{A},
+\item \qquad delete column \textit{j} from matrix A.
+\item Repeat this algorithm recursively on the reduced matrix \textit{A}.
+\end{list}
+\end{framed}
 
 \subsection{Model Building}
 
-
-% \begin{figure}[ht]
-% \small
-% \centering
-% \includegraphics[width=12cm]{mcmthesis-aaa.eps}
-% \caption{aa} \label{fig:aa}
-% \end{figure}
-
-% \lipsum[8] \eqref{aa}
-% \begin{equation}
-% a^2 \label{aa}
-% \end{equation}
-
-% \[
-% \begin{pmatrix}{*{20}c}
-% {a_{11} } & {a_{12} } & {a_{13} }  \\
-% {a_{21} } & {a_{22} } & {a_{23} }  \\
-% {a_{31} } & {a_{32} } & {a_{33} }  \\
-% \end{pmatrix}
-% = \frac{{Opposite}}{{Hypotenuse}}\cos ^{ - 1} \theta \arcsin \theta
-% \]
-% \lipsum[9]
-
-% \[
-% p_{j}=\begin{cases} 0,&\text{if $j$ is odd}\\
-% r!\,(-1)^{j/2},&\text{if $j$ is even}
-% \end{cases}
-% \]
-
-% \lipsum[10]
-
-% \[
-% \arcsin \theta  =
-% \mathop{{\int\!\!\!\!\!\int\!\!\!\!\!\int}\mkern-31.2mu
-% \bigodot}\limits_\varphi
-% {\mathop {\lim }\limits_{x \to \infty } \frac{{n!}}{{r!\left( {n - r}
-% \right)!}}} \eqno (1)
-% \]
 
 \section{Matrix Design}
 
@@ -261,7 +246,7 @@ in short but accurate
 
 \section{A Summary}
 \lipsum[6]
-
+lipsum latex
 
 \section{Strengths and weaknesses}
 \lipsum[12]
@@ -288,8 +273,6 @@ in short but accurate
 \begin{appendices}
 
 \section{First appendix}
-
-\lipsum[13]
 
 Here are simulation programmes we used in our model as follow.\\
 
