@@ -10,12 +10,15 @@ public class Resolve {
 	public ColumnHead head;
 	public ColumnHead[] columnHeads;
 	
+	public long runTimes;
+	
 	public Resolve(Sudoku sudoku){
 		this.sudoku = sudoku;
 		aList = new LinkedList<SudokuNode>();
 		allAnswers = new ArrayList<LinkedList<SudokuNode>>();
 		this.head = sudoku.head;
 		this.columnHeads = sudoku.columnLists;
+		runTimes = 0;
 	}
 	
 	public void resolve(int k){
@@ -23,6 +26,7 @@ public class Resolve {
 			allAnswers.add(new LinkedList<SudokuNode>(aList));
 			return;
 		}
+		runTimes = runTimes + 1;
 		int s = 1000;
 		int n = 0;
 		SudokuNode h = head.rightNode;
@@ -76,5 +80,10 @@ public class Resolve {
 		}
 		cNode.rightNode.leftNode = cNode;
 		cNode.leftNode.rightNode = cNode;
+	}
+	
+	public void showRunTimes(){
+		System.out.println("\nsearched " + runTimes + " branch(es) to get the answer");
+		System.out.println("*****************\n");
 	}
 }

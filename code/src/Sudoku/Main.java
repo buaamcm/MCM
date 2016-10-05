@@ -28,7 +28,7 @@ public class Main {
 		for(int i = 1; i <= 9; i++){
 			s[1][i] = 0;
 			s[2][i] = 0;
-			//s[3][i] = 0;
+			s[3][i] = 0;
 		}
 		
 		/*for(int i = 1; i <= 9; i++){
@@ -38,13 +38,16 @@ public class Main {
 			System.out.println();
 		}*/
 		
-		GenerateByLasVegas generateByLasVegas = new GenerateByLasVegas();
-		while(true){
+		//GenerateByLasVegas generateByLasVegas = new GenerateByLasVegas();
+		/*while(true){
 			s = generateByLasVegas.Generate();
 			if(s != null){
 				break;
 			}
-		}
+		}*/
+		
+		GenerateFullSudoku generateFullSudoku = new GenerateFullSudoku();
+		//s = generateFullSudoku.Generate();
 		
 		for(int i = 0; i <=9; i++){
 			s[1][i] = 0;
@@ -63,7 +66,7 @@ public class Main {
 			System.out.print(sudoku.columnLists[i].sum);
 		}*/
 		
-		System.out.println();
+		//System.out.println();
 		
 		Resolve resolve = new Resolve(sudoku);
 		resolve.resolve(0);
@@ -81,6 +84,36 @@ public class Main {
 		}*/
 		
 		TranslateSolution translateSolution = new TranslateSolution(answers);
-		translateSolution.translate();
+		//translateSolution.translate();
+		
+		//GetPuzzle getPuzzle = new GetPuzzle(generateFullSudoku.Generate());
+		GetPuzzle getPuzzle;
+		//getPuzzle.get();
+		/*for(int i = 1; i <= 9; i++){
+			for(int j = 1; j <= 9; j++){
+				System.out.print(getPuzzle.input[i][j] + " ");
+			}
+			System.out.println();
+		}*/
+		//System.out.println("-----------------");
+		//resolve = new Resolve(new Sudoku(getPuzzle.input));
+		//resolve.resolve(0);
+		//answers = resolve.allAnswers;
+		//translateSolution = new TranslateSolution(answers);
+		//translateSolution.translate();
+		
+		for(int i = 0; i < 100; i++){
+			getPuzzle = new GetPuzzle(generateFullSudoku.Generate());
+			getPuzzle.get();
+			for(int j = 1; j <= 9; j++){
+				for(int k = 1; k <= 9; k++){
+					System.out.print(getPuzzle.input[j][k] + " ");
+				}
+				System.out.println();
+			}
+			resolve = new Resolve(new Sudoku(getPuzzle.input));
+			resolve.resolve(0);
+			resolve.showRunTimes();
+		}
 	}
 }
