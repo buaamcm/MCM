@@ -459,13 +459,16 @@ Each possible assignment of a particular number to a particular cell is a candid
 \indent Let's come to the last constraints. There are 9 digits and 9 blocks in a Sudoku, which means we need another 81 columns to express the relationship, called "block field". The index are count from the left-top to the right-bottom, rows first. \\
 \indent Now we can join all the four fields above and get the matrix with 324 columns. A Sudoku problem should have atmost 729 rows(for all possibilities). This matrix is the matrix $\mathcal{R}$ and the job to solve the Sudoku puzzle now has changed to find a exact cover of this matrix. \newline 
 \section{Matrix Design}
-
-
+\indent To generate Sudoku puzzles of varying difficulty in a effcient way, we decide to split it into two parts.The first part is to generate a complete Sudoku grid filled with $9\times9$ figures. And the second part is to dig a few figures from the complete Sudoku grid. Of course, we need to gurantee that the Sudoku has a unique solution.
+\subsection{Generate complete Sudoku grids}
+\indent There is a fact that the number of different complete Sudoku grids was computed to be $6670903752021072936960 \approx 6.671 \times 10^{21}$. And the essentially different Sudoku grids, which can not be transformed by another Sudoku grid in some symmetrical ways, is proved to be $2297902829591040$ by Ed Russell and Frazer Jarvis in 2006. That's to say, the possiblity of building a random Sudoku grid is high enough for computers. Based on this, we adopt a Las Vegas-liked algorithm to generate them.\par
+\indent First of all, we create a random array filled with $1\sim9$ and put it in the first line of a empty Sudoku grid. Then we continue to create a array, take the figures out of it in turns to fill in cells of the follwing line, and check  whether the constraints are met. If not, we put the figures back and check next figure until the line is completely filled. If this process fails, a new random array is needed to be created. Then repeat the procedure. \par
+\indent Obviously, by trying for enough times, we will get a complete Sudoku grid which meets all the constraints. In fact, we can generate such grids in several milliseconds, in other words, $100000$ grids in one minute. By the way, digging different figures in different orders from a complete Sudoku grid will generate a large amount of Sudoku puzzles. Therefore, this Las Vegas-liked algorithm is quite efficient and our require to construct various Sudoku puzzles can be met quite well.
 
 \section{The Model Results}
 
 
-\section{Evaluate of the Mode}
+\section{Evaluate of the Model}
 \subsection{Advantage of the Model}
 \subsection{Disadvantage of the Model}
 
