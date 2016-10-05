@@ -39,6 +39,9 @@ titlepage = true, abstract = true}
 \usepackage{subfigure}
 \usepackage{caption}
 \usepackage{framed}
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}  
+
+\setlength{\itemsep}{0pt}
 \setlength{\parindent} {2em}
 \title{Sudoku Analyzing}
 \author{Kai Feng, Song Lu, Yutao Zeng }
@@ -417,13 +420,47 @@ Notice that the next step we can clear all the rest 1s in the matrix. So it is a
 	\end{tabular}
 \end{table}
 
-\subsubsection{Sudoku to Exact Cover}
+% \subsubsection{Sudoku to Exact Cover}
 
 
 \subsection{Model Building}
+Now we have known how to solve the exact cover problem with Algorithm X, so what's the relationship between Sudoku puzzle and exact cover problem? In fact, generating and solving Sudoku are both exact cover problems. But apparently, Algorithm X are used to solve the 0-1 problem which is much different from the Sudoku grid. So the next thing we need to do is to convert Sudoku problem into the exact cover problem. Let me introduce some indices we might use later.\\
 
+\begin{table}[!ht]
+\centering
+	\begin{tabular}{cc}
+	\hline
+	Symbols & Meanings \\
+	\hline
+	$\mathcal{X}$ & The set of candidates \\	
+	$\mathcal{Y}$ & The set of constrains sets \\
+	$\mathcal{R}$ & \tabincell{c}{Binary relation matrix with 324 columns and 729 rows \\
+								 at most,representing the relationship "is contained in".}\\
+	$\textit{c}_{i,j}$ & The element in R matrix, located in row i and column j. \\
+	\hline
+	\end{tabular}
+\caption{Symbol Table}
+\end{table}
 
+Intuitively, we need to find a transformation \textit{T}, which could achieve: \newline
+
+\centerline{$\textit{T}_{\mathcal{Y}}(X) = R$}
+Each possible assignment of a particular number to a particular cell is a candidate. When Sudoku is played with pencil and paper, candidates are often called penceil marks. In the standard $9\times9$ Sudoku variant, in which each of $9\times9$ cells is assigned one of 9 numbers, there are $9\times9\times9=729$ possibilities. The key to convert Sudoku into exact cover problem is to find out the constrains sets $\mathcal{Y}$. According to the rules of Sudoku, we can get following constains: \newline
+\begin{itemize}
+	\item Each cell \textbf{must} and \textbf{only} have one digit.
+	\item No duplicate number in the same row.
+	\item No duplicate number in the same column.
+	\item No duplicate number in the same block.
+\end{itemize}
+
+\indent All the constaints are listed above, let's build the matrix R step by step. As we all Sudoku grid has 81 cells and a completed Sudoku has one digit in each of its cell. So in order to represent this constraint, we need 81 rows in our matrix $\mathcal{R}$. The elements in each row are not digit(1-9), but a abstract bool value(0 or 1). 1 means this cell has a number, otherwise it should be 0. Here we assign the number to the cell from left to right, starting from the top row. So if $\textit{c}_{i,j}$ is not null, the $(9\times i + j)th$ row should be 1. We call these 81 lines combined as "cell field" Apparently, a correct solution of Sudoku should be the exact cover of cell field.\\
+\indent We need no duplicate numbers in the same row, which means each number can only be placed once in a single row. There are 9 digits and 9 rows in a grid, so we also need 81 rows to express this constraint, called "row field". The column 1 to column 9 of the row field shows that the Sudoku has digit 1 to 9 in the first row, column 10 to 18 are correspond to the second row and so on. If we have placed digit 8 in the seventh row, then the $6\times9+8=62nd$ column should be marked as 1. A corrent solution could also be the exact cover of row field.\\
+\indent Just like "row field", "column field" are quite the same,which represents whether one digit has shown up in one column.If you have digit 8 in the 7th column, then the  $6\times9+8=62nd$ column should be marked as 1.\\
+\indent Let's come to the last constraints. There are 9 digits and 9 blocks in a Sudoku, which means we need another 81 columns to express the relationship, called "block field". The index are count from the left-top to the right-bottom, rows first. \\
+\indent Now we can join all the four fields above and get the matrix with 324 columns. A Sudoku problem should have atmost 729 rows(for all possibilities). This matrix is the matrix $\mathcal{R}$ and the job to solve the Sudoku puzzle now has changed to find a exact cover of this matrix. \newline 
 \section{Matrix Design}
+
+
 
 \section{The Model Results}
 
@@ -473,8 +510,16 @@ Here are simulation programmes we used in our model as follow.\\
 % \textbf{\textcolor[rgb]{0.98,0.00,0.00}{Input java source:}}
 \centering
 Listing 1 : Implement of Sudoku Creation
-\lstinputlisting[language=Java]{./code/Sudoku.java}
-\lstinputlisting[language=Java]{./code/SudokuPoint.java}
+\lstinputlisting[language=Java]{./code/src/Sudoku/Array.java}
+\lstinputlisting[language=Java]{./code/src/Sudoku/ColumnHead.java}
+\lstinputlisting[language=Java]{./code/src/Sudoku/GenerateByLasVegas.java}
+\lstinputlisting[language=Java]{./code/src/Sudoku/GenerateFullSudoku.java}
+\lstinputlisting[language=Java]{./code/src/Sudoku/GetPuzzle.java}
+\lstinputlisting[language=Java]{./code/src/Sudoku/Main.java}
+\lstinputlisting[language=Java]{./code/src/Sudoku/Resolve.java}
+\lstinputlisting[language=Java]{./code/src/Sudoku/Sudoku.java}
+\lstinputlisting[language=Java]{./code/src/Sudoku/SudokuNode.java}
+\lstinputlisting[language=Java]{./code/src/Sudoku/TranslateSolution.java}
 
 \section{Second appendix}
 some more text \textcolor[rgb]{0.98,0.00,0.00}{\textbf{Input C++ source:}}
