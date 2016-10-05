@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Stack;
 
 public class GetPuzzle {
-	public static final int NUMBER = 20;
+	public static final int NUMBER = 50;
 	public static final int LIMIT = 100;
 	public int[][] input;
 	public Sudoku sudoku;
@@ -19,6 +19,12 @@ public class GetPuzzle {
 		random = new Random();
 		count = 0;
 		stack = new Stack<Array>();
+		/*for(int i = 1; i <= 9; i++){
+			for(int j = 1; j <= 9; j++){
+				System.out.print(input[i][j] + " ");
+			}
+			System.out.println();
+		}*/
 	}
 	
 	public void get(){
@@ -62,7 +68,7 @@ public class GetPuzzle {
 			}
 			if(i == LIMIT){
 				Array array = stack.pop();
-				sign[array.x][array.y] = true;
+				//sign[array.x][array.y] = true;
 				input[array.x][array.y] = array.value;
 				count = count - 1;
 			}
@@ -79,6 +85,8 @@ public class GetPuzzle {
 			y = random.nextInt(9) + 1;
 		}while(!sign[x][y]);
 		sign[x][y] = false;
+		/*System.out.print(x + " " + y + " ");
+		System.out.println(input[x][y]);*/
 		stack.push(new Array(x, y, input[x][y]));
 		input[x][y] = 0;
 		sudoku = new Sudoku(input);

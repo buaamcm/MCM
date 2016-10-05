@@ -7,7 +7,7 @@ class GenerateByLasVegas {
 	public int Number = 9;
 	public int MaxCompareNum = 500000;
 	public int Sudoku[][] = new int[Number][Number];
-	public CandidateNumber Candinum = new CandidateNumber(Number);
+	public CandidateNumberOriginal Candinum = new CandidateNumberOriginal(Number);
 	
 	// public static void main(String args[]){
 		// int times = 0;
@@ -45,19 +45,26 @@ class GenerateByLasVegas {
 		}
 		
 		//Print
-		for(int i = 0; i < Number; i++){
+		/*for(int i = 0; i < Number; i++){
 			for(int j = 0; j < Number; j++){
 				System.out.print(Sudoku[i][j] + " ");
 			}
 			System.out.println();
-		}
-		System.out.println("-----------------");
+		}*/
+		//System.out.println("-----------------");
 		int result[][] = new int[Number+1][Number+1];
 		for(int i = 1; i <= Number; i++){
 			for(int j = 1; j <= Number; j++){
 				result[i][j] = Sudoku[i - 1][j - 1];
 			}
 		}
+		for(int i = 1; i <= Number; i++){
+			for(int j= 1; j <= Number; j++){
+				System.out.print(result[i][j] + " ");
+			}
+			System.out.println();
+		}
+		System.out.println("-----------------");
 		return result;
 	}
 	
@@ -101,10 +108,10 @@ class GenerateByLasVegas {
 
 }
 
-class CandidateNumber{
+class CandidateNumberOriginal{
 	int Candidate[] = null;
 	int num = 0;
-	public CandidateNumber(int Number){
+	public CandidateNumberOriginal(int Number){
 		Candidate = new int[Number];
 		for(int i = 0; i < Number; i++){
 			Candidate[i] = i+1;
