@@ -154,7 +154,7 @@ public class Main {
 		FileWriter fileWriter = new FileWriter("data.txt");
 		
 		NormalReader normalReader = new NormalReader("10_5sudoku_plain.txt");
-		for(int k = 0; k < 1000; k++){
+		/*for(int k = 0; k < 100000; k++){
 			s = normalReader.getProblem();
 			//System.out.println(normalReader.nonzero);
 			resolve = new Resolve(new Sudoku(s));
@@ -162,17 +162,23 @@ public class Main {
 			//resolve.showRunTimes();
 			fileWriter.write(normalReader.nonzero + " " + resolve.runTimes + " " + resolve.loopTimes + "\n");
 			fileWriter.flush();
-		}
+		}*/
 		
 		fileWriter.close();
 		
-		for(int n = 1; n <= 55; n++){
+		for(int n = 56; n <= 60; n++){
 			System.out.println(n);
 			fileWriter = new FileWriter("data" + n + ".txt");
-			for(int i = 0; i < 10; i++){
+			for(int i = 0; i < 1; i++){
 				getPuzzle = new GetPuzzle(s);
 				getPuzzle.getHard(n);
 				resolve = new Resolve(new Sudoku(getPuzzle.input));
+				for(int j = 1; j <= 9; j++){
+					for(int k = 1; k <= 9; k++){
+						System.out.print(getPuzzle.input[j][k] + " ");
+					}
+					System.out.println();
+				}
 				resolve.resolve(0);
 				if(resolve.allAnswers.size() > 1){
 					System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!");
@@ -181,6 +187,8 @@ public class Main {
 				if(resolve.allAnswers.size() == 1){
 					System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@");
 				}
+				translateSolution = new TranslateSolution(resolve.allAnswers);
+				translateSolution.translate();
 				fileWriter.write(n + " " + resolve.runTimes + " " + resolve.loopTimes + "\n");
 				fileWriter.flush();
 			}
