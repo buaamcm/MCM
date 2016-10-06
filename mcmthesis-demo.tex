@@ -497,6 +497,153 @@ Each possible assignment of a particular number to a particular cell is a candid
 \end{framed}
 \indent Obviously, by trying for enough times, we will get a complete Sudoku grid which meets all the constraints. In fact, we can generate such grids in several milliseconds, in other words, $100000$ grids in one minute. By the way, digging different figures in different orders from a complete Sudoku grid will generate a large amount of Sudoku puzzles. Therefore, this Las Vegas-liked algorithm is quite efficient and our require to construct various Sudoku puzzles can be met quite well.\\
 
+\subsection{Generate a Sudoku puzzle}
+\subsubsection{Solve Sudoku puzzle with DLX algorithm}
+\indent Since the Sudoku puzzles generated should be solved with a unique solution, we must develop a algorithm to confirm that the Sudoku puzzle is constraint-satisfied while taking figures out of it. Fortunately, we have  turned this into a exact cover problem. So, let's focus on solving it. \\ 
+\indent An elegant algorithm to solve the exact cover problem is DLX, which is one good way to implement algorithm X using a data structure called
+\textbf{Dancing Links}. To transform the matrix $\mathcal{R}$ into a dancing links, we represent each 1 in the matrix $\mathcal{R}$ as a \textit{data object x} with five fields $x.left, x.right, x.down,$ $ x.up, x.columnHead$. Rows of the matrix are doubly linked as circular lists via $x.left$ and $x.right$ fields; columns are doubly linked as circular lists via $x.up$ and $x.down$ fields. Each column list also includes a special data object called its \textit{list header}.\\
+\indent The list headers are instantiations of a larger object called a \textit{column object}. Each column object $y$ contains the fields $y.left, y.right, y.up, y.down$, and $y.columnHead$ of a data object and two additional fields, $y.size$ and $y.name$; the size is the number of 1s in the column, and the name is a symbolic identifier for showing the answer. The $columnHead$ field of each object points to the column object at the head of the relevant column.\\
+\indent The $left$ and $right$ fields of the list headers link together all columns that still need to be covered. This circular list also includes a special column object called the \textit{root}, \textit{h}, which serves as a master header for all the active headers. The fields $up, down, columnHead, size$ and $name$ are not used.\\
+\indent To implement the above-mentioned data structures, we use Java and first simply create a class called SudokuNode representing the data object then create a class called ColumnHead representing the column object by extending the SudokuNode, that is to say that the ColumnHead is a subclass of the SudokuNode.\\
+\indent The algorithm \textit{X} can now be cast in the following explicit, deterministic form as a recursive procedure $search(k)$, which is invoked initially with $k = 0$. $Array$ is a linear list used to keep current solution.\\
+\begin{framed}
+\newcounter{DLX}
+\begin{list}{\arabic{DLX}.}
+{\usecounter{DLX}\setlength{\parsep}{0ex}\setlength{\itemsep}{0ex}}
+\item[] $Search(k)$
+\item[] If $h.right == h$, save the current solution($Save\_Current\_Solution()$) and return.
+\item[] choose a column object $c$($Choose \_Column\_Object()$).
+\item[] $Cover\_Column(c)$;
+\item[] $r = c$;
+\item[] For each $r = r.down$, while $r \ne c$,
+\item[] \qquad set $Array[k] = r$;
+\item[] \qquad $j = r$;
+\item[] \qquad for each $j = j.right$, while $j \ne r$,
+\item[] \qquad\qquad $Cover\_Column(j.columnHead)$;
+\item[] \qquad $search(k + 1)$;
+\item[] \qquad set $r = Array[k]$ and $c = r.columnHead$;
+\item[] \qquad $j = r$;
+\item[] \qquad for each $j = j.left$, while $j \ne r$,
+\item[] \qquad\qquad $Uncover\_Column(j.columnHead)$
+\item[] $Uncover\_Column(c)$ and return.
+\end{list}
+\end{framed}
+
+\indent Function $Save\_Current\_Solution()$ simply clone the $Array$ and save the copy into a two dimensional table:
+
+\begin{framed}
+\newcounter{Save_Current_Solution}
+\begin{list}{\arabic{Save_Current_Solution}.}
+{\usecounter{Save_Current_Solution}\setlength{\parsep}{0ex}\setlength{\itemsep}{0ex}}
+\item[] $Save\_Current\_Solution()$
+\item[] $Table.add(Array.clone)$;
+\end{list}
+\end{framed}
+
+To minimize the branching factor, we want to find out a column object $c$ with the smallest number of 1s, in other words, with the smallest field $size$, we could set $s = \infty$ and then
+
+\begin{framed}
+\newcounter{Choose_Column_Object}
+\begin{list}{\arabic{Choose_Column_Object}.}
+{\usecounter{Choose_Column_Object}\setlength{\parsep}{0ex}\setlength{\itemsep}{0ex}}
+\item[] $Choose\_Column\_Object$
+\item[] $r = h$;
+\item[] for each $r = r.right$, while $r \ne h$
+\item[] \qquad if $r.size < s$
+\item[] \qquad\qquad set $c = r$ and $s = r.size$;
+\end{list}
+\end{framed}
+
+Function $Cover_Column(c)$ removes $c$ from the header list and removes all rows in $c$'s own list from the other column lists they are in, that is to say, removes all data objects linked with a data object in column $c$ in a row from the column lists they are in.
+
+\begin{framed}
+\newcounter{Cover_Column}
+\begin{list}{\arabic{Cover_Column}.}
+{\usecounter{Cover_Column}\setlength{\parsep}{0ex}\setlength{\itemsep}{0ex}}
+\item[] $Cover\_Column(c)$
+\item[] Set $c.right.left = c.left$ and $c.left.right = c.right$;
+\item[] $i = c.down$;
+\item[] For each $i = i.right$, while $i \ne c$,
+\item[] \qquad $j = i$;
+\item[] \qquad for each $j = j.right$, while $j \ne i$,
+\item[] \qquad\qquad set $j.down.up = j.up$ and $j.up.down = j.down$;
+\item[] \qquad\qquad set $j.columnHead.size = j.columHead.size - 1$
+\end{list}
+\end{framed}
+
+The Function $Uncover_Column(c)$ add the data objects removed by $Cover_Column(c)$ into the original column lists they are in.
+
+\begin{framed}
+\newcounter{Uncover_Column}
+\begin{list}{\arabic{Uncover_Column}.}
+{\usecounter{Uncover_Column}\setlength{\parsep}{0ex}\setlength{\itemsep}{0ex}}
+\item[] $Uncover\_Column(c)$
+\item[] $i = c$;
+\item[] For each $i = i.up$, while $i \ne c$,
+\item[] \qquad $j = i$;
+\item[] \qquad\qquad for each $j = j.left$, while $j \ne i$,
+\item[] \qquad\qquad set $j.columnHead.size = j.columnHead.size + 1$;
+\item[] \qquad\qquad set $j.down.up = j$ and $j.up.down = j$;
+\item[] $c.right.left = c$ and $c.left.right = c$;
+\end{list}
+\end{framed}
+\subsubsection{Generate a genuine Sudoku puzzle}
+To generate a Sudoku puzzle with an unique solution, we implement a Las Vegas algorithm based on the above-mentioned DLX algorithm. This generate algorithm first generate a complete Sudoku puzzle and then try to randomly remove numbers in the Sudoku puzzle. Each time a number is removed, use DLX algorithm to solve the puzzle, if there is only one solution, try to remove another number, if we get several solutions, add the number to its original position. If the algorithm fails to remove number for a limited time, it backtracks. We implement the backtracking using data structure stack. We use $n$ to represent the asked number of vacancies. If we successfully remove $n$ numbers in the Sudoku puzzle in limited times of loops, then return true, otherwise return false. We use data structure $Array$ to store the position of removed numbers and their values. $count$ is a global variable to record the current number of vacancies. $s$ is used to represent a Sudoku puzzle. The algorithm can be cast in the following form:
+
+\begin{framed}
+\newcounter{get}
+\begin{list}{\arabic{get}.}
+{\usecounter{get}\setlength{\parsep}{0ex}\setlength{\itemsep}{0ex}}
+\item[] $get(n)$
+\item[] create a two-dimensional boolean array $sign$ to record whether the numbers in the Sudoku puzzle is removed or not.
+\item[] set $times = 0$ and $count = 0$
+\item[] $tryToRemoveACell(sign)$;
+\item[] while $times < TIMES$,
+\item[] \qquad if $count == n$ return $true$;
+\item[] \qquad for $i = 0$ to $i = LIMIT$,
+\item[] \qquad\qquad if $tryToRemoveACell(sign) == true$ break;
+\item[] \qquad if $i == LIMIT$,
+\item[] \qquad\qquad $Array array = stack.pop()$;
+\item[] \qquad\qquad $sign[array.x][array.y] = true$;
+\item[] \qquad\qquad $s[array.x][array.y] = array.value$;
+\item[] \qquad $times = times + 1$;
+\item[] return $false$;
+\end{list}
+\end{framed}
+
+Function $tryToRemoveACell(sign)$ is used to randomly remove a number from the Sudoku puzzle.
+
+\begin{framed}
+\newcounter{try}
+\begin{list}{\arabic{try}.}
+{\usecounter{try}\setlength{\parsep}{0ex}\setlength{\itemsep}{0ex}}
+\item[] $tryToRemoveACell(sign)$
+\item[] randomly choose a position in two-dimensional array $sign$ which is not a vacancy.
+\item[] $sign[position.x][position.y] = false$;
+\item[] $stcak.push(new Array(position.x, position.y, s[position.x][position.y]))$;
+\item[] $s[position.x][s.position.y] = 0$;
+\item[] $count = count + 1$;
+\item[] solve the $s$ using DLX algorithm.
+\item[] if get more then one solution,
+\item[] \qquad $Array array = stack.pop()$;
+\item[] \qquad $s[array.x][array.y] = array.value$;
+\item[] \qquad $sign[array.x][array.y] = true$;
+\item[] \qquad $count = count -1$;
+\item[] \qquad return $false$;
+\item[] return $true$;
+\end{list}
+\end{framed}
+
+Finally, we can wrap the above-mentioned algorithm to certainly generate a Sudoku puzzle each time.
+
+\begin{framed}
+\newcounter{finally}
+\begin{list}{\arabic{finally}.}
+{\usecounter{finally}\setlength{\parsep}{0ex}\setlength{\itemsep}{0ex}}
+\item[] $Get(n)$
+\item[] while $get(n) == false$ do nothing.
+\end{list}
+\end{framed}
 \section{The Model Results}
 
 
