@@ -11,6 +11,8 @@ public class Resolve {
 	public ColumnHead[] columnHeads;
 	
 	public long runTimes;
+	public long loopTimes;
+	//public long branchLoopTimes;
 	
 	public Resolve(Sudoku sudoku){
 		this.sudoku = sudoku;
@@ -19,6 +21,7 @@ public class Resolve {
 		this.head = sudoku.head;
 		this.columnHeads = sudoku.columnLists;
 		runTimes = 0;
+		loopTimes = 0;
 	}
 	
 	public void resolve(int k){
@@ -54,6 +57,7 @@ public class Resolve {
 			}
 		}
 		uncoverColumn(h);
+		//System.out.println("branchLoopTime " + branchLoopTimes);
 		return;
 	} 
 	
@@ -66,6 +70,8 @@ public class Resolve {
 				jNode.downNode.upNode = jNode.upNode;
 				jNode.upNode.downNode = jNode.downNode;
 				jNode.columnHead.sum = jNode.columnHead.sum - 1;
+				loopTimes = loopTimes + 1;
+				//branchLoopTimes = branchLoopTimes + 1;
 			}
 		}
 	}
@@ -76,6 +82,8 @@ public class Resolve {
 				jNode.columnHead.sum = jNode.columnHead.sum + 1;
 				jNode.downNode.upNode = jNode;
 				jNode.upNode.downNode = jNode;
+				loopTimes = loopTimes + 1;
+				//branchLoopTimes = branchLoopTimes + 1;
 			}
 		}
 		cNode.rightNode.leftNode = cNode;
@@ -83,7 +91,8 @@ public class Resolve {
 	}
 	
 	public void showRunTimes(){
-		System.out.println("\nsearched " + runTimes + " branch(es) to get the answer");
+		System.out.println("searched " + runTimes + " branch(es) to get the answer");
+		System.out.println("looped "+ loopTimes + " times to get the answer");
 		System.out.println("*****************\n");
 	}
 }

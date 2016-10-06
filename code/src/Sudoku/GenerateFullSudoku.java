@@ -48,13 +48,13 @@ class GenerateFullSudoku {
         }
         
         //Print
-        for(int i=0;i<Number;i++){
+        /*for(int i=0;i<Number;i++){
             for(int j=0;j<Number;j++){
                 System.out.print(Sudoku[i][j]+" ");
             }
             System.out.println();
         }
-        System.out.println("-----------------");
+        System.out.println("-----------------");*/
         int[][] result = new int[10][10];
         for(int i = 1; i <= Number; i++){
         	for(int j = 1; j <= Number; j++){
