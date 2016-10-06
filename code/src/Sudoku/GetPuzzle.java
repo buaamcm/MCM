@@ -90,6 +90,7 @@ public class GetPuzzle {
 		}
 		//stack.push(new Array(0, 0, 0));
 		times = 0;
+		count = 0;
 		while(true){
 			if(tryToRemoveACell(sign)){
 				times = times + 1;
@@ -114,7 +115,7 @@ public class GetPuzzle {
 				count = count - 1;
 			}
 			times = times + 1;
-			System.out.println(times);
+			//System.out.println(times);
 		}
 		
 		return false;
@@ -129,6 +130,7 @@ public class GetPuzzle {
 		}
 		//stack.push(new Array(0, 0, 0));
 		times = 0;
+		count = 0;
 		while(true){
 			if(tryToRemoveACell(sign)){
 				times = times + 1;
