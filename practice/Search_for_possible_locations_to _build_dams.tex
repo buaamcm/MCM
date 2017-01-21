@@ -7,22 +7,58 @@
 
 %这部分的说明会用到的符号，可以最后整理到一起，所以我先不把这些放到格式里
 
+这部分需要假设淹没的地表面积越小，对生态的影响一般来说越小
+落差是drop还是throw，我后面用的是throw，不一定对
+
 $V$ the volume of reservoir \\
 $S$ the water surface area of reservoir \\
 $H$ the water depth of reservoir \\
 $\alpha$ the bank angle（倾斜角）of slope
+$g$ the gravitational acceleration \\
 
 
-\section{Search for possible sites to build dams}
-To build new dams, we need to find a serial of possible sites at first. In accordance with the norms, the choice of sites should take geology, terrain, economic, ecology, disaster and so forth factors into consideration. However, the major determinant of a dams to be of valuable worthy is terrain. To be specific, the bigger the throw（落差）, the more abundant hydroenergy（水能）resources is contained; In consideration of reducing ecological effects as much as possible and reducing the evaporation loss（蒸发损失） of water, the surface area（水面面积） of artificial reservoirs should be small under certain requirement of volume. To simplify model, we assume that the vertical section（纵向截面） of a reservoir is a approximate trapezoid, then the submerged area can be expressed as below:
+\section{Search for possible reaches to build dams}
+To build new dams, we need to find a serial of possible reaches at first. In accordance with the norms, the choice of reaches should take geology, terrain, economic, ecology, disaster and so forth factors into consideration. However, the major determinant of a dams to be of valuable worthy is terrain. \\
+To be specific, we get two principle of searching for possible reaches to build dams:\\
+%这里可以加个格式 
+1. the higher the throw（落差）, the more abundant hydropower（水能）resources is contained; \\
+2. In consideration of reducing ecological effects as much as possible and reducing the evaporation loss （蒸发损失） of water, the surface area （水面面积） of artificial reservoirs should be small under certain requirement of volume. To build reservoir with small surface area and certain volume, the average depth of reservoir should be deep, thus, dams should be built between deep ravines\\
+
+%对第一条原则的解释
+Hydropower station convert gravitational potential energy of water into electrical energy. The gravitational potential energy is calculated as $E_{p} = mgh$, thus, higher throw implies bigger electricity-generation capacity.
+
+
+%对第二条原则的解释，这前面加个转折？现在这里的文字有些生硬
+To simplify model, we assume that the vertical section（纵向截面） of a reservoir is a approximate trapezoid, then the submerged area can be expressed as below:
 \begin{equation}\int_{A}^{B}\frac{H\left(l\right)}{\sin\left[\alpha\left(l\right)\right]}dl + \int_{C}^{D}\frac{H\left(L\right)}{\sin\left[\alpha\left(L\right)\right]}dL + S_{bottom}\end{equation}
 where $l, L$ are the lengths of left bank and right bank respective; $A, B$ indicate the starting position and end position of $l$; similarly, $C, D$ indicate the starting position and end position of $L$.
+The expression $\left(1\right)$ is still hard to deal, because of the difficulty of the estimation of $\alpha$. In order to make our assessment feasible, we need to simplify the expression $\left(1\right)$. Noticed that:
+\begin{equation}
+\int_{A}^{B}\frac{H\left(l\right)}{\sin\left[\alpha\left(l\right)\right]}dl = \frac{1}{sin\left[\alpha\left(\zeta\right)\right]}\int_{A}^{B}H\left(l\right)dl
+= KH_{average}l
+\end{equation}
+where $K$ is a coefficient of inclination. expressions $\left(2\right)$ is a application of mean value theorem for integrals, it fits in with the physics intuition. Then, the submerged area can be estimated as:
+\begin{equation}
+\left(K_{1}l + K_{2}L\right)H_{average} + S_{bottom}
+\end{equation}
+Using expression $\left(3\right)$, we can qualitatively explain why small surface area is desired. Using equation $H_{average} = \frac{V}{S}$, we get:
+\[S_{submerged} \approx \left(K_{1}l + K_{2}L\right)\frac{V}{S} + S_{bottom}\]
+and using the assumption of vertical section, the area of the bottom of a reservoir can be estimated as:
+\begin{equation}
+S_{bottom} = \int\left(\beta dS \right) \propto S
+\end{equation}  
+where $\beta$ is a coefficient of position and water factors, the expression $\left(4\right)$ qualitatively explain that $S_{bottom}$ is proportional to $S$, thus we get:
+\begin{equation}
+S_{submerged} \approx \left(K_{1}l + K_{2}L\right)\frac{V}{S} + CS
+\end{equation}
+where $C$ is a coefficient to indicate that $S_{bottom}$ is proportional to $S$\\
+Since the right side of the expression $\left(5\right)$ is a hyperbolic function and it monotonically decrease when $S \geq \sqrt{\frac{\left(K_{1}l + K_{2}L\right)V}{C}}$. In the actual situation, $S \gg \sqrt{V}$, so we can qualitatively conclude that under certain requirement of volume small surface area of reservoir is more beneficial than the bigger surface area.
 
+According to the above discussion, we should find the reaches（河段）with big throws on the Zambezi river based on the first principle. In accordance with the second principle, the possible reaches should between deep ravines（深谷）, because a reservoir in deep ravines can have deeper water depth and thus smaller surface area.
+  
+上面是第一部分
 
-
-%这里差一段淹没面积的简单估算
-
-To assume the volume of a reservoir, a slightly different method can be used. The accurate data of vertical section is hard to get directly（我这里想表示等高线信息比纵截面信息容易获得）. So we consider to use isohypse data to calculate volume. Local isohypse （等高线）information can be gotten using GSI software \textbf{Global Mapper}. The volume can be expressed as below:
+To assume the volume of a reservoir, a slightly different method can be used. The accurate data of vertical section is hard to get directly（我这里想表示等高线信息比纵截面信息容易获得）. So we consider to use isohypse data to calculate volume. Local isohypse （等高线）information can be gotten using GIS software \textbf{Global Mapper}. The volume can be expressed as below:
 \begin{equation}\int_{0}^{H_{max}}\frac{1}{2}\left[S\left(H\right) + S\left(H + dH\right)\right]dH\end{equation}
 where $H_{max}$ indicates the max water depth, $S\left(H\right)$ expresses the surface area enclosed by isohypse of same altitude. According to our above assumptions of vertical section, $S\left(H + dH\right)$ can be assumed as $S\left(0\right) + \frac{H}{2\tan\left(\alpha\right)}$. Then, the expression $\left(2\right)$ can be rewritten as:
 \begin{equation}\int_{0}^{H_{average}}\left(S(0) + \frac{H}{\tan\left(\alpha\right)}\right)dH\end{equation}
