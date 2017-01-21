@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{CJK}
+\begin{CJK}{UTF8}{song}
+\begin{document}
+
+%我先不放到模板里，我这里编译有点问题，初版会有中文注释
+
+%这部分的说明会用到的符号，可以最后整理到一起，所以我先不把这些放到格式里
+
+$V$ the volume of reservoir \\
+$S$ the water surface area of reservoir \\
+$H$ the water depth of reservoir \\
+$\alpha$ the bank angle（倾斜角）of slope
+
+
+\section{Search for possible sites to build dams}
+To build new dams, we need to find a serial of possible sites at first. In accordance with the norms, the choice of sites should take geology, terrain, economic, ecology, disaster and so forth factors into consideration. However, the major determinant of a dams to be of valuable worthy is terrain. To be specific, the bigger the throw（落差）, the more abundant hydroenergy（水能）resources is contained; In consideration of reducing ecological effects as much as possible and reducing the evaporation loss（蒸发损失） of water, the surface area（水面面积） of artificial reservoirs should be small under certain requirement of volume. To simplify model, we assume that the vertical section（纵向截面） of a reservoir is a approximate trapezoid, then the submerged area can be expressed as below:
+\begin{equation}\int_{A}^{B}\frac{H\left(l\right)}{\sin\left[\alpha\left(l\right)\right]}dl + \int_{C}^{D}\frac{H\left(L\right)}{\sin\left[\alpha\left(L\right)\right]}dL + S_{bottom}\end{equation}
+where $l, L$ are the lengths of left bank and right bank respective; $A, B$ indicate the starting position and end position of $l$; similarly, $C, D$ indicate the starting position and end position of $L$.
+
+
+
+%这里差一段淹没面积的简单估算
+
+To assume the volume of a reservoir, a slightly different method can be used. The accurate data of vertical section is hard to get directly（我这里想表示等高线信息比纵截面信息容易获得）. So we consider to use isohypse data to calculate volume. Local isohypse （等高线）information can be gotten using GSI software \textbf{Global Mapper}. The volume can be expressed as below:
+\begin{equation}\int_{0}^{H_{max}}\frac{1}{2}\left[S\left(H\right) + S\left(H + dH\right)\right]dH\end{equation}
+where $H_{max}$ indicates the max water depth, $S\left(H\right)$ expresses the surface area enclosed by isohypse of same altitude. According to our above assumptions of vertical section, $S\left(H + dH\right)$ can be assumed as $S\left(0\right) + \frac{H}{2\tan\left(\alpha\right)}$. Then, the expression $\left(2\right)$ can be rewritten as:
+\begin{equation}\int_{0}^{H_{average}}\left(S(0) + \frac{H}{\tan\left(\alpha\right)}\right)dH\end{equation}
+We need to emphasize that $S$ in the $\left(3\right)$ is equivalent surface area not actual surface area, to use actual surface area calculated using isohypse data, rewrite $\left(3\right)$ as:
+\begin{equation}\int_{0}^{H_{average}}\left(S - \frac{H}{\tan\left(\alpha\right)}\right)dH
+\end{equation}
+where $S$ of certain altitude and location can be calculated using isohypse data.
+
+
+\end{CJK}{UTF8}{song}
+\end{document}
