@@ -50,56 +50,16 @@ keyword1; keyword2
 \end{abstract}
 \maketitle
 \section{Introduction}
-The Kariba Dam is one of the biggest dam in the world, which is constructed on the Zambezi River. It supplies 1626 megawatts of electricity to parts of both Zambia and Zimbabwe and \\
-% \begin{itemize}
-% \item minimizes the discomfort to the hands, or
-% \item maximizes the outgoing velocity of the ball.
-% \end{itemize}
-% We focus exclusively on the second definition.
+\indent \indent The Kariba Dam is one of the biggest dam in the world, which is constructed on the Zambezi River. It supplies 1626 megawatts of electricity to parts of both Zambia and Zimbabwe. However, the Kariba Dam is in a dangerous state now. In the past 50 years, the torrents from the spillway have eroded its bedrock, carving a vast crater that has undercut the dam's foundations.$^{[1]}$ A number of options are available to solve this problem. This paper focuses on the third option -- Removing the Kariba Dam and replacing it with a series of small dams along the Zambezi River. To find the best location for new dams and do the best arrangement with the multi-dam system, we propose two mathematical models. This paper describe these two models minutely and give suggestions on where to build new small dams and how to dispatch all the dams. \\
 
-% \begin{itemize}
-% \item the initial velocity and rotation of the ball,
-% \item the initial velocity and rotation of the bat,
-% \item the relative position and orientation of the bat and ball, and
-% \item the force over time that the hitter hands applies on the handle.
-% \end{itemize}
-% \lipsum[3]
-% \begin{itemize}
-% \item the angular velocity of the bat,
-% \item the velocity of the ball, and
-% \item the position of impact along the bat.
-% \end{itemize}
-% \lipsum[4]
-% \emph{center of percussion} [Brody 1986], \lipsum[5]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%Introduction ends here%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \begin{Theorem} \label{thm:latex}
-% \LaTeX
-% \end{Theorem}
-% \begin{Lemma} \label{thm:tex}
-% \TeX .
-% \end{Lemma}
-% \begin{proof}
-% The proof of theorem.
-% \end{proof}
-
-% \subsection{Other Assumptions}
-% \lipsum[6]
-% \begin{itemize}
-% \item
-% \item
-% \item
-% \item
-% \end{itemize}
-
-
-
-\section{Model A: Search for possible reaches to build dams}
-
+\section{Model A: Search for possible locations to build dams}
 \subsection{Description}
-\indent To build new dams, we need to find a serial of possible reaches at first. In accordance with the norms, the choice of reaches should take geology, terrain, economic, ecology, disaster and so forth factors into consideration. However, the major determinant of a dams to be of valuable worthy is terrain. \\
+\indent \indent To build new dams, we need to find a serial of possible reaches at first. In accordance with the norms, the choice of reaches should take geology, terrain, economic, ecology, disaster and so forth factors into consideration. However, the major determinant of a dams to be of valuable worthy is terrain. \\
 
-\subsection{Analysis}
-\indent To be specific, we get two principle of searching for possible reaches to build dams:
+\subsection{Analysis and Assumptions}
+\indent \indent To be specific, we get two principle of searching for possible reaches to build dams:
 \begin{enumerate}
   \setlength{\itemsep}{0pt}
   \setlength{\parsep}{0pt}
@@ -111,27 +71,37 @@ The Kariba Dam is one of the biggest dam in the world, which is constructed on t
 \indent Hydropower station convert gravitational potential energy of water into electrical energy. The gravitational potential energy is calculated as $E_{p} = mgh$, thus, higher throw implies bigger electricity-generation capacity.\\
 
 \indent To simplify model, we assume that the vertical section of a reservoir is a approximate trapezoid, then the submerged area can be expressed as below:
+
 \begin{equation}\int_{A}^{B}\frac{H\left(l\right)}{\sin\left[\alpha\left(l\right)\right]}dl + \int_{C}^{D}\frac{H\left(L\right)}{\sin\left[\alpha\left(L\right)\right]}dL + S_{bottom}\end{equation}
+
 where $l, L$ are the lengths of left bank and right bank respective; $A, B$ indicate the starting position and end position of $l$; similarly, $C, D$ indicate the starting position and end position of $L$.
 The expression $\left(1\right)$ is still hard to deal, because of the difficulty of the estimation of $\alpha$. In order to make our assessment feasible, we need to simplify the expression $\left(1\right)$. Noticed that:
+
 \begin{equation}
 \int_{A}^{B}\frac{H\left(l\right)}{\sin\left[\alpha\left(l\right)\right]}dl = \frac{1}{sin\left[\alpha\left(\zeta\right)\right]}\int_{A}^{B}H\left(l\right)dl
 = KH_{average}l
 \end{equation}
+
 where $K$ is a coefficient of inclination. expressions $\left(2\right)$ is a application of mean value theorem for integrals, it fits in with the physics intuition. Then, the submerged area can be estimated as:
+
 \begin{equation}
 \left(K_{1}l + K_{2}L\right)H_{average} + S_{bottom}
 \end{equation}
+
 Using expression $\left(3\right)$, we can qualitatively explain why small surface area is desired. Using equation $H_{average} = \frac{V}{S}$, we get:
 \[S_{submerged} \approx \left(K_{1}l + K_{2}L\right)\frac{V}{S} + S_{bottom}\]
 and using the assumption of vertical section, the area of the bottom of a reservoir can be estimated as:
+
 \begin{equation}
 S_{bottom} = \int\left(\beta dS \right) \propto S
 \end{equation}  
+
 where $\beta$ is a coefficient of position and water factors, the expression $\left(4\right)$ qualitatively explain that $S_{bottom}$ is proportional to $S$, thus we get:
+
 \begin{equation}
 S_{submerged} \approx \left(K_{1}l + K_{2}L\right)\frac{V}{S} + CS
 \end{equation}
+
 where $C$ is a coefficient to indicate that $S_{bottom}$ is proportional to $S$\\
 Since the right side of the expression $\left(5\right)$ is a hyperbolic function and it monotonically decrease when $S \geq \sqrt{\frac{\left(K_{1}l + K_{2}L\right)V}{C}}$. In the actual situation, $S \gg \sqrt{V}$, so we can qualitatively conclude that under certain requirement of volume small surface area of reservoir is more beneficial than the bigger surface area.\\
 \indent According to the above discussion, we should find the reaches with big throws on the Zambezi river based on the first principle. In accordance with the second principle, the possible reaches should between deep ravines, because a reservoir in deep ravines can have deeper water depth and thus smaller surface area.
@@ -169,6 +139,10 @@ According to the DEM, we obtain the elevation along the whole Zambezi River. Fro
 \end{figure}
 
 There is a clear trend that the upstream is smooth and have small water level drop, the water level decreases remarkably in the midstream and shoulders the most responsibility of storing water, the downstream have a rapid change of water level as well but there are few dams. Three prominent falls in the water level occur in the Victoria Fall，the Kariba Dam and the Cahora Bassa Dam.
+
+%%%%%%%%%%%%%%%%%attention here!%%%%%%%%%%%%%%%%%%%%%%%%%%
+From the perspective of the drop, we know the following areas are suitable for the establishment of dams: a few areas of upstream, reaches between Victoria Fall and Kariba Lake, reaches between Kariba Dam and Cahora Bassa Dam, some areas in the downstream. In addition to the drop, we also need to analyze the slope and height as well as the breadth of the Zambezi River itself for they have great affect on the cost of dam construction. We plotted the contours of the Zambezi River basin based on the DEM model above. Generally, for the sake of storage capacity, safety and ecological impact, the surrounding mountain of the reservoir should be steep as possible and have suitable height. The steepness of the mountain means less area flooded, little 
+
 
 \subsection{Model Validation}
 
@@ -233,7 +207,7 @@ Meanwhile, based on the model, we make the following suggestions.
 % \]
 
 \section{Strengths and weaknesses}
-\subsection{Model A: Search for possible reaches to build dams}
+\subsection{Model A: Search for possible locations to build dams}
 Model A has the following weaknesses.
 \begin{itemize}
 \item 
@@ -255,9 +229,7 @@ In Model B, we consider .... , which is a weakness. However we have more strengt
 \indent \indent Here is the conclusion to be done!
 
 \begin{thebibliography}{99}
-\bibitem{1} D.~E. KNUTH   The \TeX{}book  the American
-Mathematical Society and Addison-Wesley
-Publishing Company , 1984-1986.
+\bibitem{1} IRMSA , Impact of the failure of the Kariba Dam, June 2015.
 \bibitem{2}Lamport, Leslie,  \LaTeX{}: `` A Document Preparation System '',
 Addison-Wesley Publishing Company, 1986.
 \bibitem{3}\url{http://www.latexstudio.net/}

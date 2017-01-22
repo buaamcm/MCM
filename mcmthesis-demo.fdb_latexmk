@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1485076518 "mcmthesis-demo.tex" "mcmthesis-demo.pdf" "mcmthesis-demo" 1485076519
+["pdflatex"] 1485089558 "mcmthesis-demo.tex" "mcmthesis-demo.pdf" "mcmthesis-demo" 1485089559
   "c:/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc" 1475943623 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1475943794 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm" 1475943509 1292 bd42be2f344128bff6d35d98474adfe3 ""
@@ -165,12 +165,12 @@
   "c:/texlive/2016/texmf.cnf" 1475945322 673 4ae7b2f49cee444c5343a45b5d0f169c ""
   "figures/Sensing_Figure.png" 1485054986 1170981 e9af0dc8bfb7b27e3c1cc7d761330bfe ""
   "figures/dis_alti_v3.png" 1485076513 43032 a226090b5fbe3355461895356da46936 ""
-  "mcmthesis-demo.aux" 1485076519 3307 f48f4165f4ef1da4a3d3d33905ab5352 ""
-  "mcmthesis-demo.out" 1485076519 1281 9bd5b100b935a6640722a479e35647d9 ""
-  "mcmthesis-demo.tex" 1485076446 18329 a199342db2ab5df6b890890f7e535e80 ""
+  "mcmthesis-demo.aux" 1485089559 3323 25bf2db5667c0e625ed953b01758a97e ""
+  "mcmthesis-demo.out" 1485089559 1297 7f272b7f6fc8ec6009517dac54bfaa14 ""
+  "mcmthesis-demo.tex" 1485089555 18771 655c0e0571eb179e1bdfe7f5537fac22 ""
   "mcmthesis.cls" 1484869242 9228 a32b54c83ee3c9a9953d5add223f7ae6 ""
   (generated)
-  "mcmthesis-demo.out"
   "mcmthesis-demo.aux"
-  "mcmthesis-demo.pdf"
   "mcmthesis-demo.log"
+  "mcmthesis-demo.pdf"
+  "mcmthesis-demo.out"
