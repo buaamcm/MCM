@@ -31,7 +31,7 @@ $g$ the gravitational acceleration \\
 \section{Search for possible reaches to build dams}
 To build new dams, we need to find a serial of possible reaches at first. In accordance with the norms, the choice of reaches should take geology, terrain, economic, ecology, disaster and so forth factors into consideration. However, the major determinant of a dams to be of valuable worthy is terrain. \\
 To be specific, we get two principle of searching for possible reaches to build dams:\\
-%这里可以加个格式
+%这里可以加个格式 
 1. the higher the throw（落差）, the more abundant hydropower（水能）resources is contained; \\
 2. In consideration of reducing ecological effects as much as possible and reducing the evaporation loss （蒸发损失） of water, the surface area （水面面积） of artificial reservoirs should be small under certain requirement of volume. To build reservoir with small surface area and certain volume, the average depth of reservoir should be deep, thus, dams should be built between deep ravines\\
 
@@ -57,7 +57,7 @@ Using expression $\left(3\right)$, we can qualitatively explain why small surfac
 and using the assumption of vertical section, the area of the bottom of a reservoir can be estimated as:
 \begin{equation}
 S_{bottom} = \int\left(\beta dS \right) \propto S
-\end{equation}
+\end{equation}  
 where $\beta$ is a coefficient of position and water factors, the expression $\left(4\right)$ qualitatively explain that $S_{bottom}$ is proportional to $S$, thus we get:
 \begin{equation}
 S_{submerged} \approx \left(K_{1}l + K_{2}L\right)\frac{V}{S} + CS
@@ -65,8 +65,8 @@ S_{submerged} \approx \left(K_{1}l + K_{2}L\right)\frac{V}{S} + CS
 where $C$ is a coefficient to indicate that $S_{bottom}$ is proportional to $S$\\
 Since the right side of the expression $\left(5\right)$ is a hyperbolic function and it monotonically decrease when $S \geq \sqrt{\frac{\left(K_{1}l + K_{2}L\right)V}{C}}$. In the actual situation, $S \gg \sqrt{V}$, so we can qualitatively conclude that under certain requirement of volume small surface area of reservoir is more beneficial than the bigger surface area.
 
-According to the above discussion, we should find the reaches（河段）with big throws on the Zambezi river based on the first principle. In accordance with the second principle, the possible reaches should between deep ravines （深谷）, because a reservoir in deep ravines can have deeper water depth and thus smaller surface area.
-
+According to the above discussion, we should find the reaches（河段）with big throws on the Zambezi river based on the first principle. In accordance with the second principle, the possible reaches should between deep ravines（深谷）, because a reservoir in deep ravines can have deeper water depth and thus smaller surface area.
+  
 上面是第一部分
 
 To assume the volume of a reservoir, a slightly different method can be used. The accurate data of vertical section is hard to get directly（我这里想表示等高线信息比纵截面信息容易获得）. So we consider to use isohypse data to calculate volume. Local isohypse （等高线）information can be gotten using GIS software \textbf{Global Mapper}. The volume can be expressed as below:
@@ -88,7 +88,7 @@ where $S$ of certain altitude and location can be calculated using isohypse data
 \begin{equation}
 C_{build} = K(\frac{V_{cap}}{(H/\Delta)^{\eta}})^{\gamma}
 \end{equation}
-其中的$V_{cap}$为装机容量，H为水头高度，$\Delta$和$\eta$为调节因子，用于水头高度和装机容量之间的关联，同时调整水头高度的影响因子。$\gamma$为成本因子，K 为成本系数，根据水坝的大小进行适当的取值，比如大型的取值可以为$7.7\times10^4$，小型的水坝取值可以为$5.0 \times 10^4$。
+其中的$V_{cap}$为装机容量，H为水头高度，$\Delta$和$\eta$为调节因子，用于水头高度和装机容量之间的关联，同时调整水头高度的影响因子。$\gamma$为成本因子，K为成本系数，根据水坝的大小进行适当的取值，比如大型的取值可以为$7.7\times10^4$，小型的水坝取值可以为$5.0 \times 10^4$。
 
 其中装机容量$V$可由上述的需要通过计算年流量得到，而年流量包含三个方面河流流量、水库的蒸发量、降雨量
 \begin{equation}
@@ -119,7 +119,7 @@ C_{prev} + C_{later}= (\alpha_{1} + \alpha_{2})C_{design} = 0.12C_{design}
 \end{equation}
 由此，我们得到整个工程建设成本为：
 \begin{equation}
-C_{project} = C_{build} + C_{design} + C_{prev} + C_{later}
+C_{project} = C_{build} + C_{design} + C_{prev} + C_{later} 
 \end{equation}
 \begin{equation}
 C_{project} = K(\frac{V_{cap}}{(H/\Delta)^{\eta}})^{\gamma} + (1+\alpha_{1}+\alpha_{2}){\delta}(K(\frac{V_{cap}}{(H/\Delta)^{\eta}})^{\gamma})^{\tau}
@@ -140,7 +140,7 @@ C_{project} = K(\frac{V_{cap}}{(H/\Delta)^{\eta}})^{\gamma} + (1+\alpha_{1}+\alp
   \hline
    Intensity of Importance & meaning  \\
   \hline
-  $1$ & Equal importance \\
+  $1$ & Equal importance \\  
   $3$ & Moderate importance \\
   $5$ & Strong importance \\
   $7$ & Very strong or demonstrated importance \\
@@ -169,30 +169,9 @@ $$
   \right\}
 $$
 
-%下面是一段口胡
-对于上述的5中因素，$C_{l}$和$W_{l}$直接影响到工程是否可行，所以最为重要。并且，由于$W_{l}$相对于$C_{l}$更有选择的弹性，所以$C_{l}$是最为重要的因素，在其他的三个因素中，$F_{l}$和$H_{l}$影响了水坝的蓄水能力，所以也十分重要，而$\alpha_{l}$主要影响淹没面积，是相对重要性较低的因素。\\
-依据上述的讨论，我们估计了问题的成对比较矩阵:
 
-\[A = 
-\left[
-\begin{matrix}
-1 & 5 & 1 & \frac{1}{3} & \frac{1}{4} \\
-\frac{1}{5}  & 1 & \frac{1}{5} & \frac{1}{7} & \frac{1}{8} \\ 
-1 & 5 & 1 & \frac{1}{3} & \frac{1}{4} \\
-3 & 7 & 3 & 1 & \frac{1}{2} \\
-4 & 8 & 4 & 2 & 1 \\
-\end{matrix}
-\right]
-\]
 
-计算$A$的最大特征值，为$\lambda = 5.1415$
-$A$的一致性指标为
-\[\mathit{CI} = \frac{\lambda - n}{n - 1} = 0.0354\]
-其中，$n$为矩阵的阶数
-$n = 5$时随机一致性指标\textit{RI}为$1.12$，于是$A$的一致性比率为:
-\[\mathit{CR} = \frac{\mathit{CI}}{\mathit{RI}} = 0.0316 < 0.1 \]
-所以，$A$的不一致程度在容许范围之内\\
-$\lambda$对应的特征向量为$\left[0.2185, 0.063, 0.2185, 0.5190, 0.7945\right]$
+
 
 
 
