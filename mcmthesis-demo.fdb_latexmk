@@ -1,5 +1,9 @@
 # Fdb version 3
+<<<<<<< HEAD
 ["pdflatex"] 1485075087 "mcmthesis-demo.tex" "mcmthesis-demo.pdf" "mcmthesis-demo" 1485075088
+=======
+["pdflatex"] 1485072091 "mcmthesis-demo.tex" "mcmthesis-demo.pdf" "mcmthesis-demo" 1485072093
+>>>>>>> parent of 3fa61ce... 完成整体架构
   "c:/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc" 1475943623 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1475943794 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/adobe/courier/pcrb8r.tfm" 1475943508 1292 3059476c50a24578715759f22652f3d0 ""
@@ -177,15 +181,23 @@
   "code/mcmthesis-matlab1.m" 1484869242 210 85a5d87496a269d2df36a0b391613a70 ""
   "code/mcmthesis-sudoku.cpp" 1484869242 845 5a6682dd32c79c4b8b8ea784915eeae3 ""
   "figures/Sensing_Figure.png" 1485054986 1170981 e9af0dc8bfb7b27e3c1cc7d761330bfe ""
+<<<<<<< HEAD
   "figures/dis_alti_v2.png" 1485053601 52276 7b8b1ea6cf11f9c0ecd90df3d515fc5d ""
   "figures/dis_alti_v3.png" 1485074964 43824 d8cebb80df12ec64b8bf35b19815fea6 ""
   "figures/mcmthesis-aaa.eps" 1484869242 458067 0292347d89fcc11b2fd4cfd67307e029 ""
   "mcmthesis-demo.aux" 1485075088 4484 8664b97df9559cb7c61801d8f9ab3f1b ""
   "mcmthesis-demo.out" 1485075088 1273 af8f33a0d5cafb2e5f2a9b6d7483b05e ""
   "mcmthesis-demo.tex" 1485074964 20869 34dcc682e3504bfcb305da1988b12b1e ""
+=======
+  "figures/dis_alti_v3.png" 1485072053 43824 d8cebb80df12ec64b8bf35b19815fea6 ""
+  "figures/mcmthesis-aaa.eps" 1484869242 458067 0292347d89fcc11b2fd4cfd67307e029 ""
+  "mcmthesis-demo.aux" 1485072093 3664 0289570e0621c1a4e67a5ae3d5e6d5e1 ""
+  "mcmthesis-demo.out" 1485072093 1115 406cb9453e7e5d17f10dbe5d456c9fec ""
+  "mcmthesis-demo.tex" 1485072089 18008 abf2a2904330ef5c1b22a17b74c9e569 ""
+>>>>>>> parent of 3fa61ce... 完成整体架构
   "mcmthesis.cls" 1484869242 9228 a32b54c83ee3c9a9953d5add223f7ae6 ""
   (generated)
-  "mcmthesis-demo.pdf"
   "mcmthesis-demo.out"
+  "mcmthesis-demo.pdf"
   "mcmthesis-demo.aux"
   "mcmthesis-demo.log"
