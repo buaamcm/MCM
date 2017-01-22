@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.9)  21 JAN 2017 15:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.9)  21 JAN 2017 21:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -805,7 +805,7 @@ s-converted-to.pdf ./figures/mcmthesis-aaa.eps>
 (epstopdf)             \includegraphics on input line 101.
 Package epstopdf Info: Output file is already uptodate.
 
-<./figures/mcmthesis-aaa-eps-converted-to.pdf, id=78, 421.575pt x 317.185pt>
+<./figures/mcmthesis-aaa-eps-converted-to.pdf, id=82, 421.575pt x 317.185pt>
 File: ./figures/mcmthesis-aaa-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./figures/mcmthesis-aaa-eps-converted-to.pdf>
@@ -845,13 +845,21 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 175.
  (c:/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 181--183
 
  []
 
-(./code/mcmthesis-matlab1.m
-LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--190
+
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -859,7 +867,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6]) (./code/mcmthesis-sudoku.cpp
+[7
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+(./code/mcmthesis-matlab1.m
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 1.
+) (./code/mcmthesis-sudoku.cpp
 Overfull \hbox (43.94443pt too wide) in paragraph at lines 1--2
 [][][][][][][][][] 
  []
@@ -869,7 +894,15 @@ Overfull \hbox (43.94443pt too wide) in paragraph at lines 7--9
 [][][][][][][][][] 
  []
 
-) 
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9
+
+]) 
 AED: lastpage setting LastPage
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -877,23 +910,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
+[10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 211.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 211.
  (./mcmthesis-demo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 196.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 196.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 211.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 211.
 Package rerunfilecheck Info: File `mcmthesis-demo.out' has not changed.
-(rerunfilecheck)             Checksum: 6DEC09707AD6BF1F115E1A76D6D31996;773.
+(rerunfilecheck)             Checksum: 917E8C6668F63BB479DEBBFE336DA8B5;840.
  ) 
 Here is how much of TeX's memory you used:
- 12505 strings out of 493014
- 177349 string characters out of 6137001
- 443350 words of memory out of 5000000
- 15647 multiletter control sequences out of 15000+600000
+ 12510 strings out of 493014
+ 177390 string characters out of 6137001
+ 438055 words of memory out of 5000000
+ 15648 multiletter control sequences out of 15000+600000
  80004 words of font info for 154 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,13n,100p,892b,2401s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,13n,100p,2359b,1961s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2016/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2016/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2016/texmf-dist/fonts/type1
@@ -905,10 +938,10 @@ t/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/s
 ymbol/usyr.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:
 /texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2016/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on mcmthesis-demo.pdf (9 pages, 204046 bytes).
+Output written on mcmthesis-demo.pdf (12 pages, 212997 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
- 221 compressed objects within 3 object streams
- 84 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 269 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
+ 88 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
