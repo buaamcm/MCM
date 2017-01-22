@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.9)  22 JAN 2017 11:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.9)  22 JAN 2017 16:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -793,6 +793,58 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 86.
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3] <./figures/Sensing_Figure.png, id=123, 849.92531pt x 421.575pt>
+File: ./figures/Sensing_Figure.png Graphic file (type png)
+
+<use ./figures/Sensing_Figure.png>
+Package pdftex.def Info: ./figures/Sensing_Figure.png used on input line 162.
+(pdftex.def)             Requested size: 398.33858pt x 197.58063pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4] <./figures/dis_alti_v3.png, id=130, 953.06062pt x 669.2503pt>
+File: ./figures/dis_alti_v3.png Graphic file (type png)
+
+<use ./figures/dis_alti_v3.png>
+Package pdftex.def Info: ./figures/dis_alti_v3.png used on input line 171.
+(pdftex.def)             Requested size: 455.24408pt x 319.68428pt.
+
+Overfull \hbox (31.18375pt too wide) in paragraph at lines 171--172
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 Package epstopdf Info: Source file: <./figures/mcmthesis-aaa.eps>
 (epstopdf)                    date: 2017-01-20 07:40:42
 (epstopdf)                    size: 458067 bytes
@@ -802,46 +854,48 @@ df>
 (epstopdf)                    size: 78739 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figures/mcmthesis-aaa-ep
 s-converted-to.pdf ./figures/mcmthesis-aaa.eps>
-(epstopdf)             \includegraphics on input line 101.
+(epstopdf)             \includegraphics on input line 187.
 Package epstopdf Info: Output file is already uptodate.
-
-<./figures/mcmthesis-aaa-eps-converted-to.pdf, id=82, 421.575pt x 317.185pt>
+<./figures/mcmthesis-aaa-eps-converted-to.pdf, id=131, 421.575pt x 317.185pt>
 File: ./figures/mcmthesis-aaa-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./figures/mcmthesis-aaa-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/mcmthesis-aaa-eps-converted-to.pdf used on i
-nput line 101.
+nput line 187.
 (pdftex.def)             Requested size: 341.43306pt x 256.89423pt.
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3 <./figures/mcmthesis-aaa-eps-converted-to.pdf>]
+[5 <./figures/Sensing_Figure.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4]
+[6 <./figures/dis_alti_v3.png (PNG copy)>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 175.
+[7 <./figures/mcmthesis-aaa-eps-converted-to.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 261.
  (c:/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -851,13 +905,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 181--183
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 267--269
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--190
+Underfull \hbox (badness 10000) in paragraph at lines 271--276
 
  []
 
@@ -867,7 +921,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7
+[10
 
 ]
 
@@ -876,8 +930,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
 
  []
 
@@ -900,7 +954,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9
+[12
 
 ]) 
 AED: lastpage setting LastPage
@@ -910,21 +964,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 211.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 211.
+[13]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 297.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 297.
  (./mcmthesis-demo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 211.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 211.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 297.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 297.
 Package rerunfilecheck Info: File `mcmthesis-demo.out' has not changed.
-(rerunfilecheck)             Checksum: 917E8C6668F63BB479DEBBFE336DA8B5;840.
+(rerunfilecheck)             Checksum: 406CB9453E7E5D17F10DBE5D456C9FEC;1115.
  ) 
 Here is how much of TeX's memory you used:
- 12510 strings out of 493014
- 177390 string characters out of 6137001
- 438055 words of memory out of 5000000
- 15648 multiletter control sequences out of 15000+600000
- 80004 words of font info for 154 fonts, out of 8000000 for 9000
+ 12546 strings out of 493014
+ 177943 string characters out of 6137001
+ 438297 words of memory out of 5000000
+ 15662 multiletter control sequences out of 15000+600000
+ 81712 words of font info for 157 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,13n,100p,2359b,1961s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2016/texm
@@ -938,10 +992,10 @@ t/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/s
 ymbol/usyr.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:
 /texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2016/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on mcmthesis-demo.pdf (12 pages, 212997 bytes).
+Output written on mcmthesis-demo.pdf (15 pages, 1296812 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 238 compressed objects within 3 object streams
- 88 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 317 PDF objects out of 1000 (max. 8388607)
+ 280 compressed objects within 3 object streams
+ 104 named destinations out of 1000 (max. 500000)
+ 168 words of extra memory for PDF output out of 10000 (max. 10000000)
 

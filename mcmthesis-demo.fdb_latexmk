@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1485054444 "mcmthesis-demo.tex" "mcmthesis-demo.pdf" "mcmthesis-demo" 1485054445
+["pdflatex"] 1485072091 "mcmthesis-demo.tex" "mcmthesis-demo.pdf" "mcmthesis-demo" 1485072093
   "c:/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc" 1475943623 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1475943794 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/adobe/courier/pcrb8r.tfm" 1475943508 1292 3059476c50a24578715759f22652f3d0 ""
@@ -176,13 +176,15 @@
   "c:/texlive/2016/texmf.cnf" 1475945322 673 4ae7b2f49cee444c5343a45b5d0f169c ""
   "code/mcmthesis-matlab1.m" 1484869242 210 85a5d87496a269d2df36a0b391613a70 ""
   "code/mcmthesis-sudoku.cpp" 1484869242 845 5a6682dd32c79c4b8b8ea784915eeae3 ""
+  "figures/Sensing_Figure.png" 1485054986 1170981 e9af0dc8bfb7b27e3c1cc7d761330bfe ""
+  "figures/dis_alti_v3.png" 1485072053 43824 d8cebb80df12ec64b8bf35b19815fea6 ""
   "figures/mcmthesis-aaa.eps" 1484869242 458067 0292347d89fcc11b2fd4cfd67307e029 ""
-  "mcmthesis-demo.aux" 1485054445 2805 b2c326d5661c19f5a88c332c4c5710aa ""
-  "mcmthesis-demo.out" 1485054445 840 917e8c6668f63bb479debbfe336da8b5 ""
-  "mcmthesis-demo.tex" 1485008006 10965 290c57a04577c004ee42af5e8fd150e7 ""
+  "mcmthesis-demo.aux" 1485072093 3664 0289570e0621c1a4e67a5ae3d5e6d5e1 ""
+  "mcmthesis-demo.out" 1485072093 1115 406cb9453e7e5d17f10dbe5d456c9fec ""
+  "mcmthesis-demo.tex" 1485072089 18008 abf2a2904330ef5c1b22a17b74c9e569 ""
   "mcmthesis.cls" 1484869242 9228 a32b54c83ee3c9a9953d5add223f7ae6 ""
   (generated)
-  "mcmthesis-demo.aux"
-  "mcmthesis-demo.log"
   "mcmthesis-demo.out"
   "mcmthesis-demo.pdf"
+  "mcmthesis-demo.aux"
+  "mcmthesis-demo.log"
