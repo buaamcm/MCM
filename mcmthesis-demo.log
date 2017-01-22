@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.9)  22 JAN 2017 20:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.9)  22 JAN 2017 21:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -778,18 +778,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
  []
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 56.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 58.
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+phv on input line 73.
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+LaTeX Font Info:    Try loading font information for T1+phv on input line 72.
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
@@ -807,19 +807,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 114.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 116.
 
  (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 114.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 116.
 
 <./figures/Sensing_Figure.png, id=120, 849.92531pt x 421.575pt>
 File: ./figures/Sensing_Figure.png Graphic file (type png)
 
 <use ./figures/Sensing_Figure.png>
-Package pdftex.def Info: ./figures/Sensing_Figure.png used on input line 126.
+Package pdftex.def Info: ./figures/Sensing_Figure.png used on input line 128.
 (pdftex.def)             Requested size: 398.33858pt x 197.58063pt.
 
 
@@ -829,10 +829,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: ./figures/dis_alti_v3.png Graphic file (type png)
 
 <use ./figures/dis_alti_v3.png>
-Package pdftex.def Info: ./figures/dis_alti_v3.png used on input line 135.
+Package pdftex.def Info: ./figures/dis_alti_v3.png used on input line 137.
 (pdftex.def)             Requested size: 455.24408pt x 300.46628pt.
 
-Overfull \hbox (31.18375pt too wide) in paragraph at lines 135--136
+Overfull \hbox (31.18375pt too wide) in paragraph at lines 137--138
  [][] 
  []
 
@@ -867,7 +867,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 233.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 235.
  (c:/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -878,12 +878,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 239--241
+Underfull \hbox (badness 10000) in paragraph at lines 241--243
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--248
+Underfull \hbox (badness 10000) in paragraph at lines 245--250
 
  []
 
@@ -904,13 +904,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 271.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 271.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 273.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 273.
  (./mcmthesis-demo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 271.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 271.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 273.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 273.
 Package rerunfilecheck Info: File `mcmthesis-demo.out' has not changed.
-(rerunfilecheck)             Checksum: 7F272B7F6FC8EC6009517DAC54BFAA14;1297.
+(rerunfilecheck)             Checksum: 80C6FA503B55CD7C77B62EE0F9820C11;1301.
  ) 
 Here is how much of TeX's memory you used:
  11716 strings out of 493014
@@ -930,7 +930,7 @@ e/2016/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2016/texmf-dist/f
 onts/type1/urw/symbol/usyr.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/t
 exlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on mcmthesis-demo.pdf (11 pages, 1176548 bytes).
+Output written on mcmthesis-demo.pdf (11 pages, 1177070 bytes).
 PDF statistics:
  221 PDF objects out of 1000 (max. 8388607)
  191 compressed objects within 2 object streams
