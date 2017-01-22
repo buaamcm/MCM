@@ -1,0 +1,202 @@
+% -*- coding: utf-8 -*-
+%%
+%%  本模板可以使用以下两种方式编译:
+%%     1. PDFLaTeX
+%%     2. XeLaTeX [推荐]
+%%  注意：
+%% {}   1. 在改变编译方式前应先删除 *.toc 和 *.aux 文件，
+%%       因为不同编译方式{}产生的辅助文件格式可能并不相同。
+
+%%\documentclass{cumcmart}
+\documentclass[nocover]{cumcmart}
+%切换到无封面的版本，有些赛区不允许前面的承诺页用pdf格式，可以用此选项去掉。
+\usepackage[all]{xy}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{bm}
+\begin{document}
+
+\section{测试文档}
+
+这部分需要假设淹没的地表面积越小，对生态的影响一般来说越小
+落差是drop还是throw，我后面用的是throw，不一定对
+
+$V$ the volume of reservoir \\
+$S$ the water surface area of reservoir \\
+$H$ the water depth of reservoir \\
+$\alpha$ the bank angle（倾斜角）of slope
+$g$ the gravitational acceleration \\
+
+
+\section{Search for possible reaches to build dams}
+To build new dams, we need to find a serial of possible reaches at first. In accordance with the norms, the choice of reaches should take geology, terrain, economic, ecology, disaster and so forth factors into consideration. However, the major determinant of a dams to be of valuable worthy is terrain. \\
+To be specific, we get two principle of searching for possible reaches to build dams:\\
+%这里可以加个格式 
+1. the higher the throw（落差）, the more abundant hydropower（水能）resources is contained; \\
+2. In consideration of reducing ecological effects as much as possible and reducing the evaporation loss （蒸发损失） of water, the surface area （水面面积） of artificial reservoirs should be small under certain requirement of volume. To build reservoir with small surface area and certain volume, the average depth of reservoir should be deep, thus, dams should be built between deep ravines\\
+
+%对第一条原则的解释
+Hydropower station convert gravitational potential energy of water into electrical energy. The gravitational potential energy is calculated as $E_{p} = mgh$, thus, higher throw implies bigger electricity-generation capacity.
+
+
+%对第二条原则的解释，这前面加个转折？现在这里的文字有些生硬
+To simplify model, we assume that the vertical section（纵向截面） of a reservoir is a approximate trapezoid, then the submerged area can be expressed as below:
+\begin{equation}\int_{A}^{B}\frac{H\left(l\right)}{\sin\left[\alpha\left(l\right)\right]}dl + \int_{C}^{D}\frac{H\left(L\right)}{\sin\left[\alpha\left(L\right)\right]}dL + S_{bottom}\end{equation}
+where $l, L$ are the lengths of left bank and right bank respective; $A, B$ indicate the starting position and end position of $l$; similarly, $C, D$ indicate the starting position and end position of $L$.
+The expression $\left(1\right)$ is still hard to deal, because of the difficulty of the estimation of $\alpha$. In order to make our assessment feasible, we need to simplify the expression $\left(1\right)$. Noticed that:
+\begin{equation}
+\int_{A}^{B}\frac{H\left(l\right)}{\sin\left[\alpha\left(l\right)\right]}dl = \frac{1}{sin\left[\alpha\left(\zeta\right)\right]}\int_{A}^{B}H\left(l\right)dl
+= KH_{average}l
+\end{equation}
+where $K$ is a coefficient of inclination. expressions $\left(2\right)$ is a application of mean value theorem for integrals, it fits in with the physics intuition. Then, the submerged area can be estimated as:
+\begin{equation}
+\left(K_{1}l + K_{2}L\right)H_{average} + S_{bottom}
+\end{equation}
+Using expression $\left(3\right)$, we can qualitatively explain why small surface area is desired. Using equation $H_{average} = \frac{V}{S}$, we get:
+\[S_{submerged} \approx \left(K_{1}l + K_{2}L\right)\frac{V}{S} + S_{bottom}\]
+and using the assumption of vertical section, the area of the bottom of a reservoir can be estimated as:
+\begin{equation}
+S_{bottom} = \int\left(\beta dS \right) \propto S
+\end{equation}  
+where $\beta$ is a coefficient of position and water factors, the expression $\left(4\right)$ qualitatively explain that $S_{bottom}$ is proportional to $S$, thus we get:
+\begin{equation}
+S_{submerged} \approx \left(K_{1}l + K_{2}L\right)\frac{V}{S} + CS
+\end{equation}
+where $C$ is a coefficient to indicate that $S_{bottom}$ is proportional to $S$\\
+Since the right side of the expression $\left(5\right)$ is a hyperbolic function and it monotonically decrease when $S \geq \sqrt{\frac{\left(K_{1}l + K_{2}L\right)V}{C}}$. In the actual situation, $S \gg \sqrt{V}$, so we can qualitatively conclude that under certain requirement of volume small surface area of reservoir is more beneficial than the bigger surface area.
+
+According to the above discussion, we should find the reaches（河段）with big throws on the Zambezi river based on the first principle. In accordance with the second principle, the possible reaches should between deep ravines（深谷）, because a reservoir in deep ravines can have deeper water depth and thus smaller surface area.
+  
+上面是第一部分
+
+To assume the volume of a reservoir, a slightly different method can be used. The accurate data of vertical section is hard to get directly（我这里想表示等高线信息比纵截面信息容易获得）. So we consider to use isohypse data to calculate volume. Local isohypse （等高线）information can be gotten using GIS software \textbf{Global Mapper}. The volume can be expressed as below:
+\begin{equation}\int_{0}^{H_{max}}\frac{1}{2}\left[S\left(H\right) + S\left(H + dH\right)\right]dH\end{equation}
+where $H_{max}$ indicates the max water depth, $S\left(H\right)$ expresses the surface area enclosed by isohypse of same altitude. According to our above assumptions of vertical section, $S\left(H + dH\right)$ can be assumed as $S\left(0\right) + \frac{H}{2\tan\left(\alpha\right)}$. Then, the expression $\left(2\right)$ can be rewritten as:
+\begin{equation}\int_{0}^{H_{average}}\left(S(0) + \frac{H}{\tan\left(\alpha\right)}\right)dH\end{equation}
+We need to emphasize that $S$ in the $\left(3\right)$ is equivalent surface area not actual surface area, to use actual surface area calculated using isohypse data, rewrite $\left(3\right)$ as:
+\begin{equation}\int_{0}^{H_{average}}\left(S - \frac{H}{\tan\left(\alpha\right)}\right)dH
+\end{equation}
+where $S$ of certain altitude and location can be calculated using isohypse data.
+
+\newpage
+
+\subsection{水坝的建设成本}
+%% 水电站成本计算
+水电站的建设成本可以从工程的角度出发进行估计，其中包含了前期的可行性报告编制费用、整个工程项目的设计费用、项目的整体建造成本、项目后期的可行性分析报告。
+
+其中首先计算建造费用，和电站的规模直接相关，根据Hydro Review Maga给出的水坝建造成本公式
+\begin{equation}
+C_{build} = K(\frac{V_{cap}}{(H/\Delta)^{\eta}})^{\gamma}
+\end{equation}
+其中的$V_{cap}$为装机容量，H为水头高度，$\Delta$和$\eta$为调节因子，用于水头高度和装机容量之间的关联，同时调整水头高度的影响因子。$\gamma$为成本因子，K为成本系数，根据水坝的大小进行适当的取值，比如大型的取值可以为$7.7\times10^4$，小型的水坝取值可以为$5.0 \times 10^4$。
+
+其中装机容量$V$可由上述的需要通过计算年流量得到，而年流量包含三个方面河流流量、水库的蒸发量、降雨量
+\begin{equation}
+V_{total} = V_{flow} - V_{evap} + V_{rain} = V_{flow} - (1-{\alpha})v_{0}S({\mu}T_{aver})^{\theta}t + {\beta}v_{1}St
+\end{equation}
+其中$v_{0}$为单位时间内单位面积湖水蒸发水量，$\alpha$为蒸发回流系数，$\mu$为温度调节系数，$\theta$为温度条件因子，$\beta$为流入水库系数比例，$v_{1}$为单位时间单位面积全年平均降雨量，$S$为河流面积，$t$为时间。
+
+其中$S$可由下面的计算公式求得：
+\begin{equation}
+S \approx \left(K_{1}l + K_{2}L\right)\frac{V}{S} + CS
+\end{equation}
+
+由上面的两式，我们可以获得装机容量的最终计算公式：
+\begin{equation}
+V_{cap} = {\rho}gV_{total}H = {\rho}g(V_{flow} - (1 - {\alpha})v_{0}S({\mu}T_{aver})^{\theta}t + {\beta}v_{1}St)H
+\end{equation}
+
+接着我们考虑水坝建造过程中的设计费用，设计费用和建造费用之间存在一定的比例关系，我们可以直接获得
+\begin{equation}
+C_{design} = {\delta}(C_{build})^{\tau}
+\end{equation}
+这里的$\delta$为比例系数，$\tau$为比例指数，一般而言，根据统计数据，$\tau$一般取为0.9，而$\delta$一般取为0.34
+
+接着我们考虑工程中其它成本，根据通用惯例，工程开始时需要进行可行性分析，包括地质勘测；工程结束之后需要撰写相应的可行性分析报告、使用综合各报告、项目总结。根据世界银行给出的统计数据，后期可行性分析报告和使用综合报告费用约为设计费用的$10\%$，前期可行性分析报告约为设计费用的$2\%$。
+因此有
+\begin{equation}
+C_{prev} + C_{later}= (\alpha_{1} + \alpha_{2})C_{design} = 0.12C_{design}
+\end{equation}
+由此，我们得到整个工程建设成本为：
+\begin{equation}
+C_{project} = C_{build} + C_{design} + C_{prev} + C_{later} 
+\end{equation}
+\begin{equation}
+C_{project} = K(\frac{V_{cap}}{(H/\Delta)^{\eta}})^{\gamma} + (1+\alpha_{1}+\alpha_{2}){\delta}(K(\frac{V_{cap}}{(H/\Delta)^{\eta}})^{\gamma})^{\tau}
+\end{equation}
+
+\subsection{蓄水量的计算}
+由于是对整个流域水坝进行理论上的设计，所以无法得到实际数据，无法使用蓄水量 = 流入水量 - 流出水量的方式进行计算，所以这里采用地理数据直接对水库的蓄水量进行建模。
+
+我们由上面的模型A得到了候选的水坝建造区域，在这里我们计算蓄水量则需要知道该区域需要建造多少个水坝，同时需要知道建在何处。因此，我们首先确定水坝的建造点。从上面的分析中，我们获知了选择水坝地址时需要考虑的重要因素：水位落差，岩层土壤的适宜程度，两岸山体的倾斜程度，两岸山体的高度，河流的宽度。由于存在如此多的考虑因素，我们决定使用层次分析法(Analytic Hierarchy Process, AHP)对其进行分析。
+
+% 此处需要一个示意图，表示河流
+我们首先沿着河流流动方向建立自然坐标系，假定$l$为距离区域初始点的距离。用$F_{l}$表示距离初始点的水位落差，$\alpha_{l}$表示$l$点处的山势倾斜程度，$H_{l}$表示$l$处的山体高度，$W_{l}$表示$l$处的河流宽度，$C_{l}$表示山体岩层和土壤的适宜程度。
+
+同时，我们采用1-9尺度作为AHP的中的比较尺度
+\begin{table}[!ht]
+\centering
+  \begin{tabular}{cc}
+  \hline
+   Intensity of Importance & meaning  \\
+  \hline
+  $1$ & Equal importance \\  
+  $3$ & Moderate importance \\
+  $5$ & Strong importance \\
+  $7$ & Very strong or demonstrated importance \\
+  $9$ & Extreme importance \\
+  $2,4,6,8$ & Intensity between two hierarchies \\
+  $1,1/2,...,1/9$ & The opposite numbers\\
+  \hline
+  \end{tabular}
+  \caption{Intensity of Importance}
+\end{table}
+
+我们令影响因素组合成一个层次因素向量$\textbf{P}$，并有$\textbf{P} = (F_{l}, \alpha_{l}, H_{l}, C_{l}, W_{l})$，则可以得到比较矩阵$\textbf{A}$，且满足以下式子：
+\begin{equation}
+\textbf{A} = (a_{i,j})_{5\times5},\qquad a_{ij} > 0, \quad a_{ij} = \frac{1}{a_{ji}}
+\end{equation}
+
+此时需要得到的是各因素的重要程度，也即权向量$\textbf{w}$，
+
+$$
+ \left\{
+ \begin{matrix}
+   1 & 2 & 3 \\
+   4 & 5 & 6 \\
+   7 & 8 & 9
+  \end{matrix}
+  \right\}
+$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
