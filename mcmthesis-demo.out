@@ -1,37 +1,19 @@
 \BOOKMARK [1][]{section.1}{Introduction}{}% 1
-\BOOKMARK [2][]{subsection.1.1}{Other Assumptions}{section.1}% 2
-\BOOKMARK [1][]{section.2}{Model A : Search for possible reaches to build dams}{}% 3
-\BOOKMARK [2][]{subsection.2.1}{Description}{section.2}% 4
-\BOOKMARK [2][]{subsection.2.2}{Analysis}{section.2}% 5
-\BOOKMARK [1][]{section.3}{Select Candidate Dam Site Regions}{}% 6
-<<<<<<< HEAD
-\BOOKMARK [1][]{section.4}{Model A : Search for possible location to build dams }{}% 7
-\BOOKMARK [1][]{section.5}{Select Candidate Dam Site Regions}{}% 8
-\BOOKMARK [1][]{section.6}{Analysis of the Problem}{}% 9
-\BOOKMARK [1][]{section.7}{Calculating and Simplifying the Model }{}% 10
-\BOOKMARK [1][]{section.8}{The Model Results}{}% 11
-\BOOKMARK [1][]{section.9}{Validating the Model}{}% 12
-\BOOKMARK [1][]{section.10}{Conclusions}{}% 13
-\BOOKMARK [1][]{section.11}{A Summary}{}% 14
-\BOOKMARK [1][]{section.12}{Evaluate of the Mode}{}% 15
-\BOOKMARK [1][]{section.13}{Strengths and weaknesses}{}% 16
-\BOOKMARK [2][]{subsection.13.1}{Strengths}{section.13}% 17
-\BOOKMARK [1][]{section.14}{Brief Assessment of the options}{}% 18
-\BOOKMARK [1][]{section*.7}{Appendices}{}% 19
-\BOOKMARK [1][]{Appendix.a.A}{Appendix First appendix}{}% 20
-\BOOKMARK [1][]{Appendix.a.B}{Appendix Second appendix}{}% 21
-=======
-\BOOKMARK [1][]{section.4}{Analysis of the Problem}{}% 7
-\BOOKMARK [1][]{section.5}{Calculating and Simplifying the Model }{}% 8
-\BOOKMARK [1][]{section.6}{The Model Results}{}% 9
-\BOOKMARK [1][]{section.7}{Validating the Model}{}% 10
-\BOOKMARK [1][]{section.8}{Conclusions}{}% 11
-\BOOKMARK [1][]{section.9}{A Summary}{}% 12
-\BOOKMARK [1][]{section.10}{Evaluate of the Mode}{}% 13
-\BOOKMARK [1][]{section.11}{Strengths and weaknesses}{}% 14
-\BOOKMARK [2][]{subsection.11.1}{Strengths}{section.11}% 15
-\BOOKMARK [1][]{section.12}{Brief Assessment of the options}{}% 16
-\BOOKMARK [1][]{section*.5}{Appendices}{}% 17
-\BOOKMARK [1][]{Appendix.a.A}{Appendix First appendix}{}% 18
-\BOOKMARK [1][]{Appendix.a.B}{Appendix Second appendix}{}% 19
->>>>>>> parent of 3fa61ce... 完成整体架构
+\BOOKMARK [1][]{section.2}{Model A : Search for possible reaches to build dams}{}% 2
+\BOOKMARK [2][]{subsection.2.1}{Description}{section.2}% 3
+\BOOKMARK [2][]{subsection.2.2}{Analysis}{section.2}% 4
+\BOOKMARK [2][]{subsection.2.3}{Model Building}{section.2}% 5
+\BOOKMARK [2][]{subsection.2.4}{Model Validation}{section.2}% 6
+\BOOKMARK [2][]{subsection.2.5}{Result}{section.2}% 7
+\BOOKMARK [1][]{section.3}{Model B : The Best Arrangement}{}% 8
+\BOOKMARK [2][]{subsection.3.1}{Description}{section.3}% 9
+\BOOKMARK [2][]{subsection.3.2}{Analysis and Assumptions}{section.3}% 10
+\BOOKMARK [2][]{subsection.3.3}{Model Building}{section.3}% 11
+\BOOKMARK [2][]{subsection.3.4}{Optimization}{section.3}% 12
+\BOOKMARK [2][]{subsection.3.5}{Sensitivity Analysis}{section.3}% 13
+\BOOKMARK [2][]{subsection.3.6}{Model Validation}{section.3}% 14
+\BOOKMARK [2][]{subsection.3.7}{Result}{section.3}% 15
+\BOOKMARK [1][]{section.4}{Strengths and weaknesses}{}% 16
+\BOOKMARK [2][]{subsection.4.1}{Model A: Search for possible reaches to build dams}{section.4}% 17
+\BOOKMARK [2][]{subsection.4.2}{Model B: The Best Arrangement}{section.4}% 18
+\BOOKMARK [1][]{section.5}{Brief Assessment of the options}{}% 19
