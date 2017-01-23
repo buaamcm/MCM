@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1485147710 "paper.tex" "paper.pdf" "paper" 1485147713
+["pdflatex"] 1485189424 "paper.tex" "paper.pdf" "paper" 1485189427
   "c:/Softwares/TexLive16/texmf-dist/fonts/map/fontname/texfonts.map" 1483782700 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "c:/Softwares/TexLive16/texmf-dist/fonts/sfd/ttf2pk/UGBK.sfd" 1483784306 182544 bcd31d5d273400b38612a969fcab55f9 ""
   "c:/Softwares/TexLive16/texmf-dist/fonts/sfd/ttf2pk/Unicode.sfd" 1483784306 103212 c249c63d38b8b55408aee52d643b0c18 ""
@@ -270,9 +270,9 @@
   "c:/Windows/fonts/simhei.ttf" 1468708115 9751720 3bf58f047d1440be4baad579495c0f9e ""
   "c:/Windows/fonts/simsun.ttc" 1468669327 18214356 a29228145edd16e435fb63c20b062ee5 ""
   "cumcmart.cls" 1482327508 4085 0bc6d2627140fdbb2436377d8c84f242 ""
-  "paper.aux" 1485147711 771 014faf7a67a30d164a719767dbebeb23 ""
-  "paper.tex" 1485147708 19603 6c17deb4664212e0b4ed4c9eab8726b8 ""
+  "paper.aux" 1485189426 771 014faf7a67a30d164a719767dbebeb23 ""
+  "paper.tex" 1485189422 20646 00906c8595b75630f04d219e283548df ""
   (generated)
-  "paper.aux"
-  "paper.pdf"
   "paper.log"
+  "paper.pdf"
+  "paper.aux"
