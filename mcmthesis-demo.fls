@@ -387,6 +387,12 @@ INPUT c:/texlive/2016/texmf-dist/fonts/vf/adobe/times/ptmri8t.vf
 INPUT ./figures/reservoir.png
 INPUT ./figures/reservoir.png
 INPUT ./figures/reservoir.png
+INPUT figures/table_position.png
+INPUT ./figures/table_position.png
+INPUT ./figures/table_position.png
+INPUT figures/table_capacity.png
+INPUT ./figures/table_capacity.png
+INPUT ./figures/table_capacity.png
 INPUT c:/texlive/2016/texmf-dist/fonts/vf/adobe/times/zptmcm7y.vf
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
