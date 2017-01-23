@@ -49,9 +49,9 @@
 \begin{abstract}
 The Kariba Dam is located on the Zambezi River. As one of the largest dam in Africa, its current safety state is controversial. We assume that the Kariba Dam will be removed and replaced by a multi-dam system for the sake of safety. For a complete description of this dam system, we propose two models concerning the location of new dams and the strategy for modulating the water flow through the new dam system. In order to get the optimal solution of this problem, we take the whole Zambezi River basin as research object.\\
 \indent In Model A, our primary aim is to find the optimal locations of the new dams. By looking at the elevation data and making preliminary estimates, we firstly identify the general area suitable for the construction. However, the rough estimation is apparently not enough, so we narrow the candidate area by referring to other information such as geography conditions. We also established a benchmark formula by using analytic hierarchy process. This formula is a comprehensive analysis of the terrain condition, construction cost, income and safety condition of a specific location, with high reliability. Based on this formula, we tested a series of locations within the candidate areas and choose some candidate location with higher score as our solution.\\
-\indent In Model B, our primary aim is to design a modulating strategy for the multi-dam system established in the Model A. 
+\indent In Model B, our primary aim is to design a modulating strategy for the multi-dam system established in the Model A. Since the water level of Zambezi River changes intensely in a year, we anticipate that it is very difficult to obtain a unified scheduling scheme directly. So, we firstly established a linear model with a global optimal solution under certain constraints. Moreover, we considered the action of the river authority and take it as a parameter. After that, we bring the historical data into our model and get the value of parameters in normal year, in the dry season and rainy season.
 \begin{keywords}
-Kariba Dam; Multi-dams arrangement; AHP method
+Kariba Dam, AHP method, Multi-dams arrangement
 \end{keywords}
 \end{abstract}
 \maketitle
@@ -476,9 +476,50 @@ Change the principles above into the choose of $\alpha_{i}$ and $\beta_{i}$:
   \item To the big reservoir in the midstream, choose smaller $\beta_{i}$ in the dry season.
 \end{itemize}
 The choose above makes the water level of small dams remains high in the dry season and make it possible to storage the water that cannot be used in the rainy season, which improves the utilization of water resources. Meanwhile, the schedule above performs well in emergency.
-\subsection{Model Validation}
-
 \subsection{Result}
+Choosing values for $ \alpha_ {i} $ and $ \beta_ {i} $ in a variety of situations is a complex task. We believe that their value should be estimated by professionals in practice. However, according to the monthly flow data of Zambezi River, the average monthly precipitation, monthly evaporation and other data, we still can get the better values of $ \alpha, \beta $ in different situations by simulation of the model. 
+
+To simulate the model, we need to determine the value of the model parameters, we estimate the installed capacity of the reservoir by the following equation $V_{e, i}$:
+\begin{equation}
+V_{e, i} = \frac{V_{total}t}{\eta \rho gH_{i}}
+\end{equation}
+the parameter t represents the length of time.
+
+For the most upstream reservoirs, the main factors influencing the natural increment of the reservoirs are the upstream runoff, the regional precipitation and the evaporation loss. For the other reservoirs, the main factors influencing their natural increment are the area precipitation and evaporation loss, which is:
+
+\begin{equation}
+V_{n,i} = \left\{
+\begin{array}{cc}
+V_{flow,i} - V_{evap,i} + V_{rain,i} & i = 1 \\
+-V_{evap,i} + V_{rain,i} & i > 1 \\
+\end{array}
+\right.
+\end{equation}
+
+According to the experience, we estimate the value of $E_{m}$ as:
+\begin{equation}
+E_{m} = 30\%\sum V_{n, i}
+\end{equation}
+
+Based on the model B described above, we have programmed according to the above-mentioned parameters selection principles and the dam situation. The climatic data of normal years, drought years and flood years were obtained by referring to the data, and the parameters such as precipitation, flux, evaporation, water consumption and so on. According to the iterative adjustment of the value of $ \alpha, \beta $, three optimal selection schemes are obtained to reflect the scheduling strategy of the dam system under different conditions.
+
+In order to simplify the model, we divided the reservoir scheduling behavior to maintain the water level, lower water levels, improve the water level. Through the simulation of the model, we get the following $ (\alpha, \beta) $ value:
+
+\begin{table}[!hbp]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+  & Normal & Drought & Flood \\
+\hline
+maintain the water level& (-0.05, 0.05) & (-0.03, 0.06) & (-0.07, 0.03) \\
+\hline
+lower the water level& (-0.02, 0.1) & (0.01, 0.1) & (-0.05, 0.1)  \\
+\hline
+improve the water level& (-0.1, 0.02) & (-0.08, 0.04) & (-0.1, 0.01) \\
+\hline
+\end{tabular}
+\end{table}
+
 
 \section{Strengths and weaknesses}
 \subsection{Model A: Search for possible locations to build dams}
@@ -510,6 +551,13 @@ In Model B, we consider that the objective function of the optimization model is
 \begin{thebibliography}{99}
 \bibitem{1} IRMSA , Impact of the failure of the Kariba Dam, June 2015.
 \bibitem{2} Welcomme, R.L., 1985. River fisheries. FAO Fish. Tech. Pap. No. 262, Rome.
+\bibitem{3} Zhou Houqing. A mathematic model of the spread of ebola. Journal of Shaoyang
+University(Natrual Science Edition), (1672-7010(2014)04-0001-05), 12 2014.
+\bibitem{4} WIKIPEDIA Zambezi River, Lake Kariba, Dam Kariba
+\bibitem{5} The estimation of dam building cost, Ni Ruzhou, Hydro Review, 2007
+\bibitem{6} Decision making with the analytic hierarchy process, Thomas L. Saaty, Services Sciences, 2008
+\bibitem{7} Dam site selection using an integrated method of AHP and GIS for decision making support in Bortala, Northwest China, XinyiDai, Lund University GEM thesis series, 2016
+\bibitem{8} The Zambezi River, Andy E. Moore 1 , Fenton P.D. (Woody) Cotterill, 2007
 \end{thebibliography}
 
 \clearpage
