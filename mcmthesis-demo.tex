@@ -49,7 +49,7 @@
 \begin{abstract}
 The Kariba Dam is located on the Zambezi River. As one of the largest dam in Africa, its current safety state is controversial. We assume that the Kariba Dam will be removed and replaced by a multi-dam system for the sake of safety. For a complete description of this dam system, we propose two models concerning the location of new dams and the strategy for modulating the water flow through the new dam system. In order to get the optimal solution of this problem, we take the whole Zambezi River basin as research object.\\
 \indent In Model A, our primary aim is to find the optimal locations of the new dams. By looking at the elevation data and making preliminary estimates, we firstly identify the general area suitable for the construction. However, the rough estimation is apparently not enough, so we narrow the candidate area by referring to other information such as geography conditions. We also established a benchmark formula by using analytic hierarchy process. This formula is a comprehensive analysis of the terrain condition, construction cost, income and safety condition of a specific location, with high reliability. Based on this formula, we tested a series of locations within the candidate areas and choose some candidate location with higher score as our solution.\\
-\indent In Model B, our primary aim is to design a modulating strategy for the multi-dam system established in the Model A.
+\indent In Model B, our primary aim is to design a modulating strategy for the multi-dam system established in the Model A. 
 \begin{keywords}
 Kariba Dam; Multi-dams arrangement; AHP method
 \end{keywords}
@@ -369,9 +369,6 @@ In order to validate the model, we firstly select the dam Batoka Gorge Dam which
 \label{fig:1.3.1} %图片引用标记
 \end{figure}
 
-
-
-
 \section{Model B : The Best Arrangement}
 \subsection{Description}
 \indent For a given dam system, a series of dam site selections and corresponding reservoir capacities, installed capacity, local precipitation limits, and so on, can already be determined. However, there are still many analyzes that can be carried out, among which the most interesting is the modulating of water resources between dams. The modulating scheme can protect the water resources and the benefits derived therefrom as much as possible on the basis of ensuring safety and responding to emergencies. It can be expected that the modulating scheme will be different in different situations (different periods in the water cycle, different water capacity of reservoirs, etc.). In order to cope with the different situations reasonably, a model of generating water resources modulating scheme is needed.\\
@@ -466,8 +463,19 @@ where $ V_ {i} ^ {\ max} $ is the maximum volume of the reservoir.
 \end{equation}
 $ E_ {min} $ is the amount of water required to produce the minimum electricity demand.
 
-\subsection{Sensitivity Analysis}
-
+\subsection{Macro Plan of Water Resources modulating}
+Based on the characteristics of the dam system obtained in Model A and the experience of dam management, we have proposed the following macro scenario for water resources modulating. The scenario can guide the staff of the River Authority to choose different values of $\alpha_{i}$ and $\beta_{i}$ under different circumstances. Then, the optimal scheduling scheme of water resources is obtained by solving the above model. It is observed that in the dam system we get, the reservoirs with large volume have smaller drops than that with small volume and the reservoirs with small volume usually have larger drops. That is, the smaller reservoirs have more potential in energy generation, so we need them to run in a water level as high as possible. However, the big reservoir should drain some water ahead of the rainy season to make sure it safety when the flood is coming. Based on the factors above, we think the macro plan should have several principles as follow:
+\begin{itemize}
+  \item In the dry season, the reservoir in upstream should reduce the power generation to ensure other water need.
+  \item In the rainy season, the reservoir in the midstream should catch the water from upstream and reduce the flood discharge pressure of downstream. Meanwhile, the the reservoir in upstream and downstream should keep in safety water level.
+  \item To the small dams in midstream, do the same activity as small reservoirs in downstream.
+\end{itemize}
+Change the principles above into the choose of $\alpha_{i}$ and $\beta_{i}$:
+\begin{itemize}
+  \item To the small reservoir along the river, we should choose bigger $\alpha_{i}$ in the rainy season and smaller $\beta_{i}$ in rainy season.
+  \item To the big reservoir in the midstream, choose smaller $\beta_{i}$ in the dry season.
+\end{itemize}
+The choose above makes the water level of small dams remains high in the dry season and make it possible to storage the water that cannot be used in the rainy season, which improves the utilization of water resources. Meanwhile, the schedule above performs well in emergency.
 \subsection{Model Validation}
 
 \subsection{Result}
@@ -484,18 +492,20 @@ Despite of the weakness, it has more strengths.
   \item The factors considered in this model are rather comprehensive. The benchmark function can be a good reflection of the impact of various factors.
   \item Using the analytic hierarchy process(AHP) to find the final solution, the result is accurate.
   \item The established benchmark function has a good guiding role for address selection.
-  \item The specific dam construction plan is obtained, and the requirement of water storage capacity canbe satisfied. Meanwhile, the multi-dam system have great advantage in adjusting the flow of Zambezi River basin.
+  \item The specific dam construction plan is obtained, and the requirement of water storage capacity can be satisfied. Meanwhile, the multi-dam system have great advantage in adjusting the flow of Zambezi River basin.
 \end{itemize}
 
 \subsection{Model B: The Best Arrangement}
-In Model B, we consider .... , which is a weakness. However we have more strengths as below:
+In Model B, we consider that the objective function of the optimization model is simplified to a relatively large extent and the given reference parameters may not be optimal for a particular case, which are weaknesses. However we have more strengths as below:
 \begin{itemize}
-  \item 
+  \item The model can be adjusted by a professional.
+  \item The model gives the global optimal solution under certain constraints.
+  \item The reference parameters for controlling the reservoir water volume in usual, drought and flood years are given.
 \end{itemize}
 
 \section{Conclusion}
 \indent \indent In model A, we firstly analyzed the elevation along Zambezi River. Combined with other geography factors, we found some candidate areas to build new small dams. According to our research result, the new dams should be concentrated in the middle and lower reaches of the Zambezi River, which is the basis of our next step. After that, we established a benchmark function to evaluate the candidate locations. This function is built by using AHP, which combine various important factors such as terrain conditions, construction cost, income and safety. We evaluated a series of specific locations by using this function and selected the candidate points with higher scores to build our new dam system.\\
-\indent Having chosen the specific locations, we further discuss the modulating strategy of our multi-dam system in face of complex conditions. And get some suggestion as below:
+\indent Having chosen the specific locations, we further discussed the modulating strategy of our multi-dam system in face of complex conditions. Since the water level of Zambezi River changes intensely in a year, we anticipate that it is very difficult to obtain a unified scheduling scheme directly. So, we consider whether we can get a model to generate a specific scheduling strategy. This model should generate the corresponding optimal scheduling scheme according to the specific situation. We first establish a linear model with a global optimal solution under certain constraints. Moreover, we considered the action of people and take it as a parameter. After that, we use the historical data to simulate and get the value of parameters in normal year, in the dry season and rainy season.
 
 \begin{thebibliography}{99}
 \bibitem{1} IRMSA , Impact of the failure of the Kariba Dam, June 2015.
