@@ -337,6 +337,111 @@ V(i) = 0.2185C(i) + 0.678S(i) + 0.2675B(i) + 0.3046F(i)
   \end{tabular}
 \end{table}
 
+\subsection{模型验证}
+接着，为了对模型进行验证，我们首先选取了维多利亚下游区域正在筹备建设的水坝Batoka Gorge Dam（坐标为26.130833,-17.919722），将该点处的地理因素量化代入函数E(l)中，得到值为63.82，远远超过最低阈值25；接着将该点的其他部分因素代入最终评价函数$V(i)$中得到值为$2.132\times10^9$，远低于评估函数取值的最大限制$4.5\times10^{9}$。因此，该点在模型中是一个很好的水坝选址点。最后的结果中也表明$P_7$点和Batoka Gorge Dam点极为接近。因此，模型可以认为是具有一定鲁棒性的。
+
+\subsection{结果}
+首先，通过进行归一化处理参数后，设定阈值为25，由安全性评价函数，我们得到以下的候选点：
+
+
+由于存在$10 \le N_{dam} \le 20 $的限制，我们调整阈值的选取，最后设置函数值最大阈值为$4.5\times10^{9}$。根据该阈值，我们求得以下候选点
+
+% 公式中对于收益应该是减的
+% 并且是每次选取最小的
+
+
+\subsection{另一部分}
+%算法没有放到格式里
+
+
+%又一段口胡
+选取$\alpha_{i}$和$\beta_{i}$在不同情况下的具体取值是一件复杂的任务。我们认为在实际运用中，它们的值应由专业人士进行估计。但是，我们仍根据赞比西河月均流量，降水量的月均数据，年均蒸发量，通过模型的仿真求解得到了一组在不同情况下表现较好的$\alpha, \beta$取值\\
+为了仿真求解模型，需要确定模型中参数的取值，我们通过水库的装机容量估算$V_{e, i}$
+\begin{equation}
+V_{e, i} = \frac{V_{total}t}{\eta \rho gH_{i}}
+\end{equation}
+$t$是时间长度\\
+对于最上游的水库，影响它的自然增量的主要因素有上游来水，区域降水量，蒸发损失量；对于其他水库，影响它们的自然增量的主要因素有区域降水量和蒸发损失量，即:
+\begin{equation}
+V_{n,i} = \left\{
+\begin{array}{cc}
+V_{flow,i} - V_{evap,i} + V_{rain,i} & i = 1 \\
+-V_{evap,i} + V_{rain,i} & i > 1 \\
+\end{array}
+\right.
+\end{equation}
+根据经验，有:
+\begin{equation}
+E_{m} = 30\%\sum V_{n, i}
+\end{equation}
+
+我们根据上述的模型B进行了编程，根据上述的参数选取原则和坝体情况。通过我们查阅资料得到的通常年份、极旱年份、洪涝年份（以下仅仅列举了平均流量数据）的气候数据代入上述的降水量、流量、蒸发量、用水量等数据中，得到了三组不同情况下的结果，用于反映水坝系统在不同情况下的调度策略。
+对各个水坝的参数进行了适当的选取并通过不断调整$\alpha, \beta$的取值加以迭代，调度的策略则蕴含在$\alpha,\beta$的取值中。
+
+
+我们根据上述的模型B进行了编程，由基本参数选取原则和坝体情况对水坝参数进行了选取。通过查阅资料我们得到了通常年份、干旱年份、洪涝年份的气候数据并代入上述的降水量、流量、蒸发量、用水量等参数中，根据不断调整$\alpha,\beta$的值进行迭代，得到了三组不同情况下的最佳选取方案，用以反映水坝系统在不同情况下的调度策略。
+
+为了简化模型，我们将水库需要采取的策略分为保持水位、降低水位、提高水位三种，并试图在不同情况下寻求最佳的$\alpha,\beta$取值，以反映策略的选取。最后通过对模型的仿真，我们得到以下的$(\alpha,\beta)$取值：
+
+\begin{table}[!hbp]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+  & Normal & Drought & Flood \\
+\hline
+保持水位 & (-0.05, 0.05) & (-0.03, 0.06) & (-0.07, 0.03) \\
+\hline
+提高水位 & (-0.02, 0.1) & (0.01, 0.1) & (-0.05, 0.1)  \\
+\hline
+降低水位 & (-0.1, 0.02) & (-0.08, 0.04) & (-0.1, 0.01) \\
+\hline
+\end{tabular}
+\end{table}
+
+
+
+Choosing values for $ \alpha_ {i} $ and $ \beta_ {i} $ in a variety of situations is a complex task. We believe that their value should be estimated by professionals in practice. However, according to the monthly flow data of Zambezi River, the average monthly precipitation, monthly evaporation and other data, we still can get the better values of $ \alpha, \beta $ in different situations by simulation of the model. 
+
+To simulate the model, we need to determine the value of the model parameters, we estimate the installed capacity of the reservoir by the following equation $V_{e, i}$:
+\begin{equation}
+V_{e, i} = \frac{V_{total}t}{\eta \rho gH_{i}}
+\end{equation}
+the parameter t represents the length of time.
+
+For the most upstream reservoirs, the main factors influencing the natural increment of the reservoirs are the upstream runoff, the regional precipitation and the evaporation loss. For the other reservoirs, the main factors influencing their natural increment are the area precipitation and evaporation loss, which is:
+
+\begin{equation}
+V_{n,i} = \left\{
+\begin{array}{cc}
+V_{flow,i} - V_{evap,i} + V_{rain,i} & i = 1 \\
+-V_{evap,i} + V_{rain,i} & i > 1 \\
+\end{array}
+\right.
+\end{equation}
+
+According to the experience, we estimate the value of $E_{m}$ as:
+\begin{equation}
+E_{m} = 30\%\sum V_{n, i}
+\end{equation}
+
+Based on the model B described above, we have programmed according to the above-mentioned parameters selection principles and the dam situation. The climatic data of normal years, drought years and flood years were obtained by referring to the data, and the parameters such as precipitation, flux, evaporation, water consumption and so on. According to the iterative adjustment of the value of $ \alpha, \beta $, three optimal selection schemes are obtained to reflect the scheduling strategy of the dam system under different conditions.
+
+In order to simplify the model, we divided the reservoir scheduling behavior to maintain the water level, lower water levels, improve the water level. Through the simulation of the model, we get the following $ (\alpha, \beta) $ value:
+
+\begin{table}[!hbp]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+  & Normal & Drought & Flood \\
+\hline
+maintain the water level& (-0.05, 0.05) & (-0.03, 0.06) & (-0.07, 0.03) \\
+\hline
+lower the water level& (-0.02, 0.1) & (0.01, 0.1) & (-0.05, 0.1)  \\
+\hline
+improve the water level& (-0.1, 0.02) & (-0.08, 0.04) & (-0.1, 0.01) \\
+\hline
+\end{tabular}
+\end{table}
 
 
 \end{document}
