@@ -14,6 +14,7 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{bm}
+\usepackage{framed}
 \begin{document}
 
 \section{测试文档}
@@ -125,10 +126,10 @@ C_{project} = C_{build} + C_{design} + C_{prev} + C_{later}
 C_{project} = K(\frac{V_{cap}}{(H/\Delta)^{\eta}})^{\gamma} + (1+\alpha_{1}+\alpha_{2}){\delta}(K(\frac{V_{cap}}{(H/\Delta)^{\eta}})^{\gamma})^{\tau}
 \end{equation}
 
-\subsection{蓄水量的计算}
-由于是对整个流域水坝进行理论上的设计，所以无法得到实际数据，无法使用蓄水量 = 流入水量 - 流出水量的方式进行计算，所以这里采用地理数据直接对水库的蓄水量进行建模。
+\subsection{候选点初步计算}
+由上面的模型A我们得到了初步的候选水坝建造区域，但是作为连续的区域，建立评价函数来对其一一计算工作量很大并且实际使用价值低。因此，我们从候选区域中将候选点找出，将连续问题转变为离散的问题，降低问题的复杂程度。
 
-我们由上面的模型A得到了候选的水坝建造区域，在这里我们计算蓄水量则需要知道该区域需要建造多少个水坝，同时需要知道建在何处。因此，我们首先确定水坝的建造点。从上面的分析中，我们获知了选择水坝地址时需要考虑的重要因素：水位落差，岩层土壤的适宜程度，两岸山体的倾斜程度，两岸山体的高度，河流的宽度。由于存在如此多的考虑因素，我们决定使用层次分析法(Analytic Hierarchy Process, AHP)对其进行分析。
+从上面的分析中，我们获知了选择水坝地址时需要考虑的重要因素：水位落差，岩层土壤的适宜程度，两岸山体的倾斜程度，两岸山体的高度，河流的宽度。由于存在如此多的考虑因素，我们决定使用层次分析法(Analytic Hierarchy Process, AHP)对其进行分析。
 
 % 此处需要一个示意图，表示河流
 我们首先沿着河流流动方向建立自然坐标系，假定$l$为距离区域初始点的距离。用$F_{l}$表示距离初始点的水位落差，$\alpha_{l}$表示$l$点处的山势倾斜程度，$H_{l}$表示$l$处的山体高度，$W_{l}$表示$l$处的河流宽度，$C_{l}$表示山体岩层和土壤的适宜程度。
@@ -152,28 +153,19 @@ C_{project} = K(\frac{V_{cap}}{(H/\Delta)^{\eta}})^{\gamma} + (1+\alpha_{1}+\alp
   \caption{Intensity of Importance}
 \end{table}
 
-我们令影响因素组合成一个层次因素向量$\textbf{P}$，并有$\textbf{P} = (F_{l}, \alpha_{l}, H_{l}, C_{l}, W_{l})$，则可以得到比较矩阵$\textbf{A}$，且满足以下式子：
+我们令影响因素组合成一个层次因素向量$\textbf{P}_1$，并有$\textbf{P}_1 = (F_{l}, \alpha_{l}, H_{l}, C_{l}, W_{l})$，则可以得到比较矩阵$\textbf{A}_1$，且满足以下式子：
 \begin{equation}
-\textbf{A} = (a_{i,j})_{5\times5},\qquad a_{ij} > 0, \quad a_{ij} = \frac{1}{a_{ji}}
+\textbf{A}_1 = (a_{i,j})_{5\times5},\qquad a_{ij} > 0, \quad a_{ij} = \frac{1}{a_{ji}}
 \end{equation}
 
-此时需要得到的是各因素的重要程度，也即权向量$\textbf{w}$，
-
-$$
- \left\{
- \begin{matrix}
-   1 & 2 & 3 \\
-   4 & 5 & 6 \\
-   7 & 8 & 9
-  \end{matrix}
-  \right\}
-$$
+此时需要得到的是各因素的重要程度，也即权向量$\textbf{w}$。
 
 %下面是一段口胡
-对于上述的5中因素，$C_{l}$和$W_{l}$直接影响到工程是否可行，所以最为重要。并且，由于$W_{l}$相对于$C_{l}$更有选择的弹性，所以$C_{l}$是最为重要的因素，在其他的三个因素中，$F_{l}$和$H_{l}$影响了水坝的蓄水能力，所以也十分重要，而$\alpha_{l}$主要影响淹没面积，是相对重要性较低的因素。\\
+对于上述的5种因素，$C_{l}$和$W_{l}$直接影响到工程是否可行，所以最为重要。但是由于$W_{l}$相对于$C_{l}$更有选择的弹性，所以在此处进行选点时$W_{l}$是更有效的评判因素。在其他的三个因素中，$F_{l}$和$H_{l}$影响了水坝的蓄水能力，所以也十分重要，而$\alpha_{l}$主要影响淹没面积，是相对重要性较低的因素。
+
 依据上述的讨论，我们估计了问题的成对比较矩阵:
 
-\[A = 
+\[\textbf{A}_1 = 
 \left[
 \begin{matrix}
 1 & 5 & 1 & \frac{1}{3} & \frac{1}{4} \\
@@ -186,36 +178,108 @@ $$
 \]
 
 计算$A$的最大特征值，为$\lambda = 5.1415$
-$A$的一致性指标为
+$\textbf{A}_1$的一致性指标为
 \[\mathit{CI} = \frac{\lambda - n}{n - 1} = 0.0354\]
+
 其中，$n$为矩阵的阶数
 $n = 5$时随机一致性指标\textit{RI}为$1.12$，于是$A$的一致性比率为:
 \[\mathit{CR} = \frac{\mathit{CI}}{\mathit{RI}} = 0.0316 < 0.1 \]
-所以，$A$的不一致程度在容许范围之内\\
-$\lambda$对应的特征向量为$\left[0.2185, 0.063, 0.2185, 0.5190, 0.7945\right]$
+
+所以，$\textbf{A}_1$的不一致程度在容许范围之内，$\lambda$对应的特征向量为$\left[0.2185, 0.063, 0.2185, 0.5190, 0.7945\right]$
+
+根据上述计算，我们得到了权向量$\textbf{w}$的取值：
+\begin{equation}
+\textbf{w} = \lambda = \left[0.2185, 0.063, 0.2185, 0.5190, 0.7945\right]
+\end{equation}
+
+由此，我们得到初步的定点评价函数
+\begin{equation}
+E(l) = \textbf{P}\textbf{w}^{T} = 0.2185F_l + 0.063{\alpha}_{l} + 0.2185H_l + 0.519C_l + 0.7945W_l
+\end{equation}
+
+接着，我们使用评价函数来对模型A中得到的区域取点。但是评价函数使用时需要注意以下几点：
+\begin{itemize}
+\item 每次不能选取多个点，否则先选的点会破坏原来的$H_l$计算公式，从而使得后面的点选取出现问题。
+\item 建立五个因素的函数时，需要设定相应的最大值，由于水坝建立仅仅需要满足适当条件即可，并不需要无限增大。即函数形式为
+\begin{eqnarray}
+F(x) = 
+\begin{cases}
+f(x), & 0 < x < \theta \cr F_{max}, & x \ge \theta
+\end{cases} 
+\end{eqnarray}
+\end{itemize}
 
 
+根据以上要求，我们给出以下选点算法：
+\begin{framed}
+\newcounter{alg}
+\begin{list}{\arabic{alg}.}
+    {\usecounter{alg}\setlength{\parsep}{0ex}\setlength{\itemsep}{0ex}}
+\item[] 选点算法
+\item 根据候选区域建立自然坐标系，以上游起点为原点，设置评价阈值为$T_{0}$。
+\item 由坐标系和数字高程模型(DEM)建立五个因素相应的函数$F(l),\alpha(l),H(l),C(l),W(l)$，并设立最大值。
+\item 根据$l$增大的方向，将$l$代入评价函数$E(l)$，选择最满足条件的点作为候选点。
+\item 根据得到的候选点，将区域分为两段。对于每段区域重复上述2、3操作，直至没有新的候选点产生。
+\item 将得到的所有点作为候选点放入候选集合。
+\end{list}
+\end{framed}
+
+\subsection{收益分析}
+从上面的分析中我们获得了水电站的装机容量$V_{cap}$，由此我们可以得到水坝一年发电的收益。
+\begin{equation}
+B_{elec} = V_{cap}T_{use}p_{elec}
+\end{equation}
+其中$T_{use}$为年可发电时间(因为在prolonged low water period的时候需要蓄水而无法发电)，$p_{elec}$为当地的电价。通常查询数据可以得到，$T_{use}$一般在$3700-4200$h之间取值，而当前电价在$0.384-0.468$Cent/KWh
+
+此外，水坝建造带来的附加收入还有渔业收入、娱乐收益、灌溉收益等
+渔业收入的计算可以依照Welcomme在River fisheries中建立的模型给出：
+\begin{equation}
+B_{fish} = {\gamma}S^{\theta}P_{fish}
+\end{equation}
+$\gamma$为流域面积与产量之间的关系系数，根据论文中数据取值为0.03，S为河流的面积，$\theta$为流域面积与产量之间的关系指数，根据论文，非洲地区取值一般为0.97。
+$p_{fish}$为鱼类平均价格，由鱼的种类和品质确定，查询得到2016年数据为3.5 Dollar per Kilogram。
+此外，还有一些无法量化的收益，如周边植被和粮食的灌溉、对洪水的防治和抵御、可依托大坝修建的娱乐设施并由此带来的娱乐收入。
+% 参考文献中写上这篇论文
+Welcomme, R.L., 1985. River fisheries. FAO Fish. Tech. Pap. No. 262, Rome
+
+我们由此得到水坝建造的收益计算公式：
+\begin{equation}
+B_{total} = B_{elec} + B_{fish} + B_{other}
+\end{equation}
+其中$B_{other}$为其他方面收益的一个基本估计，其中包含灌溉、洪水防治等，具体数值可以参照Zambezi River下游的其他水坝
+\subsection{安全性}
+因为是确定选址的安全性，因此我们在考虑问题时不分析运行维护时候的安全性，而是考虑选取位置下地形和地质条件对安全性的影响。所以这里直接采用了上面得到的评估函数作为安全性的度量。
+\begin{equation}
+S_{i} = E_{l,i}
+\end{equation}
+
+\subsection{其他因素}
+同时，水坝建设时对周围人、环境的影响因素，也应该作为一个计量因素放入我们的评估函数中。其中比较突出的几项为对周围生活的居民的影响(移民)，对周围动植物生存空间的侵占等。
+\begin{equation}
+F_{other} = P_{i}({\xi}S^{\sigma})m_{0} + S_{submerge}(\beta_{1}m_{1} + \beta_{2}m_{2}) + F_{balance}
+\end{equation}
+其中$P_{i}$为某区域第$i$个水坝周围的人口密度，${\xi}S^{\sigma}$为受水坝影响的周围居民的数量估算公式，$S$为水库面积，$m_{0}$为人均移民成本。$S_{submerge}$为水坝淹没的陆地面积（计算公式可以参照上面的计算公式），$\beta_{1},\beta_{2}$为动物和植物的影响调节系数，$m_{1},m_{2}$为单位面积上动物、植物对生态的价值。此外还有一个$F_{balance}$用于均衡$F_{other}$的常量。
 
 
+\subsection{综合}
+上面，我们得到了成本、安全性、收益、其他因素的量化指标，在最终的评估函数中，我们需要给出这些因素所占的权重。此处，我们依旧使用AHP方法来对其中各个因素所占比例进行计算。
 
+将上述的四种因素组合为影响因素向量$\textbf{P}_2$，其中$\textbf{P}_2 = (C_{project}, S_{i}, B_{total}, F_{other})$，由此，我们可以设置比较矩阵$\textbf{A}_2$，满足以下式子：
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\[\textbf{A}_2 = (a_{i,j})_{4\times4}, \qquad a_{i,j}>0, \qquad a_{i,j} = \frac{1}{a_{j,i}}\]
+同理，采用1-9尺度作为衡量标准。一般而言，水坝选址时安全性和成本是最为重要的两个因素，而收益在这里并非特别重要，而且收益不应该是我们最终优化的目标，其他因素的影响相较于收益影响更高，但是相对于成本、安全性则次之。
+依据讨论，我们估计了成对比较矩阵的值：
+\[\textbf{A}_1 = 
+\left[
+\begin{matrix}
+1 & 5 & 1 & \frac{1}{3} & \frac{1}{4} \\
+\frac{1}{5}  & 1 & \frac{1}{5} & \frac{1}{7} & \frac{1}{8} \\ 
+1 & 5 & 1 & \frac{1}{3} & \frac{1}{4} \\
+3 & 7 & 3 & 1 & \frac{1}{2} \\
+4 & 8 & 4 & 2 & 1 \\
+\end{matrix}
+\right]
+\]
 
 
 
