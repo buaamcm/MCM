@@ -1,302 +1,226 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.7.12)  23 JAN 2017 10:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.1.7)  23 JAN 2017 13:01
 entering extended mode
-**D:/Git/MCM/Êï∞Ê®°ËÆ∫Êñá/paper.tex
-(D:/Git/MCM/Êï∞Ê®°ËÆ∫Êñá/paper.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for loaded.
-(D:\Git\MCM\Êï∞Ê®°ËÆ∫Êñá\cumcmart.cls
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./paper.tex
+(./paper.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(./cumcmart.cls
 Document Class: cumcmart 
-(D:\CTEX\MiKTeX\tex\latex\ctex\ctexart.cls
-Document Class: ctexart 2011/03/11 v1.02c ctexart document class
-(D:\CTEX\MiKTeX\tex\latex\ctex\opt\ctex-common-opts.def)
-(D:\CTEX\MiKTeX\tex\latex\ctex\opt\ctex-caption-opts.def
-\c@CTEX@sectiondepth=\count79
-)
-(D:\CTEX\MiKTeX\tex\latex\ctex\opt\ctex-class-opts.def)
-(D:\CTEX\CTeX\tex\latex\ctex\cfg\ctexopts.cfg)
-(D:\CTEX\MiKTeX\tex\latex\ctex\def\ctex-loadclass.def
-(D:\CTEX\MiKTeX\tex\latex\base\article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(D:\CTEX\MiKTeX\tex\latex\base\size10.clo
-File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
-)
-\c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen102
-))
-(D:\CTEX\MiKTeX\tex\latex\ctex\def\ctex-common.def
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\expl3.sty
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3names.sty
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3bootstrap.sty
-Package: l3bootstrap 2011/12/29 v3110 L3 Experimental bootstrap code
-)
-Package: l3names 2011/12/30 v3113 L3 Experimental namespace for primitives
-)
-(D:\CTEX\MiKTeX\tex\latex\misc\etex.sty
-Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
-\et@xins=\count88
-)
-Package: expl3 2012/02/26 v3471 L3 Experimental code bundle wrapper
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/ctex/ctexart.cls
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2016/05/18 v6512 L3 programming layer (loader) 
 
-(D:\CTEX\MiKTeX\tex\latex\graphics\color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
-
-(D:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package color Info: Driver file: pdftex.def on input line 130.
-
-(D:\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(D:\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
-)
-(D:\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
-Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count89
-))
-(D:\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
-
-(D:\CTEX\MiKTeX\tex\latex\graphics\trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-)
-(D:\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
-)
-Package graphics Info: Driver file: pdftex.def on input line 91.
-)
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3basics.sty
-Package: l3basics 2012/02/26 v3460 L3 Experimental basic definitions
-)
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3expan.sty
-Package: l3expan 2012/02/26 v3460 L3 Experimental argument expansion
-)
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3tl.sty
-Package: l3tl 2012/02/26 v3460 L3 Experimental token lists
-)
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3seq.sty
-Package: l3seq 2012/01/09 v3158 L3 Experimental sequences and stacks
-)
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3int.sty
-Package: l3int 2012/02/26 v3460 L3 Experimental integers
-\c_max_int=\count90
-\l_tmpa_int=\count91
-\l_tmpb_int=\count92
-\l_tmpc_int=\count93
-\g_tmpa_int=\count94
-\g_tmpb_int=\count95
-)
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3quark.sty
-Package: l3quark 2012/02/12 v3384 L3 Experimental quarks
-)
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3prg.sty
-Package: l3prg 2012/02/26 v3464 L3 Experimental control structures
-\g_prg_map_int=\count96
-)
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3clist.sty
-Package: l3clist 2012/02/26 v3460 L3 Experimental comma separated lists
-)
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3token.sty
-Package: l3token 2012/02/26 v3460 L3 Experimental token manipulation
-)
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3prop.sty
-Package: l3prop 2012/02/26 v3460 L3 Experimental property lists
-)
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3msg.sty
-Package: l3msg 2012/02/26 v3470 L3 Experimental messages
-)
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3file.sty
-Package: l3file 2012/02/26 v3464 L3 Experimental file and I/O operations
-\l_iow_stream_int=\count97
-\l_iow_line_length_int=\count98
-\l_iow_target_length_int=\count99
-\l_iow_current_line_int=\count100
-\l_iow_current_word_int=\count101
-\l_iow_current_indentation_int=\count102
-)
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3skip.sty
-Package: l3skip 2012/02/26 v3460 L3 Experimental dimensions and skips
-\l_tmpa_dim=\dimen103
-\l_tmpb_dim=\dimen104
-\l_tmpc_dim=\dimen105
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2016/05/18 v6512 L3 programming layer (code)
+L3 Module: l3bootstrap 2016/02/12 v6412 L3 Bootstrap code
+L3 Module: l3names 2016/03/11 v6433 L3 Namespace for primitives
+L3 Module: l3basics 2015/11/22 v6315 L3 Basic definitions
+L3 Module: l3expan 2015/09/10 v5983 L3 Argument expansion
+L3 Module: l3tl 2016/03/26 v6465 L3 Token lists
+L3 Module: l3str 2016/03/24 v6441 L3 Strings
+L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
+L3 Module: l3int 2016/03/24 v6441 L3 Integers
+\c_max_int=\count79
+\l_tmpa_int=\count80
+\l_tmpb_int=\count81
+\g_tmpa_int=\count82
+\g_tmpb_int=\count83
+L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
+L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
+\g__prg_map_int=\count84
+L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
+L3 Module: l3token 2016/04/03 v6470 L3 Experimental token manipulation
+L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
+L3 Module: l3msg 2016/03/26 v6464 L3 Messages
+L3 Module: l3file 2016/03/25 v6458 L3 File and I/O operations
+\l_iow_line_count_int=\count85
+\l__iow_target_count_int=\count86
+\l__iow_current_line_int=\count87
+\l__iow_current_word_int=\count88
+\l__iow_current_indentation_int=\count89
+L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
+\c_zero_dim=\dimen102
+\c_max_dim=\dimen103
+\l_tmpa_dim=\dimen104
+\l_tmpb_dim=\dimen105
 \g_tmpa_dim=\dimen106
 \g_tmpb_dim=\dimen107
+\c_zero_skip=\skip41
+\c_max_skip=\skip42
 \l_tmpa_skip=\skip43
 \l_tmpb_skip=\skip44
-\l_tmpc_skip=\skip45
-\g_tmpa_skip=\skip46
-\g_tmpb_skip=\skip47
+\g_tmpa_skip=\skip45
+\g_tmpb_skip=\skip46
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
+\g__keyval_level_int=\count90
+\l_keys_choice_int=\count91
+L3 Module: l3fp 2016/03/26 v6465 L3 Floating points
+\c__fp_leading_shift_int=\count92
+\c__fp_middle_shift_int=\count93
+\c__fp_trailing_shift_int=\count94
+\c__fp_big_leading_shift_int=\count95
+\c__fp_big_middle_shift_int=\count96
+\c__fp_big_trailing_shift_int=\count97
+\c__fp_Bigg_leading_shift_int=\count98
+\c__fp_Bigg_middle_shift_int=\count99
+\c__fp_Bigg_trailing_shift_int=\count100
+L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
+\c_empty_box=\box26
+\l_tmpa_box=\box27
+\l_tmpb_box=\box28
+\g_tmpa_box=\box29
+\g_tmpb_box=\box30
+L3 Module: l3coffins 2016/05/17 v6508 L3 Coffin code layer
+\l__coffin_internal_box=\box31
+\l__coffin_internal_dim=\dimen108
+\l__coffin_offset_x_dim=\dimen109
+\l__coffin_offset_y_dim=\dimen110
+\l__coffin_x_dim=\dimen111
+\l__coffin_y_dim=\dimen112
+\l__coffin_x_prime_dim=\dimen113
+\l__coffin_y_prime_dim=\dimen114
+\c_empty_coffin=\box32
+\l__coffin_aligned_coffin=\box33
+\l__coffin_aligned_internal_coffin=\box34
+\l_tmpa_coffin=\box35
+\l_tmpb_coffin=\box36
+\l__coffin_display_coffin=\box37
+\l__coffin_display_coord_coffin=\box38
+\l__coffin_display_pole_coffin=\box39
+\l__coffin_display_offset_dim=\dimen115
+\l__coffin_display_x_dim=\dimen116
+\l__coffin_display_y_dim=\dimen117
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
+L3 Module: l3candidates 2016/05/13 v6484 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen118
+\l__box_bottom_dim=\dimen119
+\l__box_left_dim=\dimen120
+\l__box_right_dim=\dimen121
+\l__box_top_new_dim=\dimen122
+\l__box_bottom_new_dim=\dimen123
+\l__box_left_new_dim=\dimen124
+\l__box_right_new_dim=\dimen125
+\l__box_internal_box=\box40
+\l__coffin_bounding_shift_dim=\dimen126
+\l__coffin_left_corner_dim=\dimen127
+\l__coffin_right_corner_dim=\dimen128
+\l__coffin_bottom_corner_dim=\dimen129
+\l__coffin_top_corner_dim=\dimen130
+\l__coffin_scaled_total_height_dim=\dimen131
+\l__coffin_scaled_width_dim=\dimen132
+L3 Module: l3luatex 2016/03/26 v6465 L3 Experimental LuaTeX-specific functions
 )
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3keys.sty
-Package: l3keys 2011/12/22 v3086 L3 Experimental key-value interfaces
-\g_keyval_level_int=\count103
-\l_keys_choice_int=\count104
-)
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3fp.sty
-Package: l3fp 2012/02/06 v3315 L3 Experimental floating-point operations
-\c_one_million=\count105
-\c_one_hundred_million=\count106
-\c_five_hundred_million=\count107
-\c_one_thousand_million=\count108
-\c_fp_pi_by_four_decimal_int=\count109
-\c_fp_pi_by_four_extended_int=\count110
-\c_fp_pi_decimal_int=\count111
-\c_fp_pi_extended_int=\count112
-\c_fp_two_pi_decimal_int=\count113
-\c_fp_two_pi_extended_int=\count114
-\l_fp_count_int=\count115
-\l_fp_div_offset_int=\count116
-\l_fp_exp_integer_int=\count117
-\l_fp_exp_decimal_int=\count118
-\l_fp_exp_extended_int=\count119
-\l_fp_exp_exponent_int=\count120
-\l_fp_input_a_sign_int=\count121
-\l_fp_input_a_integer_int=\count122
-\l_fp_input_a_decimal_int=\count123
-\l_fp_input_a_exponent_int=\count124
-\l_fp_input_b_sign_int=\count125
-\l_fp_input_b_integer_int=\count126
-\l_fp_input_b_decimal_int=\count127
-\l_fp_input_b_exponent_int=\count128
-\l_fp_input_a_extended_int=\count129
-\l_fp_input_b_extended_int=\count130
-\l_fp_mul_a_i_int=\count131
-\l_fp_mul_a_ii_int=\count132
-\l_fp_mul_a_iii_int=\count133
-\l_fp_mul_a_iv_int=\count134
-\l_fp_mul_a_v_int=\count135
-\l_fp_mul_a_vi_int=\count136
-\l_fp_mul_b_i_int=\count137
-\l_fp_mul_b_ii_int=\count138
-\l_fp_mul_b_iii_int=\count139
-\l_fp_mul_b_iv_int=\count140
-\l_fp_mul_b_v_int=\count141
-\l_fp_mul_b_vi_int=\count142
-\l_fp_mul_output_int=\count143
-\l_fp_output_sign_int=\count144
-\l_fp_output_integer_int=\count145
-\l_fp_output_decimal_int=\count146
-\l_fp_output_exponent_int=\count147
-\l_fp_output_extended_int=\count148
-\l_fp_round_position_int=\count149
-\l_fp_round_target_int=\count150
-\l_fp_split_sign_int=\count151
-\l_fp_internal_int=\count152
-\l_fp_trig_octant_int=\count153
-\l_fp_trig_sign_int=\count154
-\l_fp_trig_decimal_int=\count155
-\l_fp_trig_extended_int=\count156
-\l_fp_internal_dim=\dimen108
-\l_fp_internal_skip=\skip48
-)
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3box.sty
-Package: l3box 2012/02/18 v3432 L3 Experimental boxes
-\l_tmpb_box=\box26
-\l_box_top_dim=\dimen109
-\l_box_bottom_dim=\dimen110
-\l_box_left_dim=\dimen111
-\l_box_right_dim=\dimen112
-\l_box_top_new_dim=\dimen113
-\l_box_bottom_new_dim=\dimen114
-\l_box_left_new_dim=\dimen115
-\l_box_right_new_dim=\dimen116
-\l_box_internal_box=\box27
-)
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3coffins.sty
-Package: l3coffins 2012/02/26 v3460 L3 Experimental coffin code layer
-\l_coffin_internal_box=\box28
-\l_coffin_internal_dim=\dimen117
-\l_coffin_offset_x_dim=\dimen118
-\l_coffin_offset_y_dim=\dimen119
-\l_coffin_x_dim=\dimen120
-\l_coffin_y_dim=\dimen121
-\l_coffin_x_prime_dim=\dimen122
-\l_coffin_y_prime_dim=\dimen123
-\l_coffin_Depth_dim=\dimen124
-\l_coffin_Height_dim=\dimen125
-\l_coffin_TotalHeight_dim=\dimen126
-\l_coffin_Width_dim=\dimen127
-\c_empty_coffin=\box29
-\l_coffin_aligned_coffin=\box30
-\l_coffin_aligned_internal_coffin=\box31
-\l_coffin_bounding_shift_dim=\dimen128
-\l_coffin_left_corner_dim=\dimen129
-\l_coffin_right_corner_dim=\dimen130
-\l_coffin_bottom_corner_dim=\dimen131
-\l_coffin_top_corner_dim=\dimen132
-\l_coffin_scaled_total_height_dim=\dimen133
-\l_coffin_scaled_width_dim=\dimen134
-\l_coffin_display_coffin=\box32
-\l_coffin_display_coord_coffin=\box33
-\l_coffin_display_pole_coffin=\box34
-\l_coffin_display_offset_dim=\dimen135
-\l_coffin_display_x_dim=\dimen136
-\l_coffin_display_y_dim=\dimen137
-)
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3color.sty
-Package: l3color 2011/09/07 v2776 L3 Experimental colour support
-)
-(D:\CTEX\MiKTeX\tex\latex\l3kernel\l3luatex.sty
-Package: l3luatex 2012/02/09 v3355 L3 Experimental LuaTeX-specific functions
-\g_cctab_allocate_int=\count157
-\g_cctab_stack_int=\count158
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2016/03/26 v6465 L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count101
+\l__driver_tmp_box=\box41
 ))
-(D:\CTEX\MiKTeX\tex\latex\etoolbox\etoolbox.sty
-Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
-\etb@tempcnta=\count159
+Document Class: ctexart 2016/05/16 v2.4.2 Chinese adapter for class article (CT
+EX)
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2016/05/18 v6512 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count102
+\l__xparse_m_args_int=\count103
+\l__xparse_mandatory_args_int=\count104
+\l__xparse_processor_int=\count105
+\l__xparse_v_nesting_int=\count106
 )
-(D:\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2016/05/18 v6512 LaTeX2e option processing using LaTeX3 keys
 )
-(D:\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-(D:\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks14
-)
-(D:\CTEX\MiKTeX\tex\latex\tools\indentfirst.sty
-Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-)
-(D:\CTEX\MiKTeX\tex\latex\base\fix-cm.sty
-Package: fix-cm 2006/09/13 v1.1m fixes to LaTeX
+\g__file_internal_ior=\read1
 
-(D:\CTEX\MiKTeX\tex\latex\base\ts1enc.def
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/ctex/ctexhook.sty
+Package: ctexhook 2016/05/16 v2.4.2 Document and package hooks (CTEX)
+)
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/ctex/ctexpatch.sty
+Package: ctexpatch 2016/05/16 v2.4.2 Patching commands (CTEX)
+)
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 ))
-(D:\CTEX\MiKTeX\tex\latex\ctex\engine\ctex-cjk-engine.def
-(D:\CTEX\MiKTeX\tex\latex\cjk\CJKutf8.sty
-Package: CJKutf8 2008/12/29 4.8.2
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\l__ctex_tmp_int=\count107
+\l__ctex_tmp_dim=\dimen133
+\l__ctex_tmp_box=\box42
 
-(D:\CTEX\MiKTeX\tex\latex\base\inputenc.sty
-Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks15
-\inpenc@posthook=\toks16
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
+File: ctexopts.cfg 2016/05/16 v2.4.2 Option configuration file (CTEX)
+)
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count108
+\c@section=\count109
+\c@subsection=\count110
+\c@subsubsection=\count111
+\c@paragraph=\count112
+\c@subparagraph=\count113
+\c@figure=\count114
+\c@table=\count115
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ctexset with sig. '' on line 377.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CTEXsetup with sig. '+o>{\TrimSpaces }m' on line 383.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CTEXoptions with sig. '+o' on line 389.
+.................................................
 
-(D:\CTEX\MiKTeX\tex\latex\base\utf8.def
-File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/ctex/engine/ctex-engine-pdftex.def
+File: ctex-engine-pdftex.def 2016/05/16 v2.4.2 (pdf)LaTeX adapter (CTEX)
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/cjk/texinput/CJKutf8.sty
+Package: CJKutf8 2015/04/18 4.8.4
+
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(D:\CTEX\MiKTeX\tex\latex\base\t1enc.dfu
-File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
    defining Unicode char U+00BB (decimal 187)
    defining Unicode char U+00BF (decimal 191)
    defining Unicode char U+00C0 (decimal 192)
@@ -361,50 +285,94 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00FD (decimal 253)
    defining Unicode char U+00FE (decimal 254)
    defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
    defining Unicode char U+0102 (decimal 258)
    defining Unicode char U+0103 (decimal 259)
    defining Unicode char U+0104 (decimal 260)
    defining Unicode char U+0105 (decimal 261)
    defining Unicode char U+0106 (decimal 262)
    defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
    defining Unicode char U+010C (decimal 268)
    defining Unicode char U+010D (decimal 269)
    defining Unicode char U+010E (decimal 270)
    defining Unicode char U+010F (decimal 271)
    defining Unicode char U+0110 (decimal 272)
    defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
    defining Unicode char U+0118 (decimal 280)
    defining Unicode char U+0119 (decimal 281)
    defining Unicode char U+011A (decimal 282)
    defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
    defining Unicode char U+011E (decimal 286)
    defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
    defining Unicode char U+0130 (decimal 304)
    defining Unicode char U+0131 (decimal 305)
    defining Unicode char U+0132 (decimal 306)
    defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
    defining Unicode char U+0139 (decimal 313)
    defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
    defining Unicode char U+013D (decimal 317)
    defining Unicode char U+013E (decimal 318)
    defining Unicode char U+0141 (decimal 321)
    defining Unicode char U+0142 (decimal 322)
    defining Unicode char U+0143 (decimal 323)
    defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
    defining Unicode char U+0147 (decimal 327)
    defining Unicode char U+0148 (decimal 328)
    defining Unicode char U+014A (decimal 330)
    defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
    defining Unicode char U+0150 (decimal 336)
    defining Unicode char U+0151 (decimal 337)
    defining Unicode char U+0152 (decimal 338)
    defining Unicode char U+0153 (decimal 339)
    defining Unicode char U+0154 (decimal 340)
    defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
    defining Unicode char U+0158 (decimal 344)
    defining Unicode char U+0159 (decimal 345)
    defining Unicode char U+015A (decimal 346)
    defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
    defining Unicode char U+015E (decimal 350)
    defining Unicode char U+015F (decimal 351)
    defining Unicode char U+0160 (decimal 352)
@@ -413,10 +381,22 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+0163 (decimal 355)
    defining Unicode char U+0164 (decimal 356)
    defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
    defining Unicode char U+016E (decimal 366)
    defining Unicode char U+016F (decimal 367)
    defining Unicode char U+0170 (decimal 368)
    defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
    defining Unicode char U+0178 (decimal 376)
    defining Unicode char U+0179 (decimal 377)
    defining Unicode char U+017A (decimal 378)
@@ -424,9 +404,38 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+017C (decimal 380)
    defining Unicode char U+017D (decimal 381)
    defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
    defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
    defining Unicode char U+2018 (decimal 8216)
    defining Unicode char U+2019 (decimal 8217)
    defining Unicode char U+201A (decimal 8218)
@@ -442,10 +451,12 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(D:\CTEX\MiKTeX\tex\latex\base\ot1enc.dfu
-File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
    defining Unicode char U+00B8 (decimal 184)
    defining Unicode char U+00BF (decimal 191)
    defining Unicode char U+00C5 (decimal 197)
@@ -463,6 +474,14 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+0142 (decimal 322)
    defining Unicode char U+0152 (decimal 338)
    defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
    defining Unicode char U+2018 (decimal 8216)
@@ -473,8 +492,8 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(D:\CTEX\MiKTeX\tex\latex\base\omsenc.dfu
-File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -489,8 +508,8 @@ Now handling font encoding U ...
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-(D:\CTEX\MiKTeX\tex\latex\base\ts1enc.dfu
-File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00A4 (decimal 164)
@@ -572,14 +591,14 @@ File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(D:\CTEX\MiKTeX\tex\latex\cjk\CJK.sty
-Package: CJK 2008/12/29 4.8.2
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/cjk/texinput/CJK.sty
+Package: CJK 2015/04/18 4.8.4
 
-(D:\CTEX\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
-Package: MULEenc 2008/12/29 4.8.2
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
+Package: MULEenc 2015/04/18 4.8.4
 )
-(D:\CTEX\MiKTeX\tex\latex\cjk\CJK.enc
-File: CJK.enc 2008/12/29 4.8.2
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/cjk/texinput/CJK.enc
+File: CJK.enc 2015/04/18 4.8.4
 Now handling font encoding C00 ...
 ... no UTF-8 mapping file for font encoding C00
 Now handling font encoding C05 ...
@@ -645,19 +664,19 @@ Now handling font encoding C41 ...
 Now handling font encoding C62 ...
 ... no UTF-8 mapping file for font encoding C62
 )
-LaTeX Info: Redefining \selectfont on input line 756.
-\CJK@indent=\box35
+LaTeX Info: Redefining \selectfont on input line 755.
+\CJK@indent=\box43
 )
-(D:\CTEX\MiKTeX\tex\latex\base\fontenc.sty
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 ))
-(D:\CTEX\CTeX\tex\latex\CJKpunct\CJKpunct.sty
-Package: CJKpunct 2010/02/21 4.8.2-2
-\CJKpunct@cnta=\count160
-\CJKpunct@cntb=\count161
-\CJKpunct@cntc=\count162
-\CJKpunct@cntd=\count163
-\CJKpunct@cnte=\count164
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/cjkpunct/CJKpunct.sty
+Package: CJKpunct 2016/05/14 4.8.4
+\CJKpunct@cnta=\count116
+\CJKpunct@cntb=\count117
+\CJKpunct@cntc=\count118
+\CJKpunct@cntd=\count119
+\CJKpunct@cnte=\count120
    defining Unicode char U+2018 (decimal 8216)
    defining Unicode char U+2019 (decimal 8217)
    defining Unicode char U+201C (decimal 8220)
@@ -665,349 +684,595 @@ Package: CJKpunct 2010/02/21 4.8.2-2
    defining Unicode char U+2014 (decimal 8212)
    defining Unicode char U+2026 (decimal 8230)
 
-(D:\CTEX\CTeX\tex\latex\CJKpunct\CJKpunct.spa))
-(D:\CTEX\MiKTeX\tex\latex\ctex\engine\ctex-cjk-common.def
-\ccwd=\dimen138
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/cjkpunct/CJKpunct.spa))
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/cjk/texinput/CJKspace.sty
+Package: CJKspace 2015/04/18 3.8.0
 )
-(D:\CTEX\MiKTeX\tex\latex\ctex\fontset\ctex-cjk-winfonts.def
-(D:\CTEX\MiKTeX\tex\generic\zhmetrics\zhwinfonts.tex
-(D:\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty
-Package ifpdf Info: The package is already loaded, stopped on input line 64.
-){D:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}})))
-\CTEX@q=\count165
-\CTEX@r=\count166
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/ctex/ctexspa.def
+File: ctexspa.def 2016/05/16 v2.4.2 Space info for CJKpunct (CTEX)
 )
-(D:\CTEX\MiKTeX\tex\latex\ctex\def\ctex-caption.def)
-(D:\CTEX\MiKTeX\tex\latex\ctex\def\ctex-class.def)
-(D:\CTEX\MiKTeX\tex\latex\ctex\def\ctex-article.def))
-(D:\CTEX\MiKTeX\tex\latex\ctex\def\ctex-utf8.def)
-(D:\CTEX\MiKTeX\tex\latex\ctex\cfg\ctexcap.cfg
-(D:\CTEX\MiKTeX\tex\latex\ctex\cfg\ctexcap-utf8.cfg))
-(D:\CTEX\MiKTeX\tex\latex\ctex\cfg\ctex.cfg)
-(D:\CTEX\MiKTeX\tex\latex\bbding\bbding.sty
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/cjk/texinput/CJKfntef.sty
+Package: CJKfntef 2015/04/18 4.8.4
+
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/cjk/texinput/CJKulem.sty
+Package: CJKulem 2015/04/18 4.8.4
+
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box44
+\UL@hyphenbox=\box45
+\UL@skip=\skip49
+\UL@hook=\toks16
+\UL@height=\dimen135
+\UL@pe=\count121
+\UL@pixel=\dimen136
+\ULC@box=\box46
+Package: ulem 2012/05/18
+\ULdepth=\dimen137
+)
+\UL@lastkern=\dimen138
+\CJK@skip=\skip50
+)
+\CJK@fntefSkip=\skip51
+\CJK@nest=\count122
+\CJK@fntefDimen=\dimen139
+\CJK@underdotBox=\box47
+\CJK@ULbox=\box48
+\CJK@underanyskip=\dimen140
+)
+\ccwd=\dimen141
+\l__ctex_ccglue_skip=\skip52
+)
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CTEXsetfont with sig. '' on line 417.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ziju with sig. 'm' on line 489.
+.................................................
+\l__ctex_ziju_dim=\dimen142
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CTEXindent with sig. '' on line 530.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CTEXnoindent with sig. '' on line 536.
+.................................................
+
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+Package: zhnumber 2016/05/14 v2.4 Typesetting numbers with Chinese glyphs
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhnumber with sig. '+o+m' on line 50.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhnumberwithoptions with sig. '+m+m' on line 57.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhnum with sig. '+o+m' on line 111.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhnumwithoptions with sig. '+m+m' on line 118.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhdig with sig. '+o+m' on line 297.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhdigwithoptions with sig. '+m+m' on line 304.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhdigits with sig. '+s+o+m' on line 318.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhdigitswithoptions with sig. '+m+m+m' on line 325.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhdate with sig. '+s+m' on line 384.
+.................................................
+\l__zhnum_scale_int=\count123
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhnumExtendScaleMap with sig. '>{\TrimSpaces }+o+m' on
+. line 506.
+.................................................
+\l__zhnum_byte_min_int=\count124
+\l__zhnum_byte_max_int=\count125
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zhnumsetup with sig. '+m' on line 938.
+.................................................
+
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
+File: zhnumber-utf8.cfg 2016/05/14 v2.4 Chinese numerals with UTF8 encoding
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CTEXnumber with sig. 'mm' on line 553.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CTEXdigits with sig. 'mm' on line 555.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ctex_assign_heading_name:nn with sig. 'm>{\SplitArgument
+. {\c_one }{,}}+m' on line 670.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \refstepcounter with sig. 'm' on line 1060.
+.................................................
+
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-ar
+ticle.def
+File: ctex-scheme-chinese-article.def 2016/05/16 v2.4.2 Chinese scheme for arti
+cle (CTEX)
+
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg
+File: ctex-name-utf8.cfg 2016/05/16 v2.4.2 Caption with encoding UTF8 (CTEX)
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \zihao with sig. 'm' on line 1063.
+.................................................
+
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/ctex/ctex-c5size.clo
+File: ctex-c5size.clo 2016/05/16 v2.4.2 c5size option (CTEX)
+)
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CTeX with sig. '' on line 1167.
+.................................................
+
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windows.
+def
+File: ctex-fontset-windows.def 2016/05/16 v2.4.2 Windows fonts definition (CTEX
+)
+
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windowsn
+ew.def
+File: ctex-fontset-windowsnew.def 2016/05/16 v2.4.2 Windows fonts definition fo
+r Vista or later version (CTEX)
+ (c:/Softwares/TexLive16/texmf-dist/tex/generic/ctex/zhwindowsfonts.tex
+File: zhwindowsfonts.tex 2016/05/16 v2.4.2 Windows font map loader for pdfTeX a
+nd DVIPDFMx (CTEX)
+{c:/Softwares/TexLive16/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{UGBK.sfd}
+{Unicode.sfd})
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \songti with sig. '' on line 110.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \heiti with sig. '' on line 111.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fangsong with sig. '' on line 112.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \kaishu with sig. '' on line 113.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \lishu with sig. '' on line 114.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \youyuan with sig. '' on line 115.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \yahei with sig. '' on line 116.
+.................................................
+)))
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/ctex/config/ctex.cfg
+File: ctex.cfg 2016/05/16 v2.4.2 Configuration file (CTEX)
+)
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/bbding/bbding.sty
 Package: bbding 1999/04/15 v1.01 Dingbats symbols
 )
-(D:\CTEX\MiKTeX\tex\latex\ltxmisc\url.sty
-\Urlmuskip=\muskip10
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(D:\CTEX\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-\fancy@headwidth=\skip49
-\f@ncyO@elh=\skip50
-\f@ncyO@erh=\skip51
-\f@ncyO@olh=\skip52
-\f@ncyO@orh=\skip53
-\f@ncyO@elf=\skip54
-\f@ncyO@erf=\skip55
-\f@ncyO@olf=\skip56
-\f@ncyO@orf=\skip57
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip53
+\f@ncyO@elh=\skip54
+\f@ncyO@erh=\skip55
+\f@ncyO@olh=\skip56
+\f@ncyO@orh=\skip57
+\f@ncyO@elf=\skip58
+\f@ncyO@erf=\skip59
+\f@ncyO@olf=\skip60
+\f@ncyO@orf=\skip61
 )
-(D:\CTEX\MiKTeX\tex\latex\booktabs\booktabs.sty
-Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen139
-\lightrulewidth=\dimen140
-\cmidrulewidth=\dimen141
-\belowrulesep=\dimen142
-\belowbottomsep=\dimen143
-\aboverulesep=\dimen144
-\abovetopsep=\dimen145
-\cmidrulesep=\dimen146
-\cmidrulekern=\dimen147
-\defaultaddspace=\dimen148
-\@cmidla=\count167
-\@cmidlb=\count168
-\@aboverulesep=\dimen149
-\@belowrulesep=\dimen150
-\@thisruleclass=\count169
-\@lastruleclass=\count170
-\@thisrulewidth=\dimen151
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen143
+\lightrulewidth=\dimen144
+\cmidrulewidth=\dimen145
+\belowrulesep=\dimen146
+\belowbottomsep=\dimen147
+\aboverulesep=\dimen148
+\abovetopsep=\dimen149
+\cmidrulesep=\dimen150
+\cmidrulekern=\dimen151
+\defaultaddspace=\dimen152
+\@cmidla=\count126
+\@cmidlb=\count127
+\@aboverulesep=\dimen153
+\@belowrulesep=\dimen154
+\@thisruleclass=\count128
+\@lastruleclass=\count129
+\@thisrulewidth=\dimen155
 )
-(D:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
-\Gin@req@height=\dimen152
-\Gin@req@width=\dimen153
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
 )
-(D:\CTEX\MiKTeX\tex\latex\paralist\paralist.sty
-Package: paralist 2002/03/18 v2.3b Extended list environments (BS)
-\pltopsep=\skip58
-\plpartopsep=\skip59
-\plitemsep=\skip60
-\plparsep=\skip61
-\pl@lab=\toks17
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(D:\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
-Package: amsmath 2000/07/18 v2.13 AMS math features
-\@mathmargin=\skip62
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 96.
+
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count130
+))
+\Gin@req@height=\dimen156
+\Gin@req@width=\dimen157
+)
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/paralist/paralist.sty
+Package: paralist 2015/12/30 v2.5 Extended list environments
+\pltopsep=\skip62
+\plpartopsep=\skip63
+\plitemsep=\skip64
+\plparsep=\skip65
+\pl@lab=\toks18
+)
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/10 v2.15b AMS math features
+\@mathmargin=\skip66
 
 For additional information on amsmath, use the `?' option.
-(D:\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty
-Package: amstext 2000/06/29 v2.01
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
 
-(D:\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks18
-\ex@=\dimen154
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen158
 ))
-(D:\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen155
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen159
 )
-(D:\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count171
-LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count172
-\leftroot@=\count173
-LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count174
-\DOTSCASE@=\count175
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
-\Mathstrutbox@=\box36
-\strutbox@=\box37
-\big@size=\dimen156
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count176
-\c@MaxMatrixCols=\count177
-\dotsspace@=\muskip11
-\c@parentequation=\count178
-\dspbrk@lvl=\count179
-\tag@help=\toks19
-\row@=\count180
-\column@=\count181
-\maxfields@=\count182
-\andhelp@=\toks20
-\eqnshift@=\dimen157
-\alignsep@=\dimen158
-\tagshift@=\dimen159
-\tagwidth@=\dimen160
-\totwidth@=\dimen161
-\lineht@=\dimen162
-\@envbody=\toks21
-\multlinegap=\skip63
-\multlinetaggap=\skip64
-\mathdisplay@stack=\toks22
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
+\inf@bad=\count131
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count132
+\leftroot@=\count133
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count134
+\DOTSCASE@=\count135
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box49
+\strutbox@=\box50
+\big@size=\dimen160
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count136
+\c@MaxMatrixCols=\count137
+\dotsspace@=\muskip17
+\c@parentequation=\count138
+\dspbrk@lvl=\count139
+\tag@help=\toks20
+\row@=\count140
+\column@=\count141
+\maxfields@=\count142
+\andhelp@=\toks21
+\eqnshift@=\dimen161
+\alignsep@=\dimen162
+\tagshift@=\dimen163
+\tagwidth@=\dimen164
+\totwidth@=\dimen165
+\lineht@=\dimen166
+\@envbody=\toks22
+\multlinegap=\skip67
+\multlinetaggap=\skip68
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
 )
-(D:\CTEX\MiKTeX\tex\latex\amsfonts\amssymb.sty
-Package: amssymb 2009/06/22 v3.00
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(D:\CTEX\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(D:\CTEX\MiKTeX\tex\latex\fancybox\fancybox.sty
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/fancybox/fancybox.sty
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
-\@fancybox=\box38
-\shadowsize=\dimen163
-\@Sbox=\box39
-\do@VerbBox=\toks23
-\the@fancyput=\toks24
-\this@fancyput=\toks25
-\EndVerbatimTokens=\toks26
+\@fancybox=\box51
+\shadowsize=\dimen167
+\@Sbox=\box52
+\do@VerbBox=\toks24
+\the@fancyput=\toks25
+\this@fancyput=\toks26
+\EndVerbatimTokens=\toks27
 \Verbatim@Outfile=\write3
-\Verbatim@Infile=\read1
-) (D:\CTEX\MiKTeX\tex\latex\xcolor\xcolor.sty
-Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+\Verbatim@Infile=\read2
+) (c:/Softwares/TexLive16/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(D:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
-LaTeX Info: Redefining \color on input line 702.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
-Package xcolor Info: Model `RGB' extended on input line 1353.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 
-(D:\CTEX\MiKTeX\tex\latex\graphics\dvipsnam.def
-File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
 )
-(D:\CTEX\MiKTeX\tex\latex\xcolor\svgnam.def
-File: svgnam.def 2007/01/21 v2.11 Predefined colors according to SVG 1.1 (UK)
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
 )
-(D:\CTEX\MiKTeX\tex\latex\xcolor\x11nam.def
-File: x11nam.def 2007/01/21 v2.11 Predefined colors according to Unix/X11 (UK)
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/xcolor/x11nam.def
+File: x11nam.def 2016/05/11 v2.12 Predefined colors according to Unix/X11 (UK)
 ))
-\xuanti=\toks27
-\numbers=\toks28
-\school=\toks29
-\authorone=\toks30
-\authortwo=\toks31
-\authorthree=\toks32
-\advisor=\toks33
-\theday=\toks34
+\xuanti=\toks28
+\numbers=\toks29
+\school=\toks30
+\authorone=\toks31
+\authortwo=\toks32
+\authorthree=\toks33
+\advisor=\toks34
+\theday=\toks35
 
-(D:\CTEX\MiKTeX\tex\latex\geometry\geometry.sty
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(D:\CTEX\MiKTeX\tex\generic\oberdiek\ifvtex.sty
-Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-\Gm@cnth=\count183
-\Gm@cntv=\count184
-\c@Gm@tempcnt=\count185
-\Gm@bindingoffset=\dimen164
-\Gm@wd@mp=\dimen165
-\Gm@odd@mp=\dimen166
-\Gm@even@mp=\dimen167
-\Gm@layoutwidth=\dimen168
-\Gm@layoutheight=\dimen169
-\Gm@layouthoffset=\dimen170
-\Gm@layoutvoffset=\dimen171
-\Gm@dimlist=\toks35
-
-(D:\CTEX\MiKTeX\tex\latex\geometry\geometry.cfg))
-\c@theorem=\count186
-\c@proposition=\count187
-\c@lemma=\count188
-\c@corollary=\count189
-\c@definition=\count190
-\c@example=\count191
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(D:\CTEX\MiKTeX\tex\generic\xypic\xy.sty
-(D:\CTEX\MiKTeX\tex\generic\xypic\xy.tex Bootstrap'ing: catcodes, docmode,
-(D:\CTEX\MiKTeX\tex\generic\xypic\xyrecat.tex)
-(D:\CTEX\MiKTeX\tex\generic\xypic\xyidioms.tex)
+\Gm@cnth=\count143
+\Gm@cntv=\count144
+\c@Gm@tempcnt=\count145
+\Gm@bindingoffset=\dimen168
+\Gm@wd@mp=\dimen169
+\Gm@odd@mp=\dimen170
+\Gm@even@mp=\dimen171
+\Gm@layoutwidth=\dimen172
+\Gm@layoutheight=\dimen173
+\Gm@layouthoffset=\dimen174
+\Gm@layoutvoffset=\dimen175
+\Gm@dimlist=\toks36
+)
+\c@theorem=\count146
+\c@proposition=\count147
+\c@lemma=\count148
+\c@corollary=\count149
+\c@definition=\count150
+\c@example=\count151
+)
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xy.sty
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xy.tex Bootstrap'ing:
+catcodes, docmode,
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xyrecat.tex)
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xyidioms.tex)
 
- Xy-pic version 3.8.6 <2011/05/27>
- Copyright (c) 1991-2011 by Kristoffer H. Rose <krisrose@tug.org>
+ Xy-pic version 3.8.9 <2013/10/06>
+ Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
  Xy-pic is free software: see the User's Guide for details.
 
 Loading kernel: messages; fonts; allocations: state,
-\X@c=\dimen172
-\Y@c=\dimen173
-\U@c=\dimen174
-\D@c=\dimen175
-\L@c=\dimen176
-\R@c=\dimen177
-\Edge@c=\toks36
-\X@p=\dimen178
-\Y@p=\dimen179
-\U@p=\dimen180
-\D@p=\dimen181
-\L@p=\dimen182
-\R@p=\dimen183
-\Edge@p=\toks37
-\X@origin=\dimen184
-\Y@origin=\dimen185
-\X@xbase=\dimen186
-\Y@xbase=\dimen187
-\X@ybase=\dimen188
-\Y@ybase=\dimen189
-\X@min=\dimen190
-\Y@min=\dimen191
-\X@max=\dimen192
-\Y@max=\dimen193
-\lastobjectbox@=\box40
-\zerodotbox@=\box41
-\almostz@=\dimen194
+\X@c=\dimen176
+\Y@c=\dimen177
+\U@c=\dimen178
+\D@c=\dimen179
+\L@c=\dimen180
+\R@c=\dimen181
+\Edge@c=\toks37
+\X@p=\dimen182
+\Y@p=\dimen183
+\U@p=\dimen184
+\D@p=\dimen185
+\L@p=\dimen186
+\R@p=\dimen187
+\Edge@p=\toks38
+\X@origin=\dimen188
+\Y@origin=\dimen189
+\X@xbase=\dimen190
+\Y@xbase=\dimen191
+\X@ybase=\dimen192
+\Y@ybase=\dimen193
+\X@min=\dimen194
+\Y@min=\dimen195
+\X@max=\dimen196
+\Y@max=\dimen197
+\lastobjectbox@=\box53
+\zerodotbox@=\box54
+\almostz@=\dimen198
  direction,
-\d@X=\dimen195
-\d@Y=\dimen196
-\K@=\count192
-\KK@=\count193
-\Direction=\count194
-\K@dXdY=\dimen197
-\K@dYdX=\dimen198
-\xyread@=\read2
+\d@X=\dimen199
+\d@Y=\dimen256
+\K@=\count152
+\KK@=\count153
+\Direction=\count154
+\K@dXdY=\dimen257
+\K@dYdX=\dimen258
+\xyread@=\read3
 \xywrite@=\write4
-\csp@=\count195
-\quotPTK@=\dimen199
+\csp@=\count155
+\quotPTK@=\dimen259
 
 utility macros; pictures: \xy, positions,
-\swaptoks@@=\toks38
-\connectobjectbox@@=\box42
+\swaptoks@@=\toks39
+\connectobjectbox@@=\box55
  objects,
-\styletoks@=\toks39
+\styletoks@=\toks40
  decorations;
 kernel objects: directionals, circles, text; options; algorithms: directions,
 edges, connections;  Xy-pic loaded)
-Package: xy 2011/05/27 Xy-pic version 3.8.6
- (D:\CTEX\MiKTeX\tex\generic\xypic\xyall.tex  Xy-pic option: All features v.3.8
+Package: xy 2013/10/06 Xy-pic version 3.8.9
 
-(D:\CTEX\MiKTeX\tex\generic\xypic\xycurve.tex
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xyall.tex
+ Xy-pic option: All features v.3.8
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xycurve.tex
  Xy-pic option: Curve and Spline extension v.3.12 curve,
-\crv@cnt@=\count196
-\crvpts@=\toks40
-\splinebox@=\box43
-\splineval@=\dimen200
-\splinedepth@=\dimen201
-Normal \dimen register pool exhausted, switching to extended pool.
-\splinetol@=\dimen256
-\splinelength@=\dimen257
+\crv@cnt@=\count156
+\crvpts@=\toks41
+\splinebox@=\box56
+\splineval@=\dimen260
+\splinedepth@=\dimen261
+\splinetol@=\dimen262
+\splinelength@=\dimen263
  circles,
-\L@=\dimen258
+\L@=\dimen264
  loaded)
-(D:\CTEX\MiKTeX\tex\generic\xypic\xyframe.tex
- Xy-pic option: Frame and Bracket extension v.3.13 loaded)
-(D:\CTEX\MiKTeX\tex\generic\xypic\xycmtip.tex
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xyframe.tex
+ Xy-pic option: Frame and Bracket extension v.3.14 loaded)
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xycmtip.tex
  Xy-pic option: Computer Modern tip extension v.3.7
-(D:\CTEX\MiKTeX\tex\generic\xypic\xytips.tex
- Xy-pic option: More Tips extension v.3.9 loaded) loaded)
-(D:\CTEX\MiKTeX\tex\generic\xypic\xyline.tex
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xytips.tex
+ Xy-pic option: More Tips extension v.3.11 loaded) loaded)
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xyline.tex
  Xy-pic option: Line styles extension v.3.10
-\xylinethick@=\dimen259
+\xylinethick@=\dimen265
  loaded)
-(D:\CTEX\MiKTeX\tex\generic\xypic\xyrotate.tex
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xyrotate.tex
  Xy-pic option: Rotate and Scale extension v.3.8 loaded)
-(D:\CTEX\MiKTeX\tex\generic\xypic\xycolor.tex
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xycolor.tex
  Xy-pic option: Colour extension v.3.11 loaded)
-(D:\CTEX\MiKTeX\tex\generic\xypic\xymatrix.tex
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xymatrix.tex
  Xy-pic option: Matrix feature v.3.14
-\Row=\count197
-\Col=\count198
-\queue@=\toks41
-\queue@@=\toks42
-\qcount@=\count199
-\qcount@@=\count200
-\matrixsize@=\count201
+\Row=\count157
+\Col=\count158
+\queue@=\toks42
+\queue@@=\toks43
+\qcount@=\count159
+\qcount@@=\count160
+\matrixsize@=\count161
  loaded)
-(D:\CTEX\MiKTeX\tex\generic\xypic\xyarrow.tex
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xyarrow.tex
  Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
-(D:\CTEX\MiKTeX\tex\generic\xypic\xygraph.tex
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xygraph.tex
  Xy-pic option: Graph feature v.3.11 loaded) loaded)
-(D:\CTEX\MiKTeX\tex\generic\xypic\xypdf.tex  Xy-pic option: PDF driver v.1.7
-Xy-pic pdf driver: `color' extension support
-(D:\CTEX\MiKTeX\tex\generic\xypic\xypdf-co.tex loaded)
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xypdf.tex
+ Xy-pic option: PDF driver v.1.7 Xy-pic pdf driver: `color' extension support
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xypdf-co.tex loaded)
 Xy-pic pdf driver: `curve' extension support
-(D:\CTEX\MiKTeX\tex\generic\xypic\xypdf-cu.tex loaded)
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xypdf-cu.tex loaded)
 Xy-pic pdf driver: `frame' extension support
-(D:\CTEX\MiKTeX\tex\generic\xypic\xypdf-fr.tex loaded)
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xypdf-fr.tex loaded)
 Xy-pic pdf driver: `line' extension support
-(D:\CTEX\MiKTeX\tex\generic\xypic\xypdf-li.tex loaded)
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xypdf-li.tex loaded)
 Xy-pic pdf driver: `rotate' extension support
-(D:\CTEX\MiKTeX\tex\generic\xypic\xypdf-ro.tex loaded) loaded))
-(D:\CTEX\MiKTeX\tex\latex\tools\bm.sty
-Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/xypic/xypdf-ro.tex loaded)
+loaded)) (c:/Softwares/TexLive16/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2016/02/27 v1.2a Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
 \symboldsymbols=\mathgroup8
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
-LaTeX Info: Redefining \bm on input line 204.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 142.
+LaTeX Info: Redefining \bm on input line 208.
 )
-(D:\CTEX\MiKTeX\tex\latex\framed\framed.sty
-Package: framed 2007/10/04 v 0.95: framed or shaded text with page breaks
-\fb@frw=\dimen260
-\fb@frh=\dimen261
-\FrameRule=\dimen262
-\FrameSep=\dimen263
-) (D:\Git\MCM\Êï∞Ê®°ËÆ∫Êñá\paper.aux)
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip69
+\fb@frw=\dimen266
+\fb@frh=\dimen267
+\FrameRule=\dimen268
+\FrameSep=\dimen269
+)
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/cjk/texinput/utf8/UTF8.bdg
+File: UTF8.bdg 2015/04/18 4.8.4
+)
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/cjk/texinput/utf8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/cjk/texinput/utf8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+(./paper.aux)
+\openout1 = `paper.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
@@ -1086,21 +1351,66 @@ LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
- (D:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+ ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 18.
+
+(c:/Softwares/TexLive16/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-Normal \count register pool exhausted, switching to extended pool.
-\scratchcounter=\count277
-\scratchdimen=\dimen264
-\scratchbox=\box44
-\nofMPsegments=\count278
-\nofMParguments=\count279
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count280
-\MPscratchDim=\dimen265
-\MPnumerator=\count281
-\makeMPintoPDFobject=\count282
-\everyMPtoPDFconversion=\toks44
+\scratchcounter=\count162
+\scratchdimen=\dimen270
+\scratchbox=\box57
+\nofMPsegments=\count163
+\nofMParguments=\count164
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count165
+\MPscratchDim=\dimen271
+\MPnumerator=\count166
+\makeMPintoPDFobject=\count167
+\everyMPtoPDFconversion=\toks45
+) (c:/Softwares/TexLive16/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
 )
+
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(c:/Softwares/TexLive16/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1136,32 +1446,22 @@ Normal \count register pool exhausted, switching to extended pool.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 18.
-(D:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 18.
 
-(D:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package xypdf Info: Line width: 0.42159pt on input line 18.
-
-(D:\CTEX\MiKTeX\tex\latex\cjk\UTF8\UTF8.bdg
-File: UTF8.bdg 2008/12/29 4.8.2
-)
-(D:\CTEX\MiKTeX\tex\latex\cjk\UTF8\UTF8.enc
-File: UTF8.enc 2008/12/29 4.8.2
-)
-(D:\CTEX\MiKTeX\tex\latex\cjk\UTF8\UTF8.chr
-File: UTF8.chr 2008/12/29 4.8.2
-)
+Package xypdf Info: Line width: 0.42155pt on input line 18.
 LaTeX Font Info:    Try loading font information for C70+rm on input line 20.
 
-(D:\CTEX\MiKTeX\tex\latex\ctex\fd\c70rm.fd
-File: c70rm.fd 2007/05/06 v0.8a ctexutf8 font definition file
+(c:/Softwares/TexLive16/texmf-dist/tex/latex/ctex/fd/c70rm.fd
+File: c70rm.fd 2016/05/16 v2.4.2 Chinese font definition (CTEX)
 )
-Package CJKpunct Info: punctuation spaces for family 'zhsong' do not exist. Use
- family 'def' instead. on input line 22.
+Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (
+quanjiao) on input line 22.
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--30
 
@@ -1173,93 +1473,132 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--38
  []
 
 
-Overfull \hbox (3.00476pt too wide) in paragraph at lines 40--41
-\OT1/cmr/m/n/10.54 grav-i-ta-tion-al po-ten-tial en-er-gy is cal-cu-lat-ed as $
-\OML/cmm/m/it/10.54 E[] \OT1/cmr/m/n/10.54 = \OML/cmm/m/it/10.54 mgh$\OT1/cmr/m
-/n/10.54 , thus, high-er throw im-plies big-ger electricity-
+Overfull \hbox (2.9778pt too wide) in paragraph at lines 40--41
+\OT1/cmr/m/n/10.53937 grav-i-ta-tional po-ten-tial en-ergy is cal-cu-lated as $
+\OML/cmm/m/it/10.53937 E[] \OT1/cmr/m/n/10.53937 = \OML/cmm/m/it/10.53937 mgh$\
+OT1/cmr/m/n/10.53937 , thus, higher throw im-plies big-ger electricity-
  []
 
 [1
 
 ] [2] [3]
-Overfull \hbox (12.73863pt too wide) in paragraph at lines 188--189
-[]\C70/rm/m/n/10.54/62 @ \C70/rm/m/n/10.54/4e Â|\C70/rm/m/n/10.54/ff | $[][]$\
-C70/rm/m/n/10.54/76 Ñ \C70/rm/m/n/10.54/4e    \C70/rm/m/n/10.54/81 Ù \C70/rm/m
-/n/10.54/7a  \C70/rm/m/n/10.54/5e ¶ \C70/rm/m/n/10.54/57 ( \C70/rm/m/n/10.54/5
-b π \C70/rm/m/n/10.54/8b ∏ \C70/rm/m/n/10.54/83  \C70/rm/m/n/10.54/56 Ù \C70/r
-m/m/n/10.54/4e K \C70/rm/m/n/10.54/51 Ö|\C70/rm/m/n/10.54/ff | $\OML/cmm/m/it/
-10.54 $\C70/rm/m/n/10.54/5b ˘ \C70/rm/m/n/10.54/5e î \C70/rm/m/n/10.54/76 Ñ \C
-70/rm/m/n/10.54/72 y \C70/rm/m/n/10.54/5f Å \C70/rm/m/n/10.54/54  \C70/rm/m/n/
-10.54/91 œ \C70/rm/m/n/10.54/4e :$[]$ 
+Overfull \hbox (5.14986pt too wide) in paragraph at lines 164--165
+[]\C70/rm/m/n/10.53937/5b ˘ \C70/rm/m/n/10.53937/4e é 
+ \C70/rm/m/n/10.53937/8f  \C70/rm/m/n/10.53937/76 Ñ\OT1/cmr/m/n/10.53937 5\C70
+/rm/m/n/10.53937/79 Õ \C70/rm/m/n/10.53937/56 ‡ \C70/rm/m/n/10.53937/7d  |\C70/
+rm/m/n/10.53937/ff ^^L| $\OML/cmm/m/it/10.53937 C[]$\C70/rm/m/n/10.53937/54 å$\
+OML/cmm/m/it/10.53937 W[]$\C70/rm/m/n/10.53937/76 Ù \C70/rm/m/n/10.53937/63 • \
+C70/rm/m/n/10.53937/5f q \C70/rm/m/n/10.53937/54 Õ \C70/rm/m/n/10.53937/52 0 \C
+70/rm/m/n/10.53937/5d Â \C70/rm/m/n/10.53937/7a  \C70/rm/m/n/10.53937/66 / \C7
+0/rm/m/n/10.53937/54 & \C70/rm/m/n/10.53937/53 Ô \C70/rm/m/n/10.53937/88 L|\C70
+/rm/m/n/10.53937/ff ^^L| \C70/rm/m/n/10.53937/62 @ \C70/rm/m/n/10.53937/4e Â \C
+70/rm/m/n/10.53937/67 ^^@ \C70/rm/m/n/10.53937/4e : \C70/rm/m/n/10.53937/91 Õ \
+C70/rm/m/n/10.53937/89 Å|\C70/rm/m/n/10.53937/30 ^^B| \C70/rm/m/n/10.53937/4f F
+ \C70/rm/m/n/10.53937/66 / \C70/rm/m/n/10.53937/75 1 \C70/rm/m/n/10.53937/4e é$
+\OML/cmm/m/it/10.53937 W[]$\C70/rm/m/n/10.53937/76 ¯ \C70/rm/m/n/10.53937/5b ˘ 
+\C70/rm/m/n/10.53937/4e é$\OML/cmm/m/it/10.53937 C[]$\C70/rm/m/n/10.53937/66 Ù
+ []
+
+
+Overfull \hbox (12.71074pt too wide) in paragraph at lines 188--189
+[]\C70/rm/m/n/10.53937/62 @ \C70/rm/m/n/10.53937/4e Â|\C70/rm/m/n/10.53937/ff ^
+^L| $[][]$\C70/rm/m/n/10.53937/76 Ñ \C70/rm/m/n/10.53937/4e ^^M ^^@ \C70/rm/m/n
+/10.53937/81 Ù \C70/rm/m/n/10.53937/7a  \C70/rm/m/n/10.53937/5e ¶ \C70/rm/m/n/
+10.53937/57 ( \C70/rm/m/n/10.53937/5b π \C70/rm/m/n/10.53937/8b ∏ \C70/rm/m/n/1
+0.53937/83 ^^C \C70/rm/m/n/10.53937/56 Ù \C70/rm/m/n/10.53937/4e K \C70/rm/m/n/
+10.53937/51 Ö|\C70/rm/m/n/10.53937/ff ^^L| $\OML/cmm/m/it/10.53937 ^^U$\C70/rm/
+m/n/10.53937/5b ˘ \C70/rm/m/n/10.53937/5e î \C70/rm/m/n/10.53937/76 Ñ \C70/rm/m
+/n/10.53937/72 y \C70/rm/m/n/10.53937/5f Å \C70/rm/m/n/10.53937/54 ^^Q \C70/rm/
+m/n/10.53937/91 œ \C70/rm/m/n/10.53937/4e :$[]$ 
  []
 
 [4]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 202.
 
- (D:\CTEX\MiKTeX\tex\latex\base\omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+ (c:/Softwares/TexLive16/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.54> not available
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.53937> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 202.
-\c@alg=\count283
- [5] [6] [7]
-(D:\Git\MCM\Êï∞Ê®°ËÆ∫Êñá\paper.aux) ) 
+\c@alg=\count168
+
+Overfull \hbox (8.60063pt too wide) in paragraph at lines 248--250
+\C70/rm/m/n/10.53937/51 v \C70/rm/m/n/10.53937/4e -$\OML/cmm/m/it/10.53937 B[]$
+\C70/rm/m/n/10.53937/4e : \C70/rm/m/n/10.53937/51 v \C70/rm/m/n/10.53937/4e ÷ \
+C70/rm/m/n/10.53937/65 π \C70/rm/m/n/10.53937/97 b \C70/rm/m/n/10.53937/65 6 \C
+70/rm/m/n/10.53937/76   Ñ \C70/rm/m/n/10.53937/4e ^^@ * \C70/rm/m/n/10.53937/57
+ ˙ \C70/rm/m/n/10.53937/67 , \C70/rm/m/n/10.53937/4f 0 \C70/rm/m/n/10.53937/8b 
+°|\C70/rm/m/n/10.53937/ff ^^L| \C70/rm/m/n/10.53937/51 v \C70/rm/m/n/10.53937/4
+e - \C70/rm/m/n/10.53937/53 ^^E \C70/rm/m/n/10.53937/54 + \C70/rm/m/n/10.53937/
+70 L \C70/rm/m/n/10.53937/6e â|\C70/rm/m/n/10.53937/30 ^^A| \C70/rm/m/n/10.5393
+7/6d * \C70/rm/m/n/10.53937/6c 4 \C70/rm/m/n/10.53937/96 2 \C70/rm/m/n/10.53937
+/6c ª \C70/rm/m/n/10.53937/7b I|\C70/rm/m/n/10.53937/ff ^^L| \C70/rm/m/n/10.539
+37/51 w \C70/rm/m/n/10.53937/4f S \C70/rm/m/n/10.53937/65 p \C70/rm/m/n/10.5393
+7/50 < \C70/rm/m/n/10.53937/53 Ô \C70/rm/m/n/10.53937/4e Â \C70/rm/m/n/10.53937
+/53 ¬ \C70/rm/m/n/10.53937/71 g\OT1/cmr/m/n/10.53937 Zambezi
+ []
+
+[5] [6] [7] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
- 15781 strings out of 495354
- 227285 string characters out of 3183859
- 357374 words of memory out of 3000000
- 18378 multiletter control sequences out of 15000+200000
- 41153 words of font info for 147 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 46i,12n,45p,3261b,1257s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/F
-onts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/W
-INDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.t
-tf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/
-simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOW
-S/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C
-:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsu
-n.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fon
-ts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WIN
-DOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf
-><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/si
-msun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/
-Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/
-WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.
-ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts
-/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDO
-WS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><
-C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simh
-ei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fo
-nts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WI
-NDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.tt
-c><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
-imsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS
-/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:
-/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun
-.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Font
-s/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIND
-OWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc>
-<C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sim
-sun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/F
-onts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/W
-INDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.t
-tc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/
-simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOW
-S/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C
-:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhe
-i.ttf><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/CTEX/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/CTEX/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmex10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/CTEX/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmmi7.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmr10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/CTEX/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/CTEX/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.
-pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on paper.pdf (7 pages, 684624 bytes).
+ 19978 strings out of 493014
+ 340118 string characters out of 6133789
+ 432389 words of memory out of 5000000
+ 22968 multiletter control sequences out of 15000+600000
+ 39238 words of font info for 149 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 47i,12n,47p,10478b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simhe
+i.ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/fon
+ts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Win
+dows/fonts/simhei.ttf><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc
+><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/si
+msun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/
+fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/
+Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simhei.
+ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/fonts
+/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Windo
+ws/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><
+c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/sims
+un.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fo
+nts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Wi
+ndows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.tt
+c><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/s
+imsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows
+/fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:
+/Windows/fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/fonts/simhei
+.ttf><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/font
+s/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Wind
+ows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc>
+<c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/sim
+sun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/f
+onts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/W
+indows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.t
+tc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/
+simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Window
+s/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c
+:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsu
+n.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fon
+ts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Win
+dows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc
+><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/si
+msun.ttc><c:/Windows/fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/
+fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/
+Softwares/TexLive16/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/So
+ftwares/TexLive16/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Soft
+wares/TexLive16/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Softwa
+res/TexLive16/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Software
+s/TexLive16/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/Softwares/T
+exLive16/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/Softwares/TexL
+ive16/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Softwares/TexLive
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/Softwares/TexLive16/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Softwares/TexLive16/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Softwares/TexLive16/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/Softwares/TexLive16/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on paper.pdf (7 pages, 586320 bytes).
 PDF statistics:
- 535 PDF objects out of 1000 (max. 8388607)
+ 540 PDF objects out of 1000 (max. 8388607)
+ 345 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  293 words of extra memory for PDF output out of 10000 (max. 10000000)
 

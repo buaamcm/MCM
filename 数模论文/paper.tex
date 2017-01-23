@@ -204,7 +204,7 @@ E(l) = \textbf{P}\textbf{w}_{1}^{T} = 0.2185F_l + 0.063{\alpha}_{l} + 0.2185H_l 
 \begin{eqnarray}
 F(x) =
 \begin{cases}
-f(x), & 0 < x < \theta \cr F_{max}, & x \ge \theta
+f(x) & 0 < x < \theta \cr F_{max} & x \ge \theta
 \end{cases}
 \end{eqnarray}
 \end{itemize}
@@ -293,9 +293,13 @@ $n = 4$时随机一致性指标\textit{RI}为$0.90$，于是$A_{2}$的一致性�
 
 根据上述计算，我们得到了权向量$\textbf{w}_{2}$的取值：
 \begin{equation}
-\textbf{w}_{2} = \lambda = \left[0.2185, 0.063, 0.2185, 0.5190, 0.7945\right]
+\textbf{w}_{2} = \lambda = \left[0.6092, 0.6780, 0.2765, 0.3046\right]
 \end{equation}
 
+由此，我们评价函数为$V(i)$的表达形式：
+\begin{equation}
+V(i) = 0.2185C(i) + 0.678S(i) + 0.2675B(i) + 0.3046F(i)
+\end{equation}
 
 
 \end{document}
