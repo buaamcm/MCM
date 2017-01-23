@@ -330,9 +330,9 @@ where $P_{i}$ means the density of the population around the $i$th dam, ${\xi}S^
 \end{matrix}
 \right]
 \]\\
-The maximum eigenvalue of $A_{2}$ is $\lambda = 4.0206$. The consistency indicator of $\textbf{A}_2$ is \[\mathit{CI} = \frac{\lambda - n}{n - 1} = 0.0069\]
+\indent The maximum eigenvalue of $A_{2}$ is $\lambda = 4.0206$. The consistency indicator of $\textbf{A}_2$ is \[\mathit{CI} = \frac{\lambda - n}{n - 1} = 0.0069\]
 where $n$ means the order of the matrix. When $n = 4$, we get the random consistency indicator  \textit{RI} to be $0.90$. So the consistency ratio of $A_{2}$ is \[\mathit{CR} = \frac{\mathit{CI}}{\mathit{RI}} = 0.0076 < 0.1 \]
-So the inconsistency of $\textbf{A}_2$ is within the allowable range, the feature vector of $\lambda$ is $\left[0.6092, 0.6780, 0.2765, 0.3046\right]$.
+\indent So the inconsistency of $\textbf{A}_2$ is within the allowable range, the feature vector of $\lambda$ is $\left[0.6092, 0.6780, 0.2765, 0.3046\right]$.
 \indent Using the result from above, we can calculate the value of weight vector $\textbf{w}_{2}$:
 \begin{equation}
 \textbf{w}_{2} = \lambda = \left[0.6092, 0.6780, 0.2765, 0.3046\right]
@@ -342,15 +342,51 @@ So the inconsistency of $\textbf{A}_2$ is within the allowable range, the featur
 V(i) = 0.2185C(i) - 0.678S(i) - 0.2675B(i) + 0.3046F(i)
 \end{equation}
 \subsection{Model Validation}
-In order to validate the model, we firstly select the dam Batoka Gorge Dam which is being prepared to construction near the Victoria Fall. Taking the geography factor at this point to $E(l)$, we can get 63.82 which is far below the threshold 25. Then we can take other important factors into the benchmark formula $V(i)$ and get $2.132\times10^9$ which is far below the limit of the benchmark $4.5\times10^{9}$. In conclusion, this point is a good location to build new dams. The result shows that the candidate point $P_7$ is very close to the location of Batoka Gorge Dam, which means that our model has a certain sensitivity.
+\indent \indent In order to validate the model, we firstly select the dam Batoka Gorge Dam which is being prepared to construction near the Victoria Fall. Taking the geography factor at this point to $E(l)$, we can get 63.82 which is far below the threshold 25. Then we can take other important factors into the benchmark formula $V(i)$ and get $2.132\times10^9$ which is far below the limit of the benchmark $4.5\times10^{9}$. In conclusion, this point is a good location to build new dams. The result shows that the candidate point $P_7$ is very close to the location of Batoka Gorge Dam, which means that our model has a certain sensitivity.
+\begin{table}[htbp]
+\centering
+  \begin{tabular}{ccc}
+  \hline
+  Symbols & Values & Units \\
+  \hline
+  $K$ & $6.3\times10^4$ & $1/m^{4}kw^{0.82}$ \\
+  $\Delta$ & 0.3 & / \\
+  $\eta$ & 0.3 & / \\
+  $\gamma$ & 0.82 & / \\
+  $\alpha$ & 0.14 & / \\
+  $V_{flow}$ & $1.213\times10^{10}$ & $m^3/year$ \\
+  $v_0$ & 1950 & $mm/year$\\
+  $v_1$ & 1250  & $mm/year$\\
+  $\mu$ & 0.03 & $K^-1$\\
+  $\theta$ & 0.5 & / \\
+  $\beta$ & 0.85 & / \\
+  $\rho$ & $1.01\times10^3$ & $kg/m^3$\\
+  $g$ & 9.8 & $m/s^2$\\
+  $\delta$ & 0.34 & / \\
+  $\tau$ & 0.9 & / \\
+  $T_{use}$ & 3950 & h \\
+  $p_{elec}$ & 14.2 & $cents/kwh$ \\
+  $p_{fish}$ & 3.5 & $dollars/kg$ \\
+  $B_{other}$ & $3.7\times10^5$ & $dollars$ \\
+  $P_{i}$ & 20.2 & $Persons/km^2$\\
+  $\xi$ & 0.042 & / \\
+  $\sigma$ & 0.5 & / \\
+  $F_{balance}$ & $2.3\times10^6$ & $dollars$ \\
+  \hline
+  \end{tabular}
+  \caption{Constant Table of Model A}
+\end{table}
 \subsection{Result}
-\indent \indent From model A, we firstly get the benchmark formula to evaluate candidate point. Then after the normalizing the parameters, we set the threshold of $E(l)$ to 25. Based on the safety evaluation function, we can get the candidate points as below(fig.7(a)). Since the limit $10 \le N_{dam} \le 20 $, we changed the threshold of the benchmark to $4.5\times10^{9}$. According to the threshold, we can get the candidate point as below(fig.7(b)). Using the effect diagram rendered by Google Earth, we can easily get the area size of the reservoir and estimate the capacity. Our final solution meets the requirement that the new multi-dam system can have the same water storage capacity as the Kariba Dam.\\
+
+\indent \indent From model A, we firstly get the benchmark formula to evaluate candidate point. Then after the normalizing the parameters, we set the threshold of $E(l)$ to 25. Based on the safety evaluation function, we can get the candidate points as below(fig.7(a)). Since the limit $10 \le N_{dam} \le 20 $, we changed the threshold of the benchmark to $4.5\times10^{9}$. According to the threshold, we can get the candidate point as below(fig.7(b)). The constant we used in Model A are shown in Table 3. Using the effect diagram rendered by Google Earth, we can easily get the area size of the reservoir and estimate the capacity. Our final solution meets the requirement that the new multi-dam system can have the same water storage capacity as the Kariba Dam.\\
+
 \begin{figure}[h]
 \small
 \centering
 \includegraphics[width=8cm]{./figures/reservoir.png}
 \caption{Effect diagram rendered by Google Earth} \label{fig:Fig1}
 \end{figure}
+
 \begin{figure}[htbp]
 \centering %居中
 \subfigure[Data of candidate locations]{ %第一张子图
