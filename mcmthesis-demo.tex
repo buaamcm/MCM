@@ -47,7 +47,9 @@
 \date{\today}
 \begin{document}
 \begin{abstract}
-Here is the abstract to be written!
+The Kariba Dam is located on the Zambezi River. As one of the largest dam in Africa, its current safety state is controversial. We assume that the Kariba Dam will be removed and replaced by a multi-dam system for the sake of safety. For a complete description of this dam system, we propose two models concerning the location of new dams and the strategy for modulating the water flow through the new dam system. In order to get the optimal solution of this problem, we take the whole Zambezi River basin as research object.\\
+\indent In Model A, our primary aim is to find the optimal locations of the new dams. By looking at the elevation data and making preliminary estimates, we firstly identify the general area suitable for the construction. However, the rough estimation is apparently not enough, so we narrow the candidate area by referring to other information such as geography conditions. We also established a benchmark formula by using analytic hierarchy process. This formula is a comprehensive analysis of the terrain condition, construction cost, income and safety condition of a specific location, with high reliability. Based on this formula, we tested a series of locations within the candidate areas and choose some candidate location with higher score as our solution.\\
+\indent In Model B, our primary aim is to design a modulating strategy for the multi-dam system established in the Model A.
 \begin{keywords}
 Kariba Dam; Multi-dams arrangement;
 \end{keywords}
@@ -415,12 +417,12 @@ V(i) = 0.2185C(i) + 0.678S(i) + 0.2675B(i) + 0.3046F(i)
 \subsection{Model Building}
 \indent According to our first two assumptions, the value of water lost per unit time of a dam system is proportional to the amount of water lost due to flood discharge. And water is lost from the entire dam system only if it is drained as flood discharge from the last dam of the dam system, so we get
 \begin{equation}
-V_{D} = V_{D,i}
+V_{D} = V_{D,n}
 \end{equation}
 \indent In order to maximize the benefits of the dam system, it is necessary to make the $ V_ {D, i} $ as small as possible, and the restrictive factors in different situations must be taken into account when proposing the modulating scheme. Therefore, we consider the use of optimization model to obtain water resources modulating scheme under certain case. \\
 \indent According to our discussion above, the objective function of optimization is very simple, i.e.
 \begin{equation}
-\min V_{D} = V_{D, i}
+\min V_{D} = V_{D, n}
 \end{equation}
 \indent In the following, we will focus on finding constraints. First, the amount of water in the reservoir after the unit time is equal to the sum of original amount of water, natural increment of the reservoir and drainage of upstream reservoirs (including power generation and flood discharge) then subtract the sum of water for other purposes, power generation and flood discharge, i.e.
 \begin{equation} V_{i}^{'} =
@@ -462,11 +464,11 @@ V_{u, i}^{\min} \leq V_{u, i} \leq V_{u, i}^{\max}
 \end{equation}
 
 \indent The lower limit of $ V_ {u, i} $ is not $ 0 $, considering that the rigid demand for agricultural water use around the reservoir.\\
-\indent The constraint on $ \ triangle V_ {i} $ should depend on the reservoir's existing water volume, future plans for reservoir volumes, and natural replenishment of future reservoirs. But intuitively, the water level of the reservoir should not be violent fluctuations; and our model should allow professionals to give limits of the reservoir water level fluctuations where used in specific case in the relevant areas, so we express the constraints of $ \ triangle V_ {i} $ as:
+\indent The constraint on $ \triangle V_ {i} $ should depend on the reservoir's existing water volume, future plans for reservoir volumes, and natural replenishment of future reservoirs. But intuitively, the water level of the reservoir should not be violent fluctuations; and our model should allow professionals to give limits of the reservoir water level fluctuations where used in specific case in the relevant areas, so we express the constraints of $ \triangle V_ {i} $ as:
 \begin{equation}
 \alpha_{i} \leq \frac{\triangle V_{i}}{V_{i}^{\max}} \leq \beta_{i}
 \end{equation}
-where $ V_ {i} ^ {\ max} $ is the maximum volume of the reservoir
+where $ V_ {i} ^ {\ max} $ is the maximum volume of the reservoir.
 
 \indent Although some dams in the system can stop generating electricity at a certain time due to the regulation of the power grid, considering the need to meet the electricity needs of the local and other areas, the total generation of the dam system should have a lower limit of more than $ 0 $, thus we get:
 \begin{equation}
@@ -486,13 +488,15 @@ $ E_ {min} $ is the amount of water required to produce the minimum electricity 
 \subsection{Model A: Search for possible locations to build dams}
 Model A has the following weaknesses.
 \begin{itemize}
-\item 
-\item 
+\item When building the benchmark function, some factors can not be quantified which will bring some errors.
+\item In the rough selection of the candidate areas, some of the valuable points may be ignored, resulting in the non-optimal solution.
 \end{itemize}
 Despite of the weakness, it has more strengths.
 \begin{itemize}
-  \item 
-  \item 
+  \item The factors considered in this model are rather comprehensive. The benchmark function can be a good reflection of the impact of various factors.
+  \item Using the analytic hierarchy process(AHP) to find the final solution, the result is accurate.
+  \item The established benchmark function has a good guiding role for address selection.
+  \item The specific dam construction plan is obtained, and the requirement of water storage capacity canbe satisfied. Meanwhile, the multi-dam system have great advantage in adjusting the flow of Zambezi River basin.
 \end{itemize}
 
 \subsection{Model B: The Best Arrangement}
@@ -502,12 +506,12 @@ In Model B, we consider .... , which is a weakness. However we have more strengt
 \end{itemize}
 
 \section{Conclusion}
-\indent \indent Here is the conclusion to be done!
+\indent \indent In model A, we firstly analyzed the elevation along Zambezi River. Combined with other geography factors, we found some candidate areas to build new small dams. According to our research result, the new dams should be concentrated in the middle and lower reaches of the Zambezi River, which is the basis of our next step. After that, we established a benchmark function to evaluate the candidate locations. This function is built by using AHP, which combine various important factors such as terrain conditions, construction cost, income and safety. We evaluated a series of specific locations by using this function and selected the candidate points with higher scores to build our new dam system.\\
+\indent Having chosen the specific locations, we further discuss the modulating strategy of our multi-dam system in face of complex conditions. And get some suggestion as below:
 
 \begin{thebibliography}{99}
 \bibitem{1} IRMSA , Impact of the failure of the Kariba Dam, June 2015.
-\bibitem{2} Welcomme, R.L., 1985. River fisheries. FAO Fish. Tech. Pap. No. 262, Rome
-
+\bibitem{2} Welcomme, R.L., 1985. River fisheries. FAO Fish. Tech. Pap. No. 262, Rome.
 \end{thebibliography}
 
 \clearpage
@@ -519,9 +523,6 @@ where $C_{p}$ is the cost of building the hydropower station, $V$ is the install
 \indent Option 1. Repairing the existing Kariba Dam. This is the option with the lowest cost of construction. Meanwhile, it won't change the submerged area, so there is no extra ecological cost. From the aspect of revenue, the reconstruction and expansion of Kariba Dam hydropower station can be carried out at the same time, which can effectively increase the total installed capacity of hydropower station, and thus improve the income of hydropower station. In fact, the expansion of the Kariba Dam hydropower station is underway. Since the reconstruction will not affect the Kariba Lake, the benefits from the use of water from the lake won't be reduced. The analysis above is based on the assumption that the climate will not change drastically in the future and no rare disasters which is outside the historical statistics will occur.\\
 \indent Option 2. Rebuilding the existing Kariba Dam. Because rebuilding the Kariba Dam need to remove the existing the dam and rebuild it at the origin site, it is an option with high risk and cost. What's more, the reconstruction of the dam will inevitably lead to the result that the hydropower station can't generate electricity in quite a long period, so this part of loss should also be included in the cost of reconstruction. However, rebuilding dams do have benefits. It helps to expand the installed capacity of hydropower station (benefit from re-designing the internal structure and using more advanced equipment). The new designed Dam would have better flood protection capacity, which allows river management to handle emergency with more flexibility. Stronger water storage capacity means we can raise the water level of Kariba Lake. It will increase the energy generation as well as bring the risk of ecologic damage which needs to be treated with caution.\\
 \indent Option 3. Removing the Kariba Dam and replacing it with a series of $10\sim20$ smaller dams along the Zambezi River. This is quite an ambitious plan. Even if the sum of installed capacity of all these small dams is the same as that of Kariba Dam, the total construction cost is still expected to be higher than rebuilding Kariba Dam according to the cost formula above. With the same problem as option 2, removing Kariba Dam will definitely lead to the loss of energy generation, furthermore even the construction of a smaller dam in the original position of Kariba Dam may result in loss of water storage capacity, as the water level in Kariba Lake will decrease. Fortunately, these losses can be minimized through rational planning. Specifically, we can give priority to the construction of small dams, and then gradually replace the Kariba Dam with their power generation capacity. New dams built in the down stream would store the water from Kariba Dam when it is removed, which can reduce the loss of water resources. Different from the previous two options, economic compensation of the new reservoirs' reserved area also needs to be include in the cost.(Here we can make an estimate by calculating the unit area GDP of the catchment)From the ecological point of view, the third option is also accompanied by greater risk. It will not only flood new areas, but also affect the ecology of Lake Kariba (the water level drops and the lake is divided into several parts). In terms of revenue, the scheduling of water resources between dams will reduce the loss of water resources caused by flooding discharge, which will actually help to increase the power generation capacity of hydropower stations. Moreover, the rational allocation of flood storage between dams will increase the safety of the dam system, the reduced reservoir area will reduce the evaporation loss of water and, in the face of emergencies, river management can also adopt a more flexible approach. Because of the high cost of the third option, a long-term analysis is of great significance. In the future, the flow of Zambezi River may reduce by $40\%\sim50\%$ due to the climate change. Although the climate predictions nowadays are with a large degree of uncertainty, but we should never be blindly optimistic about the benefits of the new dam system.\\
-
-
-
 
 % \clearpage
 % \begin{appendices}

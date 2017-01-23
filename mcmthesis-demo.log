@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.9)  23 JAN 2017 22:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.9)  24 JAN 2017 01:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -767,89 +767,89 @@ LaTeX Info: Redefining \nameref on input line 48.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 55
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 57
 .
 
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 55
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 57
 .
 
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 55
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 57
 .
 
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 55
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 57
 .
 
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 55.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 57.
 
 (c:/texlive/2016/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 55.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 57.
 
 (c:/texlive/2016/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 55.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 57.
 
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 55.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 55.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 55.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 57.
  [1
 
 {c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.55 \maketitle
+l.57 \maketitle
                 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 62.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 64.
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+phv on input line 76.
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+LaTeX Font Info:    Try loading font information for T1+phv on input line 78.
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
@@ -860,12 +860,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 106--108
+Underfull \hbox (badness 10000) in paragraph at lines 108--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--112
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 
  []
 
@@ -876,36 +876,36 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 125.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 127.
 
  (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 125.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 127.
 
-<./figures/Sensing_Figure.png, id=125, 849.92531pt x 421.575pt>
+<./figures/Sensing_Figure.png, id=129, 849.92531pt x 421.575pt>
 File: ./figures/Sensing_Figure.png Graphic file (type png)
 
 <use ./figures/Sensing_Figure.png>
-Package pdftex.def Info: ./figures/Sensing_Figure.png used on input line 135.
+Package pdftex.def Info: ./figures/Sensing_Figure.png used on input line 137.
 (pdftex.def)             Requested size: 398.33858pt x 197.58063pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figures/dis_alti_v3.png, id=127, 1204.5pt x 794.97pt>
+<./figures/dis_alti_v3.png, id=131, 1204.5pt x 794.97pt>
 File: ./figures/dis_alti_v3.png Graphic file (type png)
 
 <use ./figures/dis_alti_v3.png>
-Package pdftex.def Info: ./figures/dis_alti_v3.png used on input line 144.
+Package pdftex.def Info: ./figures/dis_alti_v3.png used on input line 146.
 (pdftex.def)             Requested size: 398.33858pt x 262.8989pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--151
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
  []
 
@@ -923,40 +923,40 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4 <./figures/Sensing_Figure.png> <./figures/dis_alti_v3.png>]
-<./figures/highlight0.png, id=142, 536.0025pt x 395.97937pt>
+<./figures/highlight0.png, id=146, 536.0025pt x 395.97937pt>
 File: ./figures/highlight0.png Graphic file (type png)
 
 <use ./figures/highlight0.png>
-Package pdftex.def Info: ./figures/highlight0.png used on input line 155.
+Package pdftex.def Info: ./figures/highlight0.png used on input line 157.
 (pdftex.def)             Requested size: 227.62204pt x 168.1591pt.
 
-<figures/midstream_contour.png, id=143, 599.23875pt x 570.13pt>
+<figures/midstream_contour.png, id=147, 599.23875pt x 570.13pt>
 File: figures/midstream_contour.png Graphic file (type png)
 
 <use figures/midstream_contour.png>
-Package pdftex.def Info: figures/midstream_contour.png used on input line 166.
+Package pdftex.def Info: figures/midstream_contour.png used on input line 168.
 (pdftex.def)             Requested size: 131.83293pt x 125.42899pt.
 
-<figures/upstream_plain_contour.png, id=144, 457.71pt x 457.71pt>
+<figures/upstream_plain_contour.png, id=148, 457.71pt x 457.71pt>
 File: figures/upstream_plain_contour.png Graphic file (type png)
 
 <use figures/upstream_plain_contour.png>
 Package pdftex.def Info: figures/upstream_plain_contour.png used on input line 
-172.
+174.
 (pdftex.def)             Requested size: 137.31406pt x 137.31406pt.
 
-<./figures/highlight1.png, id=145, 536.0025pt x 395.97937pt>
+<./figures/highlight1.png, id=149, 536.0025pt x 395.97937pt>
 File: ./figures/highlight1.png Graphic file (type png)
 
 <use ./figures/highlight1.png>
-Package pdftex.def Info: ./figures/highlight1.png used on input line 180.
+Package pdftex.def Info: ./figures/highlight1.png used on input line 182.
 (pdftex.def)             Requested size: 284.52756pt x 210.19434pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
@@ -968,7 +968,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5 <./figures/highlight0.png (PNG copy)> <./figures/midstream_contour.png> <./f
 igures/upstream_plain_contour.png>]
-Overfull \hbox (38.78545pt too wide) in paragraph at lines 210--211
+Overfull \hbox (38.78545pt too wide) in paragraph at lines 212--213
 []\T1/ptm/m/n/12 We com-bined these fac-tors into a hi-er-ar-chi-cal fac-tor ve
 c-tor $[][]$, and get $[][] \OT1/ztmcm/m/n/12 = (\OML/ztmcm/m/it/12 F[]; []; H
 []; C[]; W[]\OT1/ztmcm/m/n/12 )$\T1/ptm/m/n/12 .
@@ -981,7 +981,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6 <./figures/highlight1.png (PNG copy)>]
-Overfull \hbox (29.99353pt too wide) in paragraph at lines 229--232
+Overfull \hbox (29.99353pt too wide) in paragraph at lines 231--234
 \T1/ptm/m/n/12 The er-ror of $[][]$ is ac-cept-able, and the eigen-vec-tor of $
 \OML/ztmcm/m/it/12 ^^U$ \T1/ptm/m/n/12 is $[]$
  []
@@ -1001,7 +1001,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 
  []
 
@@ -1012,7 +1012,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 329--331
+Underfull \hbox (badness 10000) in paragraph at lines 331--333
 
  []
 
@@ -1022,19 +1022,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10] <./figures/reservoir.png, id=209, 1219.55624pt x 863.225pt>
+[10] <./figures/reservoir.png, id=213, 1219.55624pt x 863.225pt>
 File: ./figures/reservoir.png Graphic file (type png)
 
 <use ./figures/reservoir.png>
-Package pdftex.def Info: ./figures/reservoir.png used on input line 368.
+Package pdftex.def Info: ./figures/reservoir.png used on input line 370.
 (pdftex.def)             Requested size: 227.62204pt x 161.1035pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--386
+Underfull \hbox (badness 10000) in paragraph at lines 387--388
 
  []
 
 
-Overfull \hbox (27.06375pt too wide) in paragraph at lines 391--405
+Overfull \hbox (27.06375pt too wide) in paragraph at lines 393--407
  [][] 
  []
 
@@ -1069,12 +1069,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 515--517
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 519--521
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 517--522
+Underfull \hbox (badness 10000) in paragraph at lines 521--526
 
  []
 
@@ -1084,7 +1091,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15
+[16
 
 ] 
 AED: lastpage setting LastPage
@@ -1094,24 +1101,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 545.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 545.
+[17]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 546.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 546.
  (./mcmthesis-demo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 545.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 545.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 546.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 546.
 Package rerunfilecheck Info: File `mcmthesis-demo.out' has not changed.
-(rerunfilecheck)             Checksum: 2C3A1C246AEB4D63066592EDF7B3579F;1385.
+(rerunfilecheck)             Checksum: A9662E7C46C5E6FBFCC5B63FFDC376E2;1454.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12167 strings out of 493014
- 175422 string characters out of 6137001
- 411058 words of memory out of 5000000
- 15293 multiletter control sequences out of 15000+600000
+ 12170 strings out of 493014
+ 175459 string characters out of 6137001
+ 413058 words of memory out of 5000000
+ 15294 multiletter control sequences out of 15000+600000
  78725 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,13n,92p,2359b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1124,10 +1131,10 @@ a.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2
 016/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2016/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/times/
 utmr8a.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on mcmthesis-demo.pdf (18 pages, 4117024 bytes).
+Output written on mcmthesis-demo.pdf (19 pages, 4121117 bytes).
 PDF statistics:
- 316 PDF objects out of 1000 (max. 8388607)
- 271 compressed objects within 3 object streams
- 96 named destinations out of 1000 (max. 500000)
- 204 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 327 PDF objects out of 1000 (max. 8388607)
+ 281 compressed objects within 3 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 212 words of extra memory for PDF output out of 10000 (max. 10000000)
 
