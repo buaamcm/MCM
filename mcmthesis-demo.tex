@@ -40,6 +40,7 @@
 \usepackage{mathptmx}
 \usepackage{caption}
 \usepackage{subfigure}
+\usepackage{framed}
 
 \title{Managing The Zambezi River}
 \author{Kai Feng, Song Lu, Yutao Zeng}
@@ -151,7 +152,7 @@ From the perspective of the vertical drop, we know the following areas are suita
 \begin{figure}[h]
 \small
 \centering
-\includegraphics[width=8cm]{./figures/highlight1.png}
+\includegraphics[width=8cm]{./figures/highlight0.png}
 \caption{Candidate areas according to vertical drop} \label{fig:Fig3}
 \end{figure}
 
@@ -176,15 +177,17 @@ From the perspective of the vertical drop, we know the following areas are suita
 \begin{figure}[h]
 \small
 \centering
-\includegraphics[width=10cm]{./figures/dis_alti_v3.png}
+\includegraphics[width=10cm]{./figures/highlight1.png}
 \caption{Candidate areas according to combined factors} \label{fig:Fig4}
 \end{figure}
 \indent In addition, we need to consider the geological foundation conditions on both sides of the river. The rock layer of the candidate areas are rather solid and the vegetation along the river is lush which means it is less like to happen landslide in these areas. Base on the discussion above, we don't narrow the candidate areas any more since they are suitable for the construction of dams, the next step is build a function as benchmark and pick the exact locations from these candidate areas.
 
 \subsubsection{Building Benchmark function}
 \indent \indent From the discussion above, we have obtained the candidate dam construction area. However, evaluate from the continuous area is a heavy load work with great difficulty and complexity, so we try to turn the continuous problem into discrete problem and reduce the complexity of the problem.\\
-\indent The choose of the dam should based on various factors, such as vertical drop, rock and soil condition, the slope and height of the bank and the width of the river etc. With so many factors to be considered, we decided to use analytic hierarchy process(AHP) to do this job.\\
-\indent Firstly, we need to establish the natural coordinate along the river. We assume $l$ to be the distance from the region's starting point the the candidate point.
+
+\textbf{Geography Analysis}\\
+\indent The choose of the dam should based on various geographical factors, such as vertical drop, rock and soil condition, the slope and height of the bank and the width of the river etc. With so many factors to be considered, we decided to use analytic hierarchy process(AHP) to do this job.\\
+\indent Firstly, we need to establish the natural coordinate along the river. We assume $l$ to be the distance from the upstream source to the the candidate point.
 
 \begin{table}[!ht]
 \centering
@@ -229,20 +232,147 @@ Based on the calculation above, we get the weight vector $\textbf{w}_{1}$.
 \begin{equation}
 \textbf{w}_{1} = \lambda = \left[0.2185, 0.063, 0.2185, 0.5190, 0.7945\right]
 \end{equation}
+and our initial benchmark function is:
+\begin{equation}
+E(l) = \textbf{P}\textbf{w}_{1}^{T} = 0.2185F_l + 0.063{\alpha}_{l} + 0.2185H_l + 0.519C_l + 0.7945W_l
+\end{equation}
+There are something need to note when using this function:
+\begin{itemize}
+  \item This function can only determine \textbf{one} point each time because every selected point will change $H_l$.
+  \item When establishing the function of these five factors, it is necessary to set a maximum value of this function, since the dam establishment only needs to meet the appropriate conditions. The function can be expressed as 
+  \begin{eqnarray}
+  F(x) =
+  \begin{cases}
+  f(x) & 0 < x < \theta \cr F_{max} & x \ge \theta
+  \end{cases}
+  \end{eqnarray}
+\end{itemize}
+Our location selecting algorithm are as follow:
 
+\begin{framed}
+\newcounter{alg}
+\begin{list}{\arabic{alg}.}
+    {\usecounter{alg}\setlength{\parsep}{0ex}\setlength{\itemsep}{0ex}}
+\item[] Dam Location Selecting Algorithm
+\item Create a natural coordinate system of the candidate area, and take the upstream source as the origin. The evaluation threshold is set as $T_{0}$.
+\item Based on the coordinate and DEM data we get, create the function of 5 factors including $F(l),\alpha(l),H(l),C(l)$ and $W(l)$, then set the maximum value of it.
+\item Bring $l$ into evaluation function $E(l)$, and select the point that satisfies the condition best as candidate point.
+\item According to the obtained candidate point, divide this area into 2 segment. Repeat step 2 and step 3 to each of these segments until no new candidate points are generated.
+\item Put all candidate points into candidate set.
+\end{list}
+\end{framed}
+
+\textbf{Cost Analysis}\\
+\indent Besides the geography conditions, we also needs to consider the cost of dam construction, including the design cost of the whole project, the overall construction cost of the project, the feasibility analysis report of the later stage of the project etc.\\
+Firstly, we need to calculate the construction costs. According to the cost formula given by Hydro Review Maga, the construction cost is directly related to the size of the dam.
+\begin{equation}
+C_{build} = K(\frac{V_{cap}}{(H/\Delta)^{\eta}})^{\gamma}
+\end{equation}
+where $V_{cap}$ is the installed capacity, $H$ is the height of the water head, $\Delta$ and $\eta$ are two  coefficient to adjust the relationship between $V_{cap}$ and $H$, $\gamma$ is the cost index, $K$ is the cost coefficient. The value of $K$ often depends on the size of the dam. For example, the $K$ of the big dam is $7.7\times10^4$, while the small dam could be $5.0 \times 10^4$.
+\indent We can calculate the installed capacity $V_{cap}$ based on the annual flow of the river, the detailed data can be found from the Internet. The formula to calculate $V_{total}$ is:
+\begin{equation}
+V_{total} = V_{flow} - V_{evap} + V_{rain} = V_{flow} - (1-{\alpha})v_{0}S({\mu}T_{aver})^{\theta} + {\beta}v_{1}S
+\end{equation}
+where $v_{0}$ is the evaporation of the water per day per unit area, $\alpha$ is the evaporation reflux coefficient, $\mu$ is the temperature regulation coefficient, $\beta$ is the proportion of precipitation into the reservoir, $v_{1}$ is the annual average rainfall per unit area, $S$ is the area of river, $t$ is the time.\\
+\indent $S$ can be calculated by using following formula:
+\begin{equation}
+S \approx \left(K_{1}l + K_{2}L\right)\frac{V}{S} + CS
+\end{equation}
+\indent Now we get the formula to calculate the installed capacity:
+\begin{equation}
+V_{cap} = {\rho}gV_{total}H = {\rho}g(V_{flow} - (1 - {\alpha})v_{0}S({\mu}T_{aver})^{\theta}t + {\beta}v_{1}St)H
+\end{equation}
+\indent Then we consider the cost of the construction of the dam. There are some relations between the design costs and the construction cost, so we can directly get
+\begin{equation}
+C_{design} = {\delta}(C_{build})^{\tau}
+\end{equation}
+where $\delta$ is the proportional coefficient, $\tau$ is the proportional index. According to the data we get, $\tau$ generally go for 0.9 and $\delta$ generally goes for 0.34.
+\indent Then we start to consider other costs when building a dam. According to the statistic given by the World Bank, the cost of feasibility report before and after the construction account for about $12\%$ of total design cost.
+\begin{equation}
+C_{prev} + C_{later}= (\alpha_{1} + \alpha_{2})C_{design} = 0.12C_{design}
+\end{equation}
+Finally, we get the total cost of the project:
+\begin{equation}
+C_{project} = C_{build} + C_{design} + C_{prev} + C_{later}
+\end{equation}
+\begin{equation}
+C_{project} = K(\frac{V_{cap}}{(H/\Delta)^{\eta}})^{\gamma} + (1+\alpha_{1}+\alpha_{2}){\delta}(K(\frac{V_{cap}}{(H/\Delta)^{\eta}})^{\gamma})^{\tau}
+\end{equation}\\
+
+\textbf{Income Analysis}\\
+\indent After the cost analysis, let's come to the income analysis. We can calculate the profit gained from annual power generation by using the installed capacity of the dam. 
+\begin{equation}
+B_{elec} = V_{cap}T_{use}p_{elec}
+\end{equation}
+where $T_{use}$ is the power-generation time in a year(The hydropower is stopped during the low water period.),  $p_{elec}$ is the local electricity price. Usually, $T_{use}$ is between $3700-4200$h and local electricity price is $0.384\sim0.468$Cent/KWh.
+In addition, building new dams will bring some extra income such as Fishery income, tourism income, irrigation income and so on.Based on the model built by Welcomme$^{[2]}$, we can calculate the fishery income by using the equation below:
+\begin{equation}
+B_{fish} = {\gamma}S^{\theta}P_{fish}
+\end{equation}
+where $\gamma$ is the relation coefficient between watershed area and fishery output, $\theta$ is the relation index between watershed area and fishery output, $p_{fish}$ represent the local fish price on average. In this paper, $\gamma$ is set to 0.03 and $\theta$ is set to 0.97. According to the fishery data in 2016, we set $p_{fish}$ to 3.5 dollar per kilogram. There are also some benefit that cannot be quantized like the irrigation benefit and emergency response capability. \\
+The final dam income formula is:
+\begin{equation}
+B_{total} = B_{elec} + B_{fish} + B_{other}
+\end{equation}
+where $B_{other}$ is a basic estimate of other benefits including the irrigation benefit and emergency response capability. Specific values can refer to other dams on the downstream of the Zambezi River.
+
+\textbf{Safety Analysis}\\
+\indent Since we are analyzing the impact on safety made by local terrain and geological. The evaluation function obtained above is used directly as a measure of security here.
+\begin{equation}
+S_{i} = E_{l,i}
+\end{equation}
+
+\textbf{Other Factors}\\
+\indent At the same time, the influencing factors of people and environment should be put into out evaluation function as a measurement factor. Some of them are more prominent such as the impact of the residents living around(cost of immigration) and the animals and plants living in the submerged areas. We use the formula below to quantify the impact.
+\begin{equation}
+F_{other} = P_{i}({\xi}S^{\sigma})m_{0} + S_{submerge}(\beta_{1}m_{1} + \beta_{2}m_{2}) + F_{balance}
+\end{equation}
+where $P_{i}$ means the density of the population around the $i$th dam, ${\xi}S^{\sigma}$ is a formula used to estimate how many people will be influenced by the new dam, $S$ is the area of reservoir, $m_{0}$ is the migration costs per person, $S_{submerge}$ is the size of submerged area, $\beta_{1} and \beta_{2}$ are two relation coefficients between dam and the creatures living around, $m_{1},m_{2}$ is the value of the living creature living in this location. Besides, $F_{balance}$ is a constant used to balance $F_{other}$.\\
+
+\textbf{Combined Analysis}\\
+\indent We have got some quantified formula from above. In the final benchmark function, we need to put all these factors together and set proper weight to them. Here, we still use the AHP method to calculate the proportion of each factor. Combined the 4 factors above into the influencing factor vector $\textbf{P}_2$. $\textbf{P}_2 = (C_{project}, S_{i}, B_{total}, F_{other})$, then we get the comparison matrix $\textbf{A}_2$ which is satisfied with the equation below.
+\[\textbf{A}_2 = (a_{i,j})_{4\times4}, \qquad a_{i,j}>0, \qquad a_{i,j} = \frac{1}{a_{j,i}}\]
+\indent Similarly, using the standard above as a measure. The safety and geography condition are two most important factors, however the income is of less importance and its not our goal to maximum the income of the dam. The influence from other factors should be bigger than the income, but smaller than the cost and safety. So we created the comparison matrix as below.
+\[\textbf{A}_2 =
+\left[
+\begin{matrix}
+1 & 1 & 2 & 2 \\
+1 & 1 & 3 & 2 \\
+\frac{1}{2}& \frac{1}{3} & 1 & 1 \\
+\frac{1}{2} & \frac{1}{2} & 1 & 1 \\
+\end{matrix}
+\right]
+\]\\
+The maximum eigenvalue of $A_{2}$ is $\lambda = 4.0206$. The consistency indicator of $\textbf{A}_2$ is \[\mathit{CI} = \frac{\lambda - n}{n - 1} = 0.0069\]
+where $n$ means the order of the matrix. When $n = 4$, we get the random consistency indicator  \textit{RI} to be $0.90$. So the consistency ratio of $A_{2}$ is \[\mathit{CR} = \frac{\mathit{CI}}{\mathit{RI}} = 0.0076 < 0.1 \]
+So the inconsistency of $\textbf{A}_2$ is within the allowable range, the feature vector of $\lambda$ is $\left[0.6092, 0.6780, 0.2765, 0.3046\right]$.
+\indent Using the result from above, we can calculate the value of weight vector $\textbf{w}_{2}$:
+\begin{equation}
+\textbf{w}_{2} = \lambda = \left[0.6092, 0.6780, 0.2765, 0.3046\right]
+\end{equation}
+
+\indent Finally, our benchmark function $V(i)$ is:
+\begin{equation}
+V(i) = 0.2185C(i) + 0.678S(i) + 0.2675B(i) + 0.3046F(i)
+\end{equation}
 
 
 \subsection{Model Validation}
 
 \subsection{Result}
-\indent \indent According to Model A, We get some important equations as follow.
+% \indent \indent According to Model A, We get some important equations as follow.
 
-Meanwhile, based on the model, we make the following suggestions.
-\begin{itemize}
-  \item 
-\end{itemize}
+\begin{figure}[h]
+\small
+\centering
+\includegraphics[width=8cm]{./figures/reservoir.png}
+\caption{Effect diagram rendered by Google Earth} \label{fig:Fig1}
+\end{figure}
 
-
+% Meanwhile, based on the model, we make the following suggestions.
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 
 
@@ -277,14 +407,74 @@ Meanwhile, based on the model, we make the following suggestions.
 
 \subsection{Assumptions}
 \begin{enumerate}
-  \item The use of water resources is divided into a variety, such as hydropower, agricultural irrigation. In order to simplify the assessment of water resources value, we assume that the value of water resources is proportional to the volume of water resources $V$. 
+  \item The use of water resources is divided into varieties, such as hydropower, agricultural irrigation, etc. In order to simplify the assessment of water resources value, we assume that the value of water resources is proportional to the volume of water resources $V$. 
   \item The amount of water lost to a dam system due to flood discharge can not be reused.
   \item The power generation water is transferred into the downstream reservoir, but the water for other uses is not directly transferred into the dam system.
 \end{enumerate}
 
 \subsection{Model Building}
-According to our first two assumptions, the value of water lost per unit time of a dam system is proportional to the amount of water lost due to flood discharge. 
-\subsection{Optimization}
+\indent According to our first two assumptions, the value of water lost per unit time of a dam system is proportional to the amount of water lost due to flood discharge. And water is lost from the entire dam system only if it is drained as flood discharge from the last dam of the dam system, so we get
+\begin{equation}
+V_{D} = V_{D,i}
+\end{equation}
+\indent In order to maximize the benefits of the dam system, it is necessary to make the $ V_ {D, i} $ as small as possible, and the restrictive factors in different situations must be taken into account when proposing the modulating scheme. Therefore, we consider the use of optimization model to obtain water resources modulating scheme under certain case. \\
+\indent According to our discussion above, the objective function of optimization is very simple, i.e.
+\begin{equation}
+\min V_{D} = V_{D, i}
+\end{equation}
+\indent In the following, we will focus on finding constraints. First, the amount of water in the reservoir after the unit time is equal to the sum of original amount of water, natural increment of the reservoir and drainage of upstream reservoirs (including power generation and flood discharge) then subtract the sum of water for other purposes, power generation and flood discharge, i.e.
+\begin{equation} V_{i}^{'} =
+\left\{
+\begin{array}{cc}
+ V_{i} + V_{n, i} + V_{D, i - 1} + V_{e, i - 1} - V_{u, i} - V_{e, i} - V_{D, i} & i > 1 \\
+V_{i} + V_{n, i} - V_{u, i} - V_{e, i} - V_{D, i} & i = 1 \\
+\end{array}
+\right.
+\end{equation}
+where $ V_ {i} ^ {'} $ is the amount of water in reservoir $ i $ at the end of the period. 
+$\triangle V = V ^ {'} - V $, then there have:
+\begin{equation}
+V_{n, i} =
+\left\{
+\begin{array}{cc}
+\triangle V_{i} - V_{D, i - 1} - V_{e, i - 1} + V_{u, i} + V_{e, i} + V_{D, i} & i > 1 \\
+\triangle V_{i} + V_{u, i} + V_{e, i} + V_{D, i}& i = 1 \\
+\end{array}
+\right.
+\end{equation}
+This is the equality constraint between variables
+
+We consider more constraints on the variables
+The Flood discharge capacity of the dam is clearly greater than or equal to zero and has an upper limit, ie
+\begin{equation}
+0 \leq V_{D, i} \leq V_{D, i}^{max}
+\end{equation}
+$ V_{D, i} ^ {max} $ is the maximum flood discharge capacity of dam $i$
+
+Dam electricity generation capacity is limited, accordingly, the amount of water used for electricity generation is also limited. In addition, the amount of water used for electricity generation can not be negative, thus we get
+\begin{equation}
+0 \leq V_{e, i} \leq V_{e, i}^{\max}
+\end{equation}
+
+Similarly, for $ V_ {u, i} $ we have:
+\begin{equation}
+V_{u, i}^{\min} \leq V_{u, i} \leq V_{u, i}^{\max}
+\end{equation}
+
+\indent The lower limit of $ V_ {u, i} $ is not $ 0 $, considering that the rigid demand for agricultural water use around the reservoir.\\
+\indent The constraint on $ \ triangle V_ {i} $ should depend on the reservoir's existing water volume, future plans for reservoir volumes, and natural replenishment of future reservoirs. But intuitively, the water level of the reservoir should not be violent fluctuations; and our model should allow professionals to give limits of the reservoir water level fluctuations where used in specific case in the relevant areas, so we express the constraints of $ \ triangle V_ {i} $ as:
+\begin{equation}
+\alpha_{i} \leq \frac{\triangle V_{i}}{V_{i}^{\max}} \leq \beta_{i}
+\end{equation}
+where $ V_ {i} ^ {\ max} $ is the maximum volume of the reservoir
+
+\indent Although some dams in the system can stop generating electricity at a certain time due to the regulation of the power grid, considering the need to meet the electricity needs of the local and other areas, the total generation of the dam system should have a lower limit of more than $ 0 $, thus we get:
+\begin{equation}
+\sum_{i = 1}^{n} V_{e, i} \geq E_{min}
+\end{equation}
+$ E_ {min} $ is the amount of water required to produce the minimum electricity demand.
+
+% \subsection{Optimization}
 
 \subsection{Sensitivity Analysis}
 
@@ -316,10 +506,8 @@ In Model B, we consider .... , which is a weakness. However we have more strengt
 
 \begin{thebibliography}{99}
 \bibitem{1} IRMSA , Impact of the failure of the Kariba Dam, June 2015.
-\bibitem{2}Lamport, Leslie,  \LaTeX{}: `` A Document Preparation System '',
-Addison-Wesley Publishing Company, 1986.
-\bibitem{3}\url{http://www.latexstudio.net/}
-\bibitem{4}\url{http://www.chinatex.org/}
+\bibitem{2} Welcomme, R.L., 1985. River fisheries. FAO Fish. Tech. Pap. No. 262, Rome
+
 \end{thebibliography}
 
 \clearpage
