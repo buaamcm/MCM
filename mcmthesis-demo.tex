@@ -222,7 +222,15 @@ Now we need to get the importance of each factor, that is , the weight vector $\
 \]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%attention here%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%consistency index%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Calculate the maximum eigenvalues of matrix $A$, we get $\lambda = 5.1415$. The consistency indicators of $\textbf{A}_1$ is \[\mathit{CI} = \frac{\lambda - n}{n - 1} = 0.0354\], where $n$ is the order of the matrix. When $n = 5$, the stochastic consistency index \textit{RI} is $1.12$. Then the consistency ratio of matrix A is \[\mathit{CR} = \frac{\mathit{CI}}{\mathit{RI}} = 0.0316 < 0.1 \]
+Calculating the maximum eigenvalues of matrix $A$, we get $\lambda = 5.1415$. The consistency indicators of $\textbf{A}_1$ is \[\mathit{CI} = \frac{\lambda - n}{n - 1} = 0.0354\]
+where $n$ is the order of the matrix. When $n = 5$, the random consistency index \textit{RI} is $1.12$. Then the consistency ratio of matrix A is \[\mathit{CR} = \frac{\mathit{CI}}{\mathit{RI}} = 0.0316 < 0.1 \]
+The error of $\textbf{A}_1$ is acceptable, and the eigenvector of $\lambda$ is $\left[0.2185, 0.063, 0.2185, 0.5190, 0.7945\right]$
+Based on the calculation above, we get the weight vector $\textbf{w}_{1}$.
+\begin{equation}
+\textbf{w}_{1} = \lambda = \left[0.2185, 0.063, 0.2185, 0.5190, 0.7945\right]
+\end{equation}
+
+
 
 \subsection{Model Validation}
 
@@ -318,9 +326,7 @@ Addison-Wesley Publishing Company, 1986.
 \section{Brief Assessment of the options}
 \indent \indent The solution to the Kariba Dam problem can simply be divided into three options: repairing it, rebuilding it or removing it then replacing it with other dams. To the third method, ZRA suggests to build $10\sim20$ small dams to replace the huge Kariba Dam.\\
 \indent Evaluating the options from the perspective of cost and benefit is a complex task, since it can be influence by a number of factors. Only considering the cost of building dams, although it can be estimated accurately by using the cost formula below \\
-\[
-C_{p} = K\left(\frac{V}{\left(\frac{H}{0.3}\right)^{0.3}}\right)^{0.82}
-\]
+\[C_{p} = K\left(\frac{V}{\left(\frac{H}{0.3}\right)^{0.3}}\right)^{0.82}\]
 where $C_{p}$ is the cost of building the hydropower station, $V$ is the installed capacity, $H$ is the design head, $K$ is the proportional coefficient. However, the ecological costs of dam construction need to be considered more cautiously because damage to the ecological environment may be irreversible.\\
 \indent Option 1. Repairing the existing Kariba Dam. This is the option with the lowest cost of construction. Meanwhile, it won't change the submerged area, so there is no extra ecological cost. From the aspect of revenue, the reconstruction and expansion of Kariba Dam hydropower station can be carried out at the same time, which can effectively increase the total installed capacity of hydropower station, and thus improve the income of hydropower station. In fact, the expansion of the Kariba Dam hydropower station is underway. Since the reconstruction will not affect the Kariba Lake, the benefits from the use of water from the lake won't be reduced. The analysis above is based on the assumption that the climate will not change drastically in the future and no rare disasters which is outside the historical statistics will occur.\\
 \indent Option 2. Rebuilding the existing Kariba Dam. Because rebuilding the Kariba Dam need to remove the existing the dam and rebuild it at the origin site, it is an option with high risk and cost. What's more, the reconstruction of the dam will inevitably lead to the result that the hydropower station can't generate electricity in quite a long period, so this part of loss should also be included in the cost of reconstruction. However, rebuilding dams do have benefits. It helps to expand the installed capacity of hydropower station (benefit from re-designing the internal structure and using more advanced equipment). The new designed Dam would have better flood protection capacity, which allows river management to handle emergency with more flexibility. Stronger water storage capacity means we can raise the water level of Kariba Lake. It will increase the energy generation as well as bring the risk of ecologic damage which needs to be treated with caution.\\
