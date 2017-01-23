@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.9)  23 JAN 2017 10:37
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.1.7)  23 JAN 2017 13:01
+>>>>>>> origin/master
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1535,15 +1539,21 @@ e - \C70/rm/m/n/10.53937/53 ^^E \C70/rm/m/n/10.53937/54 + \C70/rm/m/n/10.53937/
 /53 Â \C70/rm/m/n/10.53937/71 g\OT1/cmr/m/n/10.53937 Zambezi
  []
 
-[5] [6] (./paper.aux) ) 
+[5] [6] [7] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  19976 strings out of 493014
  338266 string characters out of 6137001
+=======
+ 19978 strings out of 493014
+ 340118 string characters out of 6133789
+>>>>>>> origin/master
  432389 words of memory out of 5000000
- 22966 multiletter control sequences out of 15000+600000
+ 22968 multiletter control sequences out of 15000+600000
  39238 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,12n,47p,10478b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
+<<<<<<< HEAD
 <c:/WINDOWS/fonts/simsun.ttc><c:/WINDOWS/fonts/simhei.tt
 f><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/s
 imhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS/fonts/simhei.ttf><c:/WINDOWS
@@ -1592,9 +1602,60 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2016/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmti10.pfb>
 Output written on paper.pdf (6 pages, 584880 bytes).
+=======
+<c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simhe
+i.ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/fon
+ts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Win
+dows/fonts/simhei.ttf><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc
+><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/si
+msun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/
+fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/
+Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simhei.
+ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/fonts
+/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Windo
+ws/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><
+c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/sims
+un.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fo
+nts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Wi
+ndows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.tt
+c><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/s
+imsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows
+/fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:
+/Windows/fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/fonts/simhei
+.ttf><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/font
+s/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Wind
+ows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc>
+<c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/sim
+sun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/f
+onts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/W
+indows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.t
+tc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/
+simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Window
+s/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c
+:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsu
+n.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fon
+ts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Win
+dows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc
+><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/simsun.ttc><c:/Windows/fonts/si
+msun.ttc><c:/Windows/fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/
+fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/Windows/fonts/simhei.ttf><c:/
+Softwares/TexLive16/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/So
+ftwares/TexLive16/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Soft
+wares/TexLive16/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Softwa
+res/TexLive16/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Software
+s/TexLive16/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/Softwares/T
+exLive16/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/Softwares/TexL
+ive16/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Softwares/TexLive
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/Softwares/TexLive16/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Softwares/TexLive16/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Softwares/TexLive16/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/Softwares/TexLive16/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on paper.pdf (7 pages, 586320 bytes).
+>>>>>>> origin/master
 PDF statistics:
- 535 PDF objects out of 1000 (max. 8388607)
- 341 compressed objects within 4 object streams
+ 540 PDF objects out of 1000 (max. 8388607)
+ 345 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  293 words of extra memory for PDF output out of 10000 (max. 10000000)
 
