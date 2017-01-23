@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1485137742 "mcmthesis-demo.tex" "mcmthesis-demo.pdf" "mcmthesis-demo" 1485137744
+["pdflatex"] 1485138298 "mcmthesis-demo.tex" "mcmthesis-demo.pdf" "mcmthesis-demo" 1485138301
   "c:/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc" 1475943623 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1475943794 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm" 1475943509 1292 bd42be2f344128bff6d35d98474adfe3 ""
@@ -173,12 +173,12 @@
   "figures/highlight1.png" 1485137639 24149 4149f28ac1ea699e5c802ffdaca2c3c4 ""
   "figures/midstream_contour.png" 1485054986 396205 650ab69b689c403f4334affe4043c19b ""
   "figures/upstream_plain_contour.png" 1485054986 222829 855f79afbbfc57d2e1dc1eb18f547937 ""
-  "mcmthesis-demo.aux" 1485137744 4635 30fbbf1df254206b48670acc0f481697 ""
-  "mcmthesis-demo.out" 1485137744 1344 7f91c09362097436221a22f81f0dc151 ""
-  "mcmthesis-demo.tex" 1485137739 22174 02cad972d4cc60d94366744ee2d5bbac ""
+  "mcmthesis-demo.aux" 1485138301 4635 30fbbf1df254206b48670acc0f481697 ""
+  "mcmthesis-demo.out" 1485138301 1344 7f91c09362097436221a22f81f0dc151 ""
+  "mcmthesis-demo.tex" 1485137938 22180 bb28a3cbe4e92e79faae75b4f1048c04 ""
   "mcmthesis.cls" 1484869242 9228 a32b54c83ee3c9a9953d5add223f7ae6 ""
   (generated)
   "mcmthesis-demo.pdf"
   "mcmthesis-demo.log"
-  "mcmthesis-demo.aux"
   "mcmthesis-demo.out"
+  "mcmthesis-demo.aux"
