@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1485138298 "mcmthesis-demo.tex" "mcmthesis-demo.pdf" "mcmthesis-demo" 1485138301
+["pdflatex"] 1485145587 "mcmthesis-demo.tex" "mcmthesis-demo.pdf" "mcmthesis-demo" 1485151361
   "c:/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc" 1475943623 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1475943794 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm" 1475943509 1292 bd42be2f344128bff6d35d98474adfe3 ""
@@ -15,6 +15,7 @@
   "c:/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm" 1475945029 6672 e3ab9e37e925f3045c9005e6d1473d56 ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm" 1475945029 2288 f478fc8fed18759effb59f3dad7f3084 ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm" 1475945029 4640 532ca3305aad10cc01d769f3f91f1029 ""
+  "c:/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmri8t.tfm" 1475945029 6944 94c55ad86e6ea2826f78ba2240d50df9 ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7m.tfm" 1475945029 2232 db256afffc8202da192b4641df14d602 ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm" 1475945029 2172 1d00c2a0d10f23031be62329457a870c ""
   "c:/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7v.tfm" 1475945029 1032 20febbd0f0c9a48eb78616f897008286 ""
@@ -61,6 +62,8 @@
   "c:/texlive/2016/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf" 1475943907 2344 44ff28c9ef2fc97180cd884f900fee71 ""
   "c:/texlive/2016/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf" 1475945030 2340 df9c920cc5688ebbf16a93f45ce7bdd3 ""
   "c:/texlive/2016/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf" 1475945030 2348 91706c542228501c410c266421fbe30c ""
+  "c:/texlive/2016/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf" 1475945030 1384 a9d8adaf491ce34e5fba99dc7bbe5f39 ""
+  "c:/texlive/2016/texmf-dist/fonts/vf/adobe/times/ptmri8t.vf" 1475945030 2328 6cd7df782b09b29cfc4d93e55b6b9a59 ""
   "c:/texlive/2016/texmf-dist/fonts/vf/adobe/times/zptmcm7m.vf" 1475945030 1132 27520247d3fe18d4266a226b461885c2 ""
   "c:/texlive/2016/texmf-dist/fonts/vf/adobe/times/zptmcm7t.vf" 1475945030 1108 d271d6f9de4122c3f8d3b65666167fac ""
   "c:/texlive/2016/texmf-dist/fonts/vf/adobe/times/zptmcm7v.vf" 1475945030 1012 046369ac6a83af997c3aa05a43256ad5 ""
@@ -173,12 +176,12 @@
   "figures/highlight1.png" 1485137639 24149 4149f28ac1ea699e5c802ffdaca2c3c4 ""
   "figures/midstream_contour.png" 1485054986 396205 650ab69b689c403f4334affe4043c19b ""
   "figures/upstream_plain_contour.png" 1485054986 222829 855f79afbbfc57d2e1dc1eb18f547937 ""
-  "mcmthesis-demo.aux" 1485138301 4635 30fbbf1df254206b48670acc0f481697 ""
-  "mcmthesis-demo.out" 1485138301 1344 7f91c09362097436221a22f81f0dc151 ""
-  "mcmthesis-demo.tex" 1485137938 22180 bb28a3cbe4e92e79faae75b4f1048c04 ""
+  "mcmthesis-demo.aux" 1485145589 4998 c93b2398fca286f9013ec74057267c23 ""
+  "mcmthesis-demo.out" 1485145589 1515 f08e1baab44705e307d8a79dd097982a ""
+  "mcmthesis-demo.tex" 1485151358 25397 dbecc940989f7445bf2733ac884c6a08 ""
   "mcmthesis.cls" 1484869242 9228 a32b54c83ee3c9a9953d5add223f7ae6 ""
   (generated)
-  "mcmthesis-demo.pdf"
-  "mcmthesis-demo.log"
-  "mcmthesis-demo.out"
   "mcmthesis-demo.aux"
+  "mcmthesis-demo.out"
+  "mcmthesis-demo.log"
+  "mcmthesis-demo.pdf"

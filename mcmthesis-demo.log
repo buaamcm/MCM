@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.9)  23 JAN 2017 10:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.10.9)  23 JAN 2017 12:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -865,36 +865,36 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 123.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 124.
 
  (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 123.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 124.
 
-<./figures/Sensing_Figure.png, id=125, 849.92531pt x 421.575pt>
+<./figures/Sensing_Figure.png, id=133, 849.92531pt x 421.575pt>
 File: ./figures/Sensing_Figure.png Graphic file (type png)
 
 <use ./figures/Sensing_Figure.png>
-Package pdftex.def Info: ./figures/Sensing_Figure.png used on input line 133.
+Package pdftex.def Info: ./figures/Sensing_Figure.png used on input line 134.
 (pdftex.def)             Requested size: 398.33858pt x 197.58063pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figures/dis_alti_v3.png, id=127, 1204.5pt x 794.97pt>
+<./figures/dis_alti_v3.png, id=135, 1204.5pt x 794.97pt>
 File: ./figures/dis_alti_v3.png Graphic file (type png)
 
 <use ./figures/dis_alti_v3.png>
-Package pdftex.def Info: ./figures/dis_alti_v3.png used on input line 142.
+Package pdftex.def Info: ./figures/dis_alti_v3.png used on input line 143.
 (pdftex.def)             Requested size: 398.33858pt x 262.8989pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--149
+Underfull \hbox (badness 10000) in paragraph at lines 148--150
 
  []
 
@@ -912,30 +912,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4 <./figures/Sensing_Figure.png> <./figures/dis_alti_v3.png>]
-<./figures/highlight1.png, id=142, 536.0025pt x 395.97937pt>
+<./figures/highlight1.png, id=150, 536.0025pt x 395.97937pt>
 File: ./figures/highlight1.png Graphic file (type png)
 
 <use ./figures/highlight1.png>
-Package pdftex.def Info: ./figures/highlight1.png used on input line 153.
+Package pdftex.def Info: ./figures/highlight1.png used on input line 154.
 (pdftex.def)             Requested size: 227.62204pt x 168.1591pt.
 
-<figures/midstream_contour.png, id=143, 599.23875pt x 570.13pt>
+<figures/midstream_contour.png, id=151, 599.23875pt x 570.13pt>
 File: figures/midstream_contour.png Graphic file (type png)
 
 <use figures/midstream_contour.png>
-Package pdftex.def Info: figures/midstream_contour.png used on input line 164.
+Package pdftex.def Info: figures/midstream_contour.png used on input line 165.
 (pdftex.def)             Requested size: 131.83293pt x 125.42899pt.
 
-<figures/upstream_plain_contour.png, id=144, 457.71pt x 457.71pt>
+<figures/upstream_plain_contour.png, id=152, 457.71pt x 457.71pt>
 File: figures/upstream_plain_contour.png Graphic file (type png)
 
 <use figures/upstream_plain_contour.png>
 Package pdftex.def Info: figures/upstream_plain_contour.png used on input line 
-170.
+171.
 (pdftex.def)             Requested size: 137.31406pt x 137.31406pt.
 File: ./figures/dis_alti_v3.png Graphic file (type png)
  <use ./figures/dis_alti_v3.png>
-Package pdftex.def Info: ./figures/dis_alti_v3.png used on input line 178.
+Package pdftex.def Info: ./figures/dis_alti_v3.png used on input line 179.
 (pdftex.def)             Requested size: 284.52756pt x 187.78839pt.
 
 
@@ -949,17 +949,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5 <./figures/highlight1.png (PNG copy)> <./figures/midstream_contour.png> <./f
 igures/upstream_plain_contour.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
-
+Overfull \hbox (38.78545pt too wide) in paragraph at lines 207--208
+[]\T1/ptm/m/n/12 We com-bined these fac-tors into a hi-er-ar-chi-cal fac-tor ve
+c-tor $[][]$, and get $[][] \OT1/ztmcm/m/n/12 = (\OML/ztmcm/m/it/12 F[]; []; H
+[]; C[]; W[]\OT1/ztmcm/m/n/12 )$\T1/ptm/m/n/12 .
  []
-
-
-Overfull \hbox (27.06375pt too wide) in paragraph at lines 205--219
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -968,6 +962,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6]
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+
+ []
+
+
+Overfull \hbox (27.06375pt too wide) in paragraph at lines 253--267
+ [][] 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -975,7 +978,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 265.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 313.
  (c:/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -985,13 +995,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 271--273
+[9]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 319--321
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--280
+Underfull \hbox (badness 10000) in paragraph at lines 323--328
 
  []
 
@@ -1001,7 +1018,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9
+[11
 
 ] 
 AED: lastpage setting LastPage
@@ -1011,23 +1028,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 303.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 303.
+[12]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
  (./mcmthesis-demo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 303.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 303.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 351.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 351.
 Package rerunfilecheck Info: File `mcmthesis-demo.out' has not changed.
-(rerunfilecheck)             Checksum: 7F91C09362097436221A22F81F0DC151;1344.
+(rerunfilecheck)             Checksum: F08E1BAAB44705E307D8A79DD097982A;1515.
  ) 
 Here is how much of TeX's memory you used:
- 12086 strings out of 493014
- 174331 string characters out of 6137001
+ 12102 strings out of 493014
+ 174541 string characters out of 6137001
  409635 words of memory out of 5000000
- 15256 multiletter control sequences out of 15000+600000
- 71919 words of font info for 137 fonts, out of 8000000 for 9000
+ 15264 multiletter control sequences out of 15000+600000
+ 78924 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,11n,92p,2359b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,12n,92p,2359b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2016/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2016/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2016/texmf-dist/fonts/type1
@@ -1038,10 +1055,10 @@ e/2016/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2016/texmf-dist/f
 onts/type1/urw/symbol/usyr.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/t
 exlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on mcmthesis-demo.pdf (12 pages, 1889462 bytes).
+Output written on mcmthesis-demo.pdf (14 pages, 1895913 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
- 211 compressed objects within 3 object streams
- 57 named destinations out of 1000 (max. 500000)
- 194 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 270 PDF objects out of 1000 (max. 8388607)
+ 231 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 210 words of extra memory for PDF output out of 10000 (max. 10000000)
 

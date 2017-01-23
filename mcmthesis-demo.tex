@@ -117,6 +117,7 @@ where $C$ is a coefficient to indicate that $S_{bottom}$ is proportional to $S$.
 
 
 \subsection{Model Building}
+\subsubsection{Search for candidate areas}
 \indent \indent In order to find suitable dam sites along the Zambezi River, we established a simple model based on the geographical conditions, costs, safety of the whole dam system and other fatal conditions. \\
 \indent The storage capacity of dams depends on the height of dams which is limited by the slope and height of the river bank. The cost of construction basically depends on the dam's height and length as well as the width of river. Thus, there are three major parameter to be taken into account in choosing candidate regions:
 \begin{itemize}
@@ -178,10 +179,50 @@ From the perspective of the vertical drop, we know the following areas are suita
 \includegraphics[width=10cm]{./figures/dis_alti_v3.png}
 \caption{Candidate areas according to combined factors} \label{fig:Fig4}
 \end{figure}
-\indent In addition, we need to consider the geological foundation conditions on both sides of the river. The rock layer of the candidate areas are rather solid and the vegetation along the river is lush which means it is less like to happen landslide in these areas. Base on the discussion above, we don't narrow the candidate areas any more since they are suitable for the construction of dams, the next step is to pick the exact location from these candidate areas.
+\indent In addition, we need to consider the geological foundation conditions on both sides of the river. The rock layer of the candidate areas are rather solid and the vegetation along the river is lush which means it is less like to happen landslide in these areas. Base on the discussion above, we don't narrow the candidate areas any more since they are suitable for the construction of dams, the next step is build a function as benchmark and pick the exact locations from these candidate areas.
 
+\subsubsection{Building Benchmark function}
+\indent \indent From the discussion above, we have obtained the candidate dam construction area. However, evaluate from the continuous area is a heavy load work with great difficulty and complexity, so we try to turn the continuous problem into discrete problem and reduce the complexity of the problem.\\
+\indent The choose of the dam should based on various factors, such as vertical drop, rock and soil condition, the slope and height of the bank and the width of the river etc. With so many factors to be considered, we decided to use analytic hierarchy process(AHP) to do this job.\\
+\indent Firstly, we need to establish the natural coordinate along the river. We assume $l$ to be the distance from the region's starting point the the candidate point.
 
+\begin{table}[!ht]
+\centering
+  \begin{tabular}{cc}
+  \hline
+   Intensity of Importance & meaning  \\
+  \hline
+  $1$ & Equal importance \\
+  $3$ & Moderate importance \\
+  $5$ & Strong importance \\
+  $7$ & Very strong or demonstrated importance \\
+  $9$ & Extreme importance \\
+  $2,4,6,8$ & Intensity between two hierarchies \\
+  $1,1/2,...,1/9$ & The opposite numbers\\
+  \hline
+  \end{tabular}
+  \caption{Intensity of Importance}
+\end{table}
 
+We combined these factors into a hierarchical factor vector $\textbf{P}_1$, and get $\textbf{P}_1 = (F_{l}, \alpha_{l}, H_{l}, C_{l}, W_{l})$. Then we can get the comparison matrix $\textbf{A}_1$ which is satisfied with the following equation:
+\begin{equation}
+\textbf{A}_1 = (a_{i,j})_{5\times5},\qquad a_{ij} > 0, \quad a_{ij} = \frac{1}{a_{ji}}
+\end{equation}
+Now we need to get the importance of each factor, that is , the weight vector $\textbf{w}$. The $C_{l}$ and $W_{l}$ decides whether the construction is feasible to a great extent, so they are regarded as the most important factors. Between $W_{l}$ and $C_{l}$, $W_{l}$ has more flexibility, so we decide to choose $W_{l}$ as a more effective judge factor. In the other 3 elements, $F_{l}$ and $H_{l}$ decide they storage capacity of the dam, so they are also with a certain importance. However, $\alpha_{l}$ mainly influence the submerged area, so we think it a less significant factor. So we get the comparison matrix as below:
+\[\textbf{A}_1 = 
+\left[
+\begin{matrix}
+1 & 5 & 1 & \frac{1}{3} & \frac{1}{4} \\
+\frac{1}{5}  & 1 & \frac{1}{5} & \frac{1}{7} & \frac{1}{8} \\ 
+1 & 5 & 1 & \frac{1}{3} & \frac{1}{4} \\
+3 & 7 & 3 & 1 & \frac{1}{2} \\
+4 & 8 & 4 & 2 & 1 \\
+\end{matrix}
+\right]
+\]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%attention here%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%consistency index%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Calculate the maximum eigenvalues of matrix $A$, we get $\lambda = 5.1415$. The consistency indicators of $\textbf{A}_1$ is \[\mathit{CI} = \frac{\lambda - n}{n - 1} = 0.0354\], where $n$ is the order of the matrix. When $n = 5$, the stochastic consistency index \textit{RI} is $1.12$. Then the consistency ratio of matrix A is \[\mathit{CR} = \frac{\mathit{CI}}{\mathit{RI}} = 0.0316 < 0.1 \]
 
 \subsection{Model Validation}
 
@@ -192,6 +233,13 @@ Meanwhile, based on the model, we make the following suggestions.
 \begin{itemize}
   \item 
 \end{itemize}
+
+
+
+
+
+
+
 
 
 \section{Model B : The Best Arrangement}

@@ -3,19 +3,21 @@
 \BOOKMARK [2][]{subsection.2.1}{Description}{section.2}% 3
 \BOOKMARK [2][]{subsection.2.2}{Analysis and Assumptions}{section.2}% 4
 \BOOKMARK [2][]{subsection.2.3}{Model Building}{section.2}% 5
-\BOOKMARK [2][]{subsection.2.4}{Model Validation}{section.2}% 6
-\BOOKMARK [2][]{subsection.2.5}{Result}{section.2}% 7
-\BOOKMARK [1][]{section.3}{Model B : The Best Arrangement}{}% 8
-\BOOKMARK [2][]{subsection.3.1}{Description}{section.3}% 9
-\BOOKMARK [2][]{subsection.3.2}{Symbols}{section.3}% 10
-\BOOKMARK [2][]{subsection.3.3}{Assumptions}{section.3}% 11
-\BOOKMARK [2][]{subsection.3.4}{Model Building}{section.3}% 12
-\BOOKMARK [2][]{subsection.3.5}{Optimization}{section.3}% 13
-\BOOKMARK [2][]{subsection.3.6}{Sensitivity Analysis}{section.3}% 14
-\BOOKMARK [2][]{subsection.3.7}{Model Validation}{section.3}% 15
-\BOOKMARK [2][]{subsection.3.8}{Result}{section.3}% 16
-\BOOKMARK [1][]{section.4}{Strengths and weaknesses}{}% 17
-\BOOKMARK [2][]{subsection.4.1}{Model A: Search for possible locations to build dams}{section.4}% 18
-\BOOKMARK [2][]{subsection.4.2}{Model B: The Best Arrangement}{section.4}% 19
-\BOOKMARK [1][]{section.5}{Conclusion}{}% 20
-\BOOKMARK [1][]{section.6}{Brief Assessment of the options}{}% 21
+\BOOKMARK [3][]{subsubsection.2.3.1}{Search for candidate areas}{subsection.2.3}% 6
+\BOOKMARK [3][]{subsubsection.2.3.2}{Building Benchmark function}{subsection.2.3}% 7
+\BOOKMARK [2][]{subsection.2.4}{Model Validation}{section.2}% 8
+\BOOKMARK [2][]{subsection.2.5}{Result}{section.2}% 9
+\BOOKMARK [1][]{section.3}{Model B : The Best Arrangement}{}% 10
+\BOOKMARK [2][]{subsection.3.1}{Description}{section.3}% 11
+\BOOKMARK [2][]{subsection.3.2}{Symbols}{section.3}% 12
+\BOOKMARK [2][]{subsection.3.3}{Assumptions}{section.3}% 13
+\BOOKMARK [2][]{subsection.3.4}{Model Building}{section.3}% 14
+\BOOKMARK [2][]{subsection.3.5}{Optimization}{section.3}% 15
+\BOOKMARK [2][]{subsection.3.6}{Sensitivity Analysis}{section.3}% 16
+\BOOKMARK [2][]{subsection.3.7}{Model Validation}{section.3}% 17
+\BOOKMARK [2][]{subsection.3.8}{Result}{section.3}% 18
+\BOOKMARK [1][]{section.4}{Strengths and weaknesses}{}% 19
+\BOOKMARK [2][]{subsection.4.1}{Model A: Search for possible locations to build dams}{section.4}% 20
+\BOOKMARK [2][]{subsection.4.2}{Model B: The Best Arrangement}{section.4}% 21
+\BOOKMARK [1][]{section.5}{Conclusion}{}% 22
+\BOOKMARK [1][]{section.6}{Brief Assessment of the options}{}% 23
